@@ -1,0 +1,1590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="/cdn-cgi/apps/head/3cOPSgo5Omz84ycX7CvigfX4cpw.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-82213539-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-82213539-2');
+    </script>
+    <title>17 &#23433;&#20840;&#24615; 4.0.0</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8"/>
+    <link rel="stylesheet" href="../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8"/>
+    <script type="text/javascript">
+function addJsClass() {
+    var classes = document.body.className.split(" ");
+    classes.push("js");
+    document.body.className = classes.join(" ");
+}
+    </script>
+</head>
+
+<body class="body" onload="addJsClass();">
+<div id="navigation">
+    <div class="navTitle">
+        
+        The Grails Framework
+    </div>
+    <div class="navLinks">
+        <ul>
+            <li>
+                <div id="nav-summary" onmouseover="toggleNavSummary(false)" onmouseout="toggleNavSummary(true)">
+                    <a href="../guide/index.html" class="button">Table of contents</a>
+
+                    <div id="nav-summary-childs" style="display:none;">
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/introduction.html"><strong>1</strong><span>&#31616;&#20171;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/gettingStarted.html"><strong>2</strong><span>&#20837;&#38376;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/upgrading.html"><strong>3</strong><span>&#20174; Grails 3.3.x &#21319;&#32423;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/conf.html"><strong>4</strong><span>&#37197;&#32622;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/commandLine.html"><strong>5</strong><span>&#21629;&#20196;&#34892;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/profiles.html"><strong>6</strong><span>&#24212;&#29992;&#31243;&#24207;&#37197;&#32622;&#25991;&#20214;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/GORM.html"><strong>7</strong><span>&#23545;&#35937;&#20851;&#31995;&#26144;&#23556; &#65288;GORM&#65289;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/theWebLayer.html"><strong>8</strong><span>Web &#23618;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/traits.html"><strong>9</strong><span>&#29305;&#24449;&#65288;Trait&#65289;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/REST.html"><strong>10</strong><span>REST</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/async.html"><strong>11</strong><span>&#24322;&#27493;&#32534;&#31243;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/validation.html"><strong>12</strong><span>&#39564;&#35777;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/services.html"><strong>13</strong><span>&#26381;&#21153;&#23618;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/staticTypeCheckingAndCompilation.html"><strong>14</strong><span>&#38745;&#24577;&#31867;&#22411;&#26816;&#26597;&#21644;&#32534;&#35793;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/testing.html"><strong>15</strong><span>&#27979;&#35797;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/i18n.html"><strong>16</strong><span>&#22269;&#38469;&#21270;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/security.html"><strong>17</strong><span>&#23433;&#20840;&#24615;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/plugins.html"><strong>18</strong><span>&#25554;&#20214;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/spring.html"><strong>19</strong><span>Grails &#19982; Spring</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/scaffolding.html"><strong>20</strong><span>&#33050;&#25163;&#26550;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/deployment.html"><strong>21</strong><span>&#37096;&#32626;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/contributing.html"><strong>22</strong><span>&#32473; Grails &#36129;&#29486;&#20195;&#30721;</span></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="separator selected">
+                <a id="ref-button" onclick="localToggle(); return false;" href="#">Quick Reference</a>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+
+<table id="colset" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td id="col1">
+            <div id="main" class="corner-all">
+
+                
+                    <div class="toc-item prev-left"><a href="../guide/i18n.html">&lt;&lt; <strong>16</strong><span>&#22269;&#38469;&#21270;</span></a></div>
+                
+
+                <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
+
+                
+                    <div class="toc-item next-right"><a href="../guide/plugins.html"><strong>18</strong><span>&#25554;&#20214;</span> >></a></div>
+                
+
+
+                <div class="project">
+                    <h1>17 &#23433;&#20840;&#24615;</h1>
+
+                    <p><strong>Version:</strong> 4.0.0</p>
+                </div>
+
+                
+                <div id="table-of-content">
+                    <h2>Table of Contents</h2>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#securingAgainstAttacks"><strong>17.1</strong><span>&#38450;&#33539;&#25915;&#20987;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#xssPrevention"><strong>17.2</strong><span>&#36328;&#31449;&#28857;&#33050;&#26412; &#65288;XSS&#65289; &#39044;&#38450;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#codecs"><strong>17.3</strong><span>&#32534;&#30721;&#21644;&#35299;&#30721;&#23545;&#35937;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#authentication"><strong>17.4</strong><span>&#36523;&#20221;&#39564;&#35777;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#securityPlugins"><strong>17.5</strong><span>&#23433;&#20840;&#25554;&#20214;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:10px"><a href="#springSecurity"><strong>17.5.1</strong><span>Spring &#23433;&#20840;&#26426;&#21046;</span></a>
+                    </div>
+                    
+                </div>
+                
+
+                
+<a name="14. &#23433;&#20840;"><!-- Legacy link --></a>
+<h1 id="security">17 安全性</h1>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/security.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>Grails的安全性与Java Servlet差不多。 但是，由于Java虚拟机是代码的基础，因此Java Servlet（因此还有Grails）非常安全，并且不受常见缓冲区溢出和URL格式错误的影响。</p>
+</div>
+<div class="paragraph">
+<p>Web安全性问题通常是由于开发人员的幼稚或错误而发生的，Grails可以采取一些措施来避免常见错误并使编写安全的应用程序更容易编写。</p>
+</div>
+<div class="sect3">
+<h4 id="_grails自动执行的操作">Grails自动执行的操作</h4>
+<div class="paragraph">
+<p>默认情况下，Grails具有一些内置的安全机制。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>通过<a href="GORM.html">GORM</a>域对象进行的所有标准数据库访问都将自动转义SQL，以防止SQL注入攻击</p>
+</li>
+<li>
+<p>默认 <a href="scaffolding.html">scaffolding</a>模板HTML在显示时会转义所有数据字段</p>
+</li>
+<li>
+<p>Grails链接创建标签（<a href="http://gsp.grails.org/latest/ref/Tags/link.html">link</a>, <a href="http://gsp.grails.org/latest/ref/Tags/form.html">form</a>, <a href="http://gsp.grails.org/latest/ref/Tags/createLink.html">createLink</a>, <a href="http://gsp.grails.org/latest/ref/Tags/createLinkTo.html">createLinkTo</a>等）均使用适当的转义机制来防止代码注入</p>
+</li>
+<li>
+<p>Grails提供了&lt;&lt; codecs，codecs &gt;&gt;，当您将它们呈现为HTML，JavaScript和URL时，可以轻松地对数据进行转义，以防止注入攻击。</p>
+</li>
+</ul>
+</div>
+</div>
+
+<a name="14.1 &#38450;&#33539;&#25915;&#20987;"><!-- Legacy link --></a>
+<h2 id="securingAgainstAttacks">17.1 防范攻击</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/security/securingAgainstAttacks.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="sect3">
+<h4 id="_sql注入">SQL注入</h4>
+<div class="paragraph">
+<p>Hibernate是GORM域类的底层技术，它在提交到数据库时自动转义数据，所以这不是问题。但是，仍然有可能编写出错误的动态HQL代码在使用未检查请求参数情况下。例如，以下代码是容易受到HQL注入攻击:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> <span class="function">vulnerable</span>() {
+    <span class="keyword">def</span> books = <span class="predefined-type">Book</span>.find(<span class="string"><span class="delimiter">&quot;</span><span class="content">from Book as b where b.title ='</span><span class="delimiter">&quot;</span></span> + params.title + <span class="string"><span class="delimiter">&quot;</span><span class="content">'</span><span class="delimiter">&quot;</span></span>)
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>还有类似的使用GString的调用:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> <span class="function">vulnerable</span>() {
+    <span class="keyword">def</span> books = <span class="predefined-type">Book</span>.find(<span class="string"><span class="delimiter">&quot;</span><span class="content">from Book as b where b.title ='</span><span class="inline"><span class="inline-delimiter">${</span>params.title<span class="inline-delimiter">}</span></span><span class="content">'</span><span class="delimiter">&quot;</span></span>)
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>不要这样做。使用命名或位置参数代替传递参数:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> <span class="function">safe</span>() {
+    <span class="keyword">def</span> books = <span class="predefined-type">Book</span>.find(<span class="string"><span class="delimiter">&quot;</span><span class="content">from Book as b where b.title = ?</span><span class="delimiter">&quot;</span></span>,
+                          [params.title])
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> <span class="function">safe</span>() {
+<span class="keyword">def</span> books = <span class="predefined-type">Book</span>.find(<span class="string"><span class="delimiter">&quot;</span><span class="content">from Book as b where b.title = :title</span><span class="delimiter">&quot;</span></span>,
+                          [<span class="key">title</span>: params.title])
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_网络钓鱼">网络钓鱼</h4>
+<div class="paragraph">
+<p>这是一个公共关系问题，因为它可以避免你的品牌被劫持，同时也可以避免与你的客户进行公开的沟通。客户需要知道如何识别有效的电子邮件。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_跨站点脚本注入">跨站点脚本注入</h4>
+<div class="paragraph">
+<p>重要的是，应用程序要尽可能多地验证传入的请求来自应用程序，而不是来自其他站点。确保所有呈现到视图中的数据值都正确转义也很重要。例如，在将其呈现为HTML或XHTML时，必须确保人们不能恶意地将JavaScript或其他HTML注入到其他人看到的数据或标记中。</p>
+</div>
+<div class="paragraph">
+<p>Grails 2.3及以上版本包括对放置在GSP页面中的自动编码数据的特殊支持。有关更多信息，请参见<a href="#xssPrevention">Cross Site Scripting (XSS) prevention</a>的文档。</p>
+</div>
+<div class="paragraph">
+<p>您还必须避免使用请求参数或数据字段来确定要将用户重定向到的下一个URL。如果你使用 <code>successURL</code> 参数例如确定将用户重定向到登录成功后,攻击者可以模仿你的登录过程使用您自己的网站,然后将用户重定向回自己的网站一旦登录,可能允许JavaScript代码然后利用登录账户在网站上。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_跨站点请求伪造">跨站点请求伪造</h4>
+<div class="paragraph">
+<p>CSRF涉及从网站信任的用户发送未经授权的命令。一个典型的例子是另一个网站嵌入一个链接来执行一个操作，如果用户仍然是认证的。</p>
+</div>
+<div class="paragraph">
+<p>降低此类攻击风险的最佳方法是在表单上使用 <code>useToken</code> 属性。详情请参阅链接：<a href="theWebLayer.html#formtokens">Handling Duplicate Form Submissions</a>，以获取有关如何使用它的更多信息。另一个措施是不要使用记住我cookies。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_html_url注入">HTML / URL注入</h4>
+<div class="paragraph">
+<p>这是提供错误数据的地方，以便在以后用于在页面中创建链接时，单击它不会导致预期的行为，并且可能重定向到另一个站点或更改请求参数。</p>
+</div>
+<div class="paragraph">
+<p>Grails提供的 <a href="#codecs">codecs</a> 和Grails提供的标记库都可以在适当的地方使用 <a href="#codecs">encodeAsURL</a> 轻松地处理HTML/URL注入。如果你创建自己的标签来生成url，你也需要注意这一点。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_拒绝服务">拒绝服务</h4>
+<div class="paragraph">
+<p>负载均衡器和其他设备在这里更有用，但也存在与过度查询有关的问题，例如，攻击者创建一个链接来设置结果集的最大值，以便查询可以超过服务器的内存限制或使得系统慢下来。这里的解决方案是在将请求参数传递给动态查找程序或其他GORM查询方法之前始终对其进行清理：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">int</span> limit = <span class="integer">100</span>
+<span class="keyword">def</span> safeMax = <span class="predefined-type">Math</span>.min(params.max?.toInteger() ?: limit, limit) <span class="comment">// limit to 100 results</span>
+<span class="keyword">return</span> <span class="predefined-type">Book</span>.list(<span class="key">max</span>:safeMax)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_可推测的id">可推测的id</h4>
+<div class="paragraph">
+<p>许多应用程序使用URL的最后一部分作为某个对象的"id"，以便从GORM或其他地方检索。特别是在GORM的情况下，这些很容易猜测，因为它们通常是连续整数。</p>
+</div>
+<div class="paragraph">
+<p>因此，您必须断言，在将响应返回给用户之前，允许请求用户使用所请求的id查看对象。</p>
+</div>
+<div class="paragraph">
+<p>不这样做就是"通过隐藏实现安全性"，这是不可避免的，就像拥有默认密码"letmein"等等。</p>
+</div>
+<div class="paragraph">
+<p>您必须假设每个未受保护的URL都可以通过某种方式公开访问。</p>
+</div>
+</div>
+
+<a name="13.2 &#36328;&#31449;&#28857;&#33050;&#26412; &#65288;XSS&#65289; &#39044;&#38450;"><!-- Legacy link --></a>
+<h2 id="xssPrevention">17.2 跨站点脚本 （XSS） 预防</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/security/xssPrevention.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>跨站点脚本攻击(XSS)是web应用程序的常见攻击载体。它们通常涉及以这样的形式提交HTML或Javascript代码，即当代码显示时，浏览器会做一些令人讨厌的事情。它可以是简单的弹出一个警告框，也可以是更糟糕的，例如可以通过 <a href="https://blog.codinghorror.com/protecting-your-cookies-httponly/">access other users session cookies</a>访问其他用户的会话cookie。</p>
+</div>
+<div class="paragraph">
+<p>解决方案是在页面中显示所有不受信任的用户输入时对其进行转义。例如，</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">&lt;script&gt;alert(<span class="string"><span class="delimiter">'</span><span class="content">Got ya!</span><span class="delimiter">'</span></span>);&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">script&gt;</span></span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>会变成</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">&amp;lt;script&amp;gt;alert(<span class="string"><span class="delimiter">'</span><span class="content">Got ya!</span><span class="delimiter">'</span></span>);&amp;lt;<span class="regexp"><span class="delimiter">/</span><span class="content">script&amp;gt;</span></span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>呈现时，取消恶意输入的效果。</p>
+</div>
+<div class="paragraph">
+<p>默认情况下，Grails会安全地运行它，并在gsp中转义 <code>${}</code> 表达式中的所有内容。默认情况下，所有标准GSP标记也都是安全的，可以转义任何相关的属性值。</p>
+</div>
+<div class="paragraph">
+<p>那么当你想阻止Grails转义某些内容时会发生什么呢？只要内容是 <strong>可信的</strong> ，就有将HTML放入数据库并按原样呈现的有效用例。在这种情况下，您可以告诉Grails，内容是安全的，应该原始呈现，即不需要任何转义：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">&lt;section&gt;<span class="error">$</span>{raw(page.content)}&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">section&gt;</span></span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>您在这里看到的 <code>raw()</code> 方法可以从控制器、标记库和GSP页面获得。</p>
+</div>
+<div class="paragraph">
+<p><strong>XSS的预防是困难的，需要开发人员的大量关注</strong></p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+尽管Grails在默认情况下是安全的，但这不能保证您的应用程序不会受到XSS风格的攻击。这种攻击不太可能成功，但开发人员应该始终注意潜在的攻击载体，并在测试期间尝试发现应用程序中的漏洞。切换到不安全的默认设置也很容易，从而增加了引入漏洞的风险。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>关于XSS的更多细节可以看 <a href="https://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet#XSS_Prevention_Rules">OWASP - XSS prevention rules</a>和 <a href="https://www.owasp.org/index.php/Types_of_Cross-Site_Scripting">OWASP - Types of Cross-Site Scripting</a>.
+XSS的种类见： <a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)#Stored_XSS_Attacks">Stored XSS</a>, <a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)#Reflected_XSS_Attacks">Reflected XSS</a> 和 <a href="https://www.owasp.org/index.php/DOM_Based_XSS">DOM based XSS</a>. <a href="https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet">DOM based XSS prevention</a>随着Javascript客户端模板和单页应用程序的流行，它变得越来越重要。</p>
+</div>
+<div class="paragraph">
+<p>Grails编解码器主要用于防止存储和反射XSS类型的攻击。Grails 2.4包含HTMLJS编解码器,它可以帮助防止一些基于DOM的XSS攻击。</p>
+</div>
+<div class="paragraph">
+<p>很难让一个解决方案,适用于每个人,所以Grails提供了很大的灵活性对于微调逃离是如何工作的,让你保持你的大多数应用程序安全,同时关闭默认逃离或者改变编解码器用于页面,标签,页面片段,等等。</p>
+</div>
+<div class="sect3">
+<h4 id="_配置">配置</h4>
+<div class="paragraph">
+<p>建议您查看新创建的Grails应用程序的配置，以了解Grails中的XSS预防工作。</p>
+</div>
+<div class="paragraph">
+<p>当您使用HttpOnly标记标记cookie时,它会告诉浏览器该特定cookie只应被服务器访问。严禁从客户端脚本访问cookie。这可以在 <code>application.yml</code> 配置文件中进行配置，如下所示：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="key">server</span>:
+    <span class="key">session</span>:
+        <span class="key">cookie</span>:
+            <span class="key">domain</span>: example.org
+            http-<span class="key">only</span>: <span class="predefined-constant">true</span>
+            <span class="key">path</span>: <span class="regexp"><span class="delimiter">/</span></span><span class="error">
+</span>            <span class="key">secure</span>: <span class="predefined-constant">true</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>GSP具有自动对GSP表达式进行HTML编码的功能，从Grails 2.3开始，这是默认配置。新创建的Grails应用程序的默认配置（见 <code>application.yml</code> ）如下：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="key">grails</span>:
+    <span class="key">views</span>:
+        <span class="key">gsp</span>:
+            <span class="key">encoding</span>: UTF-<span class="integer">8</span>
+            <span class="key">htmlcodec</span>: xml <span class="error">#</span> use xml escaping instead of HTML4 escaping
+            <span class="key">codecs</span>:
+                <span class="key">expression</span>: html <span class="error">#</span> escapes values inside <span class="error">$</span>{}
+                <span class="key">scriptlets</span>: html <span class="error">#</span> escapes output from scriptlets <span class="keyword">in</span> GSPs
+                <span class="key">taglib</span>: none <span class="error">#</span> escapes output from taglibs
+                <span class="key">staticparts</span>: none <span class="error">#</span> escapes output from <span class="directive">static</span> template parts</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>GSP具有几个编解码器，在将页面写入响应时使用这些编解码器。编解码器在 <code>codecs</code> 块中配置，如下所述：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>expression</code> -这个表达式编解码器用于对在${..}表达式中找到的任何代码进行编码。新创建的应用程序的默认值是 <code>html</code> 编码。</p>
+</li>
+<li>
+<p><code>scriptlet</code> -这个用于GSP的输出（&lt;% %&gt;，&lt;%= %&gt;块）。新创建的应用程序的默认值是 <code>html</code> 编码</p>
+</li>
+<li>
+<p><code>taglib</code> -用于对GSP标记库的输出进行编码。对于新应用程序，默认值为 <code>none</code> ，因为通常由标记作者负责定义给定标记的编码，并通过指定 <code>none</code> Grails才能保持与旧标记库的向下兼容。</p>
+</li>
+<li>
+<p><code>staticparts</code> -用于对GSP页的原始标记输出进行编码。默认值为 <code>none</code> 。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_双重编码的预防">双重编码的预防</h4>
+<div class="paragraph">
+<p>在2.3之前的Grails版本，包括了将默认的编解码器设置 <code>html</code> 的能力，但是，在使用现有的插件时，启用这个设置有时会被证明是有问题的，因为编码被应用了两次(一次是 <code>html</code> 编解码器，一次是手动调用的插件 <code>encodeAsHTML</code> )。</p>
+</div>
+<div class="paragraph">
+<p>Grails 2.3包含双重编码保护，这样在计算表达式时，如果数据已经编码，它就不会进行编码（例如 <code>${foo.encodeAsHTML()}</code> ）。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_原始的输出">原始的输出</h4>
+<div class="paragraph">
+<p>如果您百分百确定您希望在页面上显示的值尚未从用户输入中收到，并且您不希望对该值进行编码，则可以使用 <code>raw</code> 方法：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">$</span>{raw(book.title)}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>'raw' 方法在标记库、控制器和GSP页面中可用。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_每个插件编码">每个插件编码</h4>
+<div class="paragraph">
+<p>Grails还具有控制每个插件使用的编解码器的功能。例如，如果安装了名为 <code>foo</code> 的插件，那么将以下配置放在 <code>application.groovy</code> 中将只对 <code>foo</code> 插件禁用编码</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">foo.grails.views.gsp.codecs.expression = <span class="string"><span class="delimiter">&quot;</span><span class="content">none</span><span class="delimiter">&quot;</span></span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_每页的编码">每页的编码</h4>
+<div class="paragraph">
+<p>还可以使用page指令控制用于每页呈现GSP页的各种编解码器：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">&lt;%<span class="annotation">@page</span> expressionCodec=<span class="string"><span class="delimiter">&quot;</span><span class="content">none</span><span class="delimiter">&quot;</span></span> %&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_每个标记库编码">每个标记库编码</h4>
+<div class="paragraph">
+<p>创建的每个标记库都有机会指定一个默认编解码器，用于使用"defaultEncodeAs"属性对来自标记库的输出进行编码：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="directive">static</span> defaultEncodeAs = <span class="string"><span class="delimiter">'</span><span class="content">html</span><span class="delimiter">'</span></span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>也可以使用"encodeAsForTags"在每个标记的基础上指定编码：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="directive">static</span> encodeAsForTags = [<span class="key">tagName</span>: <span class="string"><span class="delimiter">'</span><span class="content">raw</span><span class="delimiter">'</span></span>]</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_上下文敏感编码切换">上下文敏感编码切换</h4>
+<div class="paragraph">
+<p>某些标记需要特定的编码，Grails的功能是使用"withCodec"方法只启用标记执行的特定部分的编解码器。例如，考虑一下"&lt;g:javascript&gt;""标记，它允许您在页面中嵌入javascript代码。此标记需要JavaScript编码，而不是HTML编码以执行标记主体（但不用于输出的标记）：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">out.println <span class="string"><span class="delimiter">'</span><span class="content">&lt;script type=&quot;text/javascript&quot;&gt;</span><span class="delimiter">'</span></span>
+    withCodec(<span class="string"><span class="delimiter">&quot;</span><span class="content">JavaScript</span><span class="delimiter">&quot;</span></span>) {
+        out &lt;&lt; body()
+    }
+    out.println()
+    out.println <span class="string"><span class="delimiter">'</span><span class="content">&lt;/script&gt;</span><span class="delimiter">'</span></span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_标签的强制编码">标签的强制编码</h4>
+<div class="paragraph">
+<p>如果标记指定的默认编码与您的要求不同，则可以通过传递可选的&#8217;encodeAs&#8217;属性强制对任何标记进行编码：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">&lt;<span class="key">g</span>:message code=<span class="string"><span class="delimiter">&quot;</span><span class="content">foo.bar</span><span class="delimiter">&quot;</span></span> encodeAs=<span class="string"><span class="delimiter">&quot;</span><span class="content">JavaScript</span><span class="delimiter">&quot;</span></span> /&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_所有输出的默认编码">所有输出的默认编码</h4>
+<div class="paragraph">
+<p>新应用程序的默认配置对于大多数用例来说是很好的，并且与现有的插件和标签库向后兼容。但是，通过配置Grails始终在响应结束时对所有输出进行编码，您还可以使您的应用程序更加安全。这是使用 <code>application.groovy</code> 中的 <code>filteringCodecForContentType</code> 配置完成的：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">grails.views.gsp.filteringCodecForContentType.<span class="string"><span class="delimiter">'</span><span class="content">text/html</span><span class="delimiter">'</span></span> = <span class="string"><span class="delimiter">'</span><span class="content">html</span><span class="delimiter">'</span></span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>请注意，如果激活了 <code>staticparts</code> 编解码器，则通常需要将其设置为 <code>raw</code> ，以便不对静态标记进行编码：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">codecs {
+        expression = <span class="string"><span class="delimiter">'</span><span class="content">html</span><span class="delimiter">'</span></span> <span class="comment">// escapes values inside ${}</span>
+        scriptlet = <span class="string"><span class="delimiter">'</span><span class="content">html</span><span class="delimiter">'</span></span> <span class="comment">// escapes output from scriptlets in GSPs</span>
+        taglib = <span class="string"><span class="delimiter">'</span><span class="content">none</span><span class="delimiter">'</span></span> <span class="comment">// escapes output from taglibs</span>
+        staticparts = <span class="string"><span class="delimiter">'</span><span class="content">raw</span><span class="delimiter">'</span></span> <span class="comment">// escapes output from static template parts</span>
+    }</code></pre>
+</div>
+</div>
+</div>
+
+<a name="14.2 &#32534;&#30721;&#21644;&#35299;&#30721;&#23545;&#35937;"><!-- Legacy link --></a>
+<h2 id="codecs">17.3 编码和解码对象</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/security/codecs.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>Grails支持动态编码/解码方法的概念。Grails附带了一组标准的编解码器。Grails还支持一种简单的机制，让开发人员贡献自己的代码，这些代码将在运行时被识别出来。</p>
+</div>
+<div class="sect3">
+<h4 id="_codec_classes">Codec Classes</h4>
+<div class="paragraph">
+<p>Grails编解码器类可能包含一个编码闭包、一个解码闭包或两者都包含。当Grails应用程序启动时，Grails框架将从 <code>Grails -app/utils/</code> 目录动态加载编解码器。</p>
+</div>
+<div class="paragraph">
+<p>该框架在 <code>grails-app/utils/</code> 下查找以约定 <code>Codec</code> 结尾的类名。例如，Grails附带的标准编码器之一是 <code>HTMLCodec</code>。</p>
+</div>
+<div class="paragraph">
+<p>如果一个编解码器包含一个 <code>encode</code> 闭包，Grails将创建一个动态的 <code>encode</code> 方法，并将该方法添加到 <code>Object</code> 类中，其名称表示定义了encode闭包的编解码器。例如， <code>HTMLCodec</code> 类定义了一个 <code>encode</code> 闭包，因此Grails将其命名为 <code>encodeAsHTML</code> 。</p>
+</div>
+<div class="paragraph">
+<p><code>HTMLCodec</code> 和 <code>URLCodec</code> 类还定义了一个 <code>decode</code> 闭包，因此Grails分别将这两个类的名称命名为 <code>decodeHTML</code> 和 <code>decodeURL</code> 。可以在Grails应用程序的任何地方调用动态编解码器方法。例如，考虑这样一种情况，报表包含一个名为 <code>description</code> 的属性，该属性可能包含必须转义才能在HTML文档中显示的特殊字符。在GSP中处理这个问题的一种方法是使用如下所示的动态编码方法对description属性进行编码:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">$</span>{report.description.encodeAsHTML()}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>使用 <code>value.decodeHTML()</code> 语法进行解码。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_用于静态编译代码的编码器和解码器接口">用于静态编译代码的编码器和解码器接口</h4>
+<div class="paragraph">
+<p>使用codecs的首选方法是使用codecLookup bean获取 <code>Encoder</code> 和 <code>Decoder</code> 实例</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> org.grails.encoder;
+
+<span class="directive">public</span> <span class="type">interface</span> CodecLookup {
+    <span class="directive">public</span> <span class="predefined-type">Encoder</span> lookupEncoder(<span class="predefined-type">String</span> codecName);
+    <span class="directive">public</span> Decoder lookupDecoder(<span class="predefined-type">String</span> codecName);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>例子使用 <code>CodecLookup</code> 和 <code>Encoder</code> 接口</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">org.grails.encoder.CodecLookup</span>
+
+<span class="type">class</span> <span class="class">CustomTagLib</span> {
+    CodecLookup codecLookup
+
+    <span class="keyword">def</span> myTag = { <span class="predefined-type">Map</span> attrs, body -&gt;
+        out &lt;&lt; codecLookup.lookupEncoder(<span class="string"><span class="delimiter">'</span><span class="content">HTML</span><span class="delimiter">'</span></span>).encode(attrs.something)
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_standard_codecs">Standard Codecs</h4>
+<div class="paragraph">
+<p><strong>HTMLCodec</strong></p>
+</div>
+<div class="paragraph">
+<p>这个编解码器执行HTML转义和反转义，因此可以在HTML页面中安全地呈现值，而不需要创建任何HTML标记或破坏页面布局。例如,给定一个价值 <code>你不知道2 &gt; 1 ?</code> 你不能显示这安全地在一个HTML页面,因为&gt;将看起来关闭标签,尤其糟糕的如果你渲染这个数据在一个属性,如一个输入字段的值属性。</p>
+</div>
+<div class="paragraph">
+<p>使用示例 :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">&lt;input name=<span class="string"><span class="delimiter">&quot;</span><span class="content">comment.message</span><span class="delimiter">&quot;</span></span> value=<span class="string"><span class="delimiter">&quot;</span><span class="inline"><span class="inline-delimiter">${</span>comment.message.encodeAsHTML()<span class="inline-delimiter">}</span></span><span class="delimiter">&quot;</span></span>/&gt;</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+HTML编码不会重新编码撇号/单引号，因此必须对属性值使用双引号，以避免撇号影响页面的文本。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>HTMLCodec默认为HTML4格式转义(在2.3.0之前的Grails版本中遗留的HTMLCodec实现)，它转义非ascii字符</p>
+</div>
+<div class="paragraph">
+<p>您可以使用普通的XML转义而不是HTML4转义，通过在 <code>application.groovy</code> 中设置这个配置属性:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">grails.views.gsp.htmlcodec = <span class="string"><span class="delimiter">'</span><span class="content">xml</span><span class="delimiter">'</span></span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>XMLCodec</strong></p>
+</div>
+<div class="paragraph">
+<p>这个编解码器执行XML转义和反转义。它转义&amp;，&lt;，&gt;，"，'，'，\\\\，@，'，不间断空格(\\\\u00a0)，行分隔符(\\\\u2028)和段落分隔符(\\\\u2029)。）</p>
+</div>
+<div class="paragraph">
+<p><strong>HTMLJSCodec</strong></p>
+</div>
+<div class="paragraph">
+<p>这个编解码器执行HTML和JS编码。它用于防止一些DOM-XSS漏洞。有关防止基于DOM的XSS攻击的指南，请参阅 <a href="https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet">OWASP - DOM based XSS Prevention Cheat Sheet</a>。</p>
+</div>
+<div class="paragraph">
+<p><strong>URLCodec</strong></p>
+</div>
+<div class="paragraph">
+<p>当在链接或表单操作中创建URL时，或者在使用数据创建URL时，都需要URL编码。它可以防止非法字符进入URL并改变其含义，例如"Apple &amp; Blackberry"作为GET请求中的一个参数将不能很好地工作，因为&amp;将破坏参数解析。</p>
+</div>
+<div class="paragraph">
+<p>使用的例子:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">&lt;a href=<span class="string"><span class="delimiter">&quot;</span><span class="content">/mycontroller/find?searchKey=</span><span class="inline"><span class="inline-delimiter">${</span>lastSearch.encodeAsURL()<span class="inline-delimiter">}</span></span><span class="delimiter">&quot;</span></span>&gt;
+Repeat last search
+&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">a&gt;</span></span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Base64Codec</strong></p>
+</div>
+<div class="paragraph">
+<p>执行Base64编码/解码功能。使用的例子:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">Your registration code <span class="key">is</span>: <span class="error">$</span>{user.registrationCode.encodeAsBase64()}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>JavaScriptCodec</strong></p>
+</div>
+<div class="paragraph">
+<p>转义字符串，使它们可以用作有效的JavaScript字符串。例如:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="predefined-type">Element</span>.update(<span class="string"><span class="delimiter">'</span><span class="content">${elementId}</span><span class="delimiter">'</span></span>,
+    <span class="string"><span class="delimiter">'</span><span class="content">${render(template: &quot;/common/message&quot;).encodeAsJavaScript()}</span><span class="delimiter">'</span></span>)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>HexCodec</strong></p>
+</div>
+<div class="paragraph">
+<p>将字节数组或整数列表编码为小写十六进制字符串，并可以将十六进制字符串解码为字节数组。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">Selected <span class="key">colour</span>: <span class="error">#</span><span class="error">$</span>{[<span class="integer">255</span>,<span class="integer">127</span>,<span class="integer">255</span>].encodeAsHex()}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>MD5Codec</strong></p>
+</div>
+<div class="paragraph">
+<p>使用MD5算法将字节数组或整数列表或字符串字节(在默认系统编码中)消化为小写十六进制字符串</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">Your API <span class="predefined-type">Key</span>: <span class="error">$</span>{user.uniqueID.encodeAsMD5()}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>MD5BytesCodec</strong></p>
+</div>
+<div class="paragraph">
+<p>使用MD5算法将字节数组或整数列表或字符串字节(默认系统编码)消化为字节数组。使用的例子:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">byte</span><span class="type">[]</span> passwordHash = params.password.encodeAsMD5Bytes()</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>SHA1Codec</strong></p>
+</div>
+<div class="paragraph">
+<p>使用SHA1算法将字节数组或整数列表或字符串字节(在默认系统编码中)分解为小写十六进制字符串</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">Your API <span class="predefined-type">Key</span>: <span class="error">$</span>{user.uniqueID.encodeAsSHA1()}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>SHA1BytesCodec</strong></p>
+</div>
+<div class="paragraph">
+<p>使用SHA1算法将字节数组或整数列表或字符串字节(默认系统编码)消化为字节数组。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">byte</span><span class="type">[]</span> passwordHash = params.password.encodeAsSHA1Bytes()</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>SHA256Codec</strong></p>
+</div>
+<div class="paragraph">
+<p>使用SHA256算法将字节数组或整数列表或字符串字节(在默认系统编码中)消化为小写十六进制字符串。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">Your API <span class="predefined-type">Key</span>: <span class="error">$</span>{user.uniqueID.encodeAsSHA256()}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>SHA256BytesCodec</strong></p>
+</div>
+<div class="paragraph">
+<p>使用SHA256算法将字节数组或整数列表或字符串字节(默认系统编码)消化为字节数组。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">byte</span><span class="type">[]</span> passwordHash = params.password.encodeAsSHA256Bytes()</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_custom_codecs">Custom Codecs</h4>
+<div class="paragraph">
+<p>应用程序可以定义自己的编解码器，Grails会将它们与标准的编解码器一起加载。自定义的编解码器类必须在 <code>grails-app/utils/</code> 目录中定义，类名必须以 <code>codec</code> 结尾。该编解码器可能包含一个 <code>静态</code> 的 <code>encode</code> 闭包，一个 <code>静态</code> 的 <code>decode</code> 闭包，或者两者都包含。闭包必须接受一个参数，该参数将是调用动态方法的对象。例如:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">PigLatinCodec</span> {
+  <span class="directive">static</span> encode = { str -&gt;
+    <span class="comment">// convert the string to pig latin and return the result</span>
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>有了上面的编解码器，应用程序可以做这样的事情:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml">${lastName.encodeAsPigLatin()}</code></pre>
+</div>
+</div>
+</div>
+
+<a name="14.3 &#36523;&#20221;&#39564;&#35777;"><!-- Legacy link --></a>
+<h2 id="authentication">17.4 身份验证</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/security/authentication.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>Grails没有默认的身份验证机制，因为可以通过许多不同的方式实现身份验证。然而，很容易实现一个简单的认证机制使用 <a href="theWebLayer.html#interceptors">interceptors</a>.这对于简单的用例来说已经足够了，但是最好使用一个已经建立的安全框架，例如使用&lt;springSecurity,Spring Security&gt;或者&lt;shiro,Shiro&gt;插件。</p>
+</div>
+<div class="paragraph">
+<p>拦截器允许跨所有控制器或跨URI空间应用身份验证。例如，你可以在一个名为 <code>grails-app/controllers/SecurityInterceptor</code> 的类中创建一组新的过滤器。groovy的运行:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">grails create-interceptor security</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and implement your interception logic there:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">SecurityInterceptor</span> {
+
+    SecurityInterceptor() {
+        matchAll()
+        .except(<span class="key">controller</span>:<span class="string"><span class="delimiter">'</span><span class="content">user</span><span class="delimiter">'</span></span>, <span class="key">action</span>:<span class="string"><span class="delimiter">'</span><span class="content">login</span><span class="delimiter">'</span></span>)
+    }
+
+    <span class="type">boolean</span> before() {
+        <span class="keyword">if</span> (!session.user &amp;&amp; actionName != <span class="string"><span class="delimiter">&quot;</span><span class="content">login</span><span class="delimiter">&quot;</span></span>) {
+            redirect(<span class="key">controller</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">user</span><span class="delimiter">&quot;</span></span>, <span class="key">action</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">login</span><span class="delimiter">&quot;</span></span>)
+            <span class="keyword">return</span> <span class="predefined-constant">false</span>
+        }
+        <span class="keyword">return</span> <span class="predefined-constant">true</span>
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在这里，拦截器拦截执行_before_除了 <code>登录</code> 之外的所有操作都被执行，如果会话中没有用户，则重定向到 <code>登录</code> 操作。</p>
+</div>
+<div class="paragraph">
+<p><code>login</code> 操作本身也很简单:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> <span class="function">login</span>() {
+    <span class="keyword">if</span> (request.get) {
+        <span class="keyword">return</span> <span class="comment">// render the login view</span>
+    }
+
+    <span class="keyword">def</span> u = User.findByLogin(params.login)
+    <span class="keyword">if</span> (u) {
+        <span class="keyword">if</span> (u.password == params.password) {
+            session.user = u
+            redirect(<span class="key">action</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">home</span><span class="delimiter">&quot;</span></span>)
+        }
+        <span class="keyword">else</span> {
+            render(<span class="key">view</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">login</span><span class="delimiter">&quot;</span></span>, <span class="key">model</span>: [<span class="key">message</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Password incorrect</span><span class="delimiter">&quot;</span></span>])
+        }
+    }
+    <span class="keyword">else</span> {
+        render(<span class="key">view</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">login</span><span class="delimiter">&quot;</span></span>, <span class="key">model</span>: [<span class="key">message</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">User not found</span><span class="delimiter">&quot;</span></span>])
+    }
+}</code></pre>
+</div>
+</div>
+
+<a name="14.4 &#23433;&#20840;&#25554;&#20214;"><!-- Legacy link --></a>
+<h2 id="securityPlugins">17.5 安全插件</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/security/securityPlugins.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>如果您需要比简单的身份验证更高级的功能，比如授权、角色等，那么您应该考虑使用spring security core插件。</p>
+</div>
+
+<a name="14.4.1 Spring Security"><!-- Legacy link --></a>
+<h2 id="springSecurity">17.5.1 Spring 安全机制</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/security/securityPlugins/springSecurity.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>Spring安全插件构建在place项目上 <a href="http://projects.spring.io/spring-security/">Spring Security</a>项目为构建各种身份验证和授权方案提供了灵活的、可扩展的框架。插件是模块化的，因此您可以安装您的应用程序所需的功能。Spring安全插件是Grails的官方安全插件，受到积极的维护和支持。</p>
+</div>
+<div class="paragraph">
+<p>有一种 <a href="http://grails.org/plugins.html#plugin/spring-security-core">Core plugin</a>支持基于表单的身份验证、加密/加验密码、HTTP基本身份验证等。次要的依赖插件提供替代功能，如 <a href="https://grails.org/plugins.html#plugin/spring-security-acl">ACL support</a>等等，和安全工作流。</p>
+</div>
+<div class="paragraph">
+<p>基本信息参见 <a href="http://grails.org/plugins.html#plugin/spring-security-core">Core plugin page</a>
+详细信息参见 <a href="http://grails-plugins.github.io/grails-spring-security-core/">user guide</a></p>
+</div>
+
+
+                <div style="clear:both;margin-top:15px;"></div>
+                
+                    <div class="toc-item prev-left"><a href="../guide/i18n.html">&lt;&lt; <strong>16</strong><span>&#22269;&#38469;&#21270;</span></a></div>
+                
+                    <div class="toc-item next-right"><a href="../guide/plugins.html"><strong>18</strong><span>&#25554;&#20214;</span> >></a></div>
+                
+                <div style="clear:both"></div>
+            </div>
+        </td>
+        <td id="col2">
+            <div class="local clearfix">
+                <div class="local-title">
+                    <a href="../guide/index.html" target="mainFrame">Quick Reference</a>
+                    <span class="toggle">(<a href="#" onclick="localToggle(); return false;">hide</a>)</span>
+                </div>
+                <div class="menu">
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Command Line</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Command%20Line/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/bug-report.html">bug-report</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/clean.html">clean</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/compile.html">compile</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/console.html">console</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-app.html">create-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-command.html">create-command</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-controller.html">create-controller</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-domain-class.html">create-domain-class</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-functional-test.html">create-functional-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-hibernate-cfg-xml.html">create-hibernate-cfg-xml</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-integration-test.html">create-integration-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-interceptor.html">create-interceptor</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-plugin.html">create-plugin</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-profile.html">create-profile</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-script.html">create-script</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-service.html">create-service</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-taglib.html">create-taglib</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-unit-test.html">create-unit-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/dependency-report.html">dependency-report</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/docs.html">docs</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/generate-all.html">generate-all</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/generate-controller.html">generate-controller</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/generate-views.html">generate-views</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/help.html">help</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/install-templates.html">install-templates</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/list-plugins.html">list-plugins</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/list-profiles.html">list-profiles</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/package-plugin.html">package-plugin</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/package.html">package</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/plugin-info.html">plugin-info</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/profile-info.html">profile-info</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/run-app.html">run-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/run-command.html">run-command</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/run-script.html">run-script</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/schema-export.html">schema-export</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/shell.html">shell</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/stats.html">stats</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/stop-app.html">stop-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/test-app.html">test-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/war.html">war</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Constraints</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Constraints/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/attributes.html">attributes</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/bindable.html">bindable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/blank.html">blank</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/creditCard.html">creditCard</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/email.html">email</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/inList.html">inList</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/matches.html">matches</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/max.html">max</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/maxSize.html">maxSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/min.html">min</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/minSize.html">minSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/notEqual.html">notEqual</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/nullable.html">nullable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/range.html">range</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/scale.html">scale</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/size.html">size</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/unique.html">unique</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/url.html">url</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/validator.html">validator</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/widget.html">widget</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Controllers</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Controllers/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/actionName.html">actionName</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/allowedMethods.html">allowedMethods</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/bindData.html">bindData</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/chain.html">chain</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/controllerName.html">controllerName</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/defaultAction.html">defaultAction</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/errors.html">errors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/flash.html">flash</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/forward.html">forward</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/grailsApplication.html">grailsApplication</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/hasErrors.html">hasErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/namespace.html">namespace</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/params.html">params</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/redirect.html">redirect</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/render.html">render</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/request.html">request</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/respond.html">respond</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/response.html">response</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/responseFormats.html">responseFormats</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/scope.html">scope</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/servletContext.html">servletContext</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/session.html">session</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/withForm.html">withForm</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/withFormat.html">withFormat</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Database Mapping</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/autoImport.html">autoImport</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/autoTimestamp.html">autoTimestamp</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/batchSize.html">batchSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/cache.html">cache</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/cascade.html">cascade</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/column.html">column</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/comment.html">comment</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/discriminator.html">discriminator</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/dynamicInsert.html">dynamicInsert</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/dynamicUpdate.html">dynamicUpdate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/fetch.html">fetch</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/id.html">id</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/ignoreNotFound.html">ignoreNotFound</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/indexColumn.html">indexColumn</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/insertable.html">insertable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/joinTable.html">joinTable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/lazy.html">lazy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/order.html">order</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/sort.html">sort</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/table.html">table</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/type.html">type</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/updateable.html">updateable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/version.html">version</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Domain Classes</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/addTo.html">addTo</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/attach.html">attach</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/belongsTo.html">belongsTo</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/clearErrors.html">clearErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/constraints.html">constraints</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/count.html">count</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/countBy.html">countBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/createCriteria.html">createCriteria</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/delete.html">delete</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/discard.html">discard</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/embedded.html">embedded</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/errors.html">errors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/executeQuery.html">executeQuery</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/executeUpdate.html">executeUpdate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/exists.html">exists</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/fetchMode.html">fetchMode</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/find.html">find</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findAll.html">findAll</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findAllBy.html">findAllBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findAllWhere.html">findAllWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findBy.html">findBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findOrCreateBy.html">findOrCreateBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findOrCreateWhere.html">findOrCreateWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findOrSaveBy.html">findOrSaveBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findOrSaveWhere.html">findOrSaveWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findWhere.html">findWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/first.html">first</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/get.html">get</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/getAll.html">getAll</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/getDirtyPropertyNames.html">getDirtyPropertyNames</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/getPersistentValue.html">getPersistentValue</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/hasErrors.html">hasErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/hasMany.html">hasMany</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/hasOne.html">hasOne</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/ident.html">ident</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/instanceOf.html">instanceOf</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/isAttached.html">isAttached</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/isDirty.html">isDirty</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/last.html">last</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/list.html">list</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/listOrderBy.html">listOrderBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/load.html">load</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/lock.html">lock</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/mapWith.html">mapWith</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/mappedBy.html">mappedBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/mapping.html">mapping</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/merge.html">merge</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/namedQueries.html">namedQueries</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/properties.html">properties</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/read.html">read</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/refresh.html">refresh</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/removeFrom.html">removeFrom</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/save.html">save</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/transients.html">transients</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/validate.html">validate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/where.html">where</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/whereAny.html">whereAny</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/withCriteria.html">withCriteria</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/withNewSession.html">withNewSession</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/withSession.html">withSession</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/withTransaction.html">withTransaction</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Plug-ins</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Plug-ins/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/URL%20mappings.html">URL mappings</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/codecs.html">codecs</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/controllers.html">controllers</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/core.html">core</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/dataSource.html">dataSource</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/domainClasses.html">domainClasses</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/hibernate.html">hibernate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/i18n.html">i18n</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/logging.html">logging</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/scaffolding.html">scaffolding</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/services.html">services</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/servlets.html">servlets</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Services</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Services/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Services/scope.html">scope</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Services/transactional.html">transactional</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Servlet API</h1><div class="menu-sub">
+                        
+                            
+                            <div class="menu-item"><a href="../ref/Servlet%20API/request.html">request</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Servlet%20API/response.html">response</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Servlet%20API/servletContext.html">servletContext</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Servlet%20API/session.html">session</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<div id="footer">
+    Copies of this document may be made for your own use and for distribution to others, provided that you do not charge any fee for such copies and further provided that each copy contains this Copyright Notice, whether distributed in print or electronically.
+    
+</div>
+
+<script type="text/javascript" src="../js/docs.js"></script>
+
+</body>
+</html>

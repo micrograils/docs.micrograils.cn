@@ -1,0 +1,1227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="/cdn-cgi/apps/head/3cOPSgo5Omz84ycX7CvigfX4cpw.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-82213539-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-82213539-2');
+    </script>
+    <title>The Grails Framework 4.0.0</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8"/>
+    <link rel="stylesheet" href="../../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8"/>
+    <script type="text/javascript">
+function addJsClass(el) {
+    var classes = document.body.className.split(" ");
+    classes.push("js");
+    document.body.className = classes.join(" ");
+}
+    </script>
+    <style>
+        .contribute-btn {
+            bottom: 0px;
+        }
+    </style>
+</head>
+
+<body class="body" onload="addJsClass();">
+
+<div id="navigation">
+    <div class="navTitle">
+        
+        The Grails Framework
+    </div>
+
+    <div class="navLinks">
+        <ul>
+            <li>
+                <div id="nav-summary" onmouseover="toggleNavSummary(false)" onmouseout="toggleNavSummary(true)">
+                    <a href="../../guide/index.html" class="button">Table of contents</a>
+
+                    <div id="nav-summary-childs">
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/introduction.html"><strong>1</strong><span>&#31616;&#20171;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/gettingStarted.html"><strong>2</strong><span>&#20837;&#38376;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/upgrading.html"><strong>3</strong><span>&#20174; Grails 3.3.x &#21319;&#32423;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/conf.html"><strong>4</strong><span>&#37197;&#32622;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/commandLine.html"><strong>5</strong><span>&#21629;&#20196;&#34892;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/profiles.html"><strong>6</strong><span>&#24212;&#29992;&#31243;&#24207;&#37197;&#32622;&#25991;&#20214;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/GORM.html"><strong>7</strong><span>&#23545;&#35937;&#20851;&#31995;&#26144;&#23556; &#65288;GORM&#65289;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/theWebLayer.html"><strong>8</strong><span>Web &#23618;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/traits.html"><strong>9</strong><span>&#29305;&#24449;&#65288;Trait&#65289;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/REST.html"><strong>10</strong><span>REST</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/async.html"><strong>11</strong><span>&#24322;&#27493;&#32534;&#31243;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/validation.html"><strong>12</strong><span>&#39564;&#35777;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/services.html"><strong>13</strong><span>&#26381;&#21153;&#23618;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/staticTypeCheckingAndCompilation.html"><strong>14</strong><span>&#38745;&#24577;&#31867;&#22411;&#26816;&#26597;&#21644;&#32534;&#35793;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/testing.html"><strong>15</strong><span>&#27979;&#35797;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/i18n.html"><strong>16</strong><span>&#22269;&#38469;&#21270;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/security.html"><strong>17</strong><span>&#23433;&#20840;&#24615;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/plugins.html"><strong>18</strong><span>&#25554;&#20214;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/spring.html"><strong>19</strong><span>Grails &#19982; Spring</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/scaffolding.html"><strong>20</strong><span>&#33050;&#25163;&#26550;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/deployment.html"><strong>21</strong><span>&#37096;&#32626;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/contributing.html"><strong>22</strong><span>&#32473; Grails &#36129;&#29486;&#20195;&#30721;</span></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="separator selected">
+                <a id="ref-button" onclick="localToggle(); return false;" href="#">Quick Reference</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<table id="colset" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td id="col1">
+            <div id="main" class="reference corner-all">
+
+                <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
+                
+                <div class='contribute-btn'>
+                    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/ref/Domain Classes/createCriteria.adoc"'>
+                        <i class='fa fa-pencil-square-o'></i> Improve this doc
+                    </button>
+                </div>
+                
+
+                <div class="sect1">
+<h2 id="_createcriteria">createCriteria</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_目的">目的</h3>
+<div class="paragraph">
+<p>创建并返回Grails的 <a href="http://grails.github.io/grails-data-mapping/latest/api/grails/orm/HibernateCriteriaBuilder.html">HibernateCriteriaBuilder</a>实例，该实例可用于构造条件查询。</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+单元测试使用的是不带Hibernate的GORM内存实现，因此， <code>createCriteria()</code> 返回 <a href="http://grails.github.io/grails-data-mapping/latest/api/grails/gorm/CriteriaBuilder.html">CriteriaBuilder</a>，而不是 HibernateCriteriaBuilder。
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_例">例</h3>
+<div class="paragraph">
+<p>可以从HibernateCriteriaBuilder（如本文档的以下示例中）静态导入用于构建条件的条件方法（例如，和，或，之间等），或写为“ c.like（&#8230;&#8203;）”，“ c.between（&#8230;&#8203;）“等</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> c = Account.createCriteria()
+<span class="keyword">def</span> results = c.list {
+    like(<span class="string"><span class="delimiter">&quot;</span><span class="content">holderFirstName</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">Fred%</span><span class="delimiter">&quot;</span></span>)
+    and {
+        between(<span class="string"><span class="delimiter">&quot;</span><span class="content">balance</span><span class="delimiter">&quot;</span></span>, <span class="integer">500</span>, <span class="integer">1000</span>)
+        eq(<span class="string"><span class="delimiter">&quot;</span><span class="content">branch</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">London</span><span class="delimiter">&quot;</span></span>)
+    }
+    maxResults(<span class="integer">10</span>)
+    order(<span class="string"><span class="delimiter">&quot;</span><span class="content">holderLastName</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">desc</span><span class="delimiter">&quot;</span></span>)
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>要使用分页，您将不得不进行另一个查询以检索匹配结果的总数。更好的方法是将分页值作为参数传递给criteria方法，如下所示：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> c = Account.createCriteria()
+<span class="keyword">def</span> results = c.list (<span class="key">max</span>: <span class="integer">10</span>, <span class="key">offset</span>: <span class="integer">10</span>) {
+    like(<span class="string"><span class="delimiter">&quot;</span><span class="content">holderFirstName</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">Fred%</span><span class="delimiter">&quot;</span></span>)
+    and {
+        between(<span class="string"><span class="delimiter">&quot;</span><span class="content">balance</span><span class="delimiter">&quot;</span></span>, <span class="integer">500</span>, <span class="integer">1000</span>)
+        eq(<span class="string"><span class="delimiter">&quot;</span><span class="content">branch</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">London</span><span class="delimiter">&quot;</span></span>)
+    }
+    order(<span class="string"><span class="delimiter">&quot;</span><span class="content">holderLastName</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">desc</span><span class="delimiter">&quot;</span></span>)
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>由于该查询包含分页参数（最大和偏移），因此将返回 <a href="http://grails.github.io/grails-data-mapping/latest/api/grails/orm/PagedResultList.html">PagedResultList</a>，其中包含 <code>getTotalCount()</code> 方法，返回用于分页的匹配记录总数。两个查询仍在运行，但它们为您运行，并且结果和总数在 <code>PagedResultList</code> 中合并。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">println <span class="string"><span class="delimiter">&quot;</span><span class="content">Rendering </span><span class="inline"><span class="inline-delimiter">${</span>results.size()<span class="inline-delimiter">}</span></span><span class="content"> Accounts of </span><span class="inline"><span class="inline-delimiter">${</span>results.totalCount<span class="inline-delimiter">}</span></span><span class="delimiter">&quot;</span></span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_描述">描述</h3>
+<div class="paragraph">
+<p>标准查询是一种类型安全的高级查询方式，它使用Groovy构建器构造潜在的复杂查询。这是使用StringBuilder动态构建HQL查询的更好的选择。有关使用说明，请参阅 <a href="http://gorm.grails.org/6.0.x/hibernate/manual/index.html#criteria">Criteria</a>上的用户指南部分。</p>
+</div>
+<div class="paragraph">
+<p>方法参考：</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">方法</th>
+<th class="tableblock halign-left valign-top">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>list</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">默认方法；返回所有匹配的行.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>get</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">返回唯一的结果，即仅一行。标准必须以这种方式形成，即它仅查询一行。此方法不应与仅第一行的限制混淆。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>scroll</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">返回可滚动的结果集</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>listDistinct</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果使用子查询或关联，则在结果集中可能多次出现同一行。在Hibernate中，可以执行“ CriteriaSpecification.DISTINCT_ROOT_ENTITY”。在Grails中，只需使用此方法就可以做到。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+listDistinct（）方法不能与分页选项maxResult和firstResult一起使用。如果您需要分页获得不同的结果，我们建议您现在使用HQL。您可以从 <a href="http://floledermann.blogspot.com/2007/10/solving-hibernate-criterias-distinct.html">this blog post</a>中找到更多信息。
+如果不使用方法名称调用构建器
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">c { ... }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>list()</code> 方法将被自动调用。换句话说，它相当于</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">c.list { ... }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>以下是每种标准方法的节点参考：</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">节点</th>
+<th class="tableblock halign-left valign-top">描述</th>
+<th class="tableblock halign-left valign-top">例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>between</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">属性值在两个不同的值之间</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>between("balance", 500, 1000)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>eq</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">当属性等于特定值时。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>eq("branch", "London")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>eq</strong> (case-insensitive)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>eq</strong> 的版本，它支持可选的3rd Map参数，以指定查询不区分大小写。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>eq("branch", "london", [ignoreCase: true])</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>eqProperty</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">一个属性必须等于另一个属性</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>eqProperty("lastTx", "firstTx")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>gt</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">属性大于特定值</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>gt("balance",1000)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>gtProperty</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">一个属性必须大于另一个属性</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>gtProperty("balance", "overdraft")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ge</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">属性大于或等于特定值的情况</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ge("balance", 1000)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>geProperty</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">一个属性必须大于或等于另一个属性</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geProperty("balance", "overdraft")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>idEq</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">对象ID等于指定值的地方</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>idEq(1)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ilike</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">不区分大小写的 `like`表达式</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ilike("holderFirstName", "Steph%")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>in</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">指定的值列表中包含属性的位置。也可以与“不”方法链接，其中属性不包含在指定的值列表中。注意：“ in”是Groovy保留字，因此必须用引号将其转义。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>'in'("age",[18..65]) or not {'in'("age",[18..65])}</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>isEmpty</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">集合属性为空的地方</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>isEmpty("transactions")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>isNotEmpty</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">集合属性不为空的情况</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>isNotEmpty("transactions")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>isNull</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果属性为 <code>null</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>isNull("holderGender")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>isNotNull</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果属性不是 <code>null</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>isNotNull("holderGender")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>lt</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">属性少于特定价值的地方</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>lt("balance", 1000)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ltProperty</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">一个属性必须少于另一个属性</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ltProperty("balance", "overdraft")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>le</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">属性小于或等于特定值的情况</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>le("balance", 1000)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>leProperty</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">一个属性必须小于或等于另一个属性</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>leProperty("balance", "overdraft")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>like</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">等效于类似SQL的表达式</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>like("holderFirstName", "Steph%")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ne</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">当属性不等于特定值时</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ne("branch", "London")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>neProperty</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">当一个属性不等于另一个</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>neProperty("lastTx", "firstTx")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>order</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">按特定属性排序结果</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order("holderLastName", "desc")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>rlike</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">类似于like，但是使用了正则表达式。仅在Oracle和MySQL上受支持。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rlike("holderFirstName", /Steph.+/)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sizeEq</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">集合属性的大小等于特定值时</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sizeEq("transactions", 10)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sizeGt</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">集合属性的大小大于特定值时</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sizeGt("transactions", 10)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sizeGe</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">集合属性的大小大于或等于特定值的情况</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sizeGe("transactions", 10)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sizeLt</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">集合属性的大小小于特定值的情况</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sizeLt("transactions", 10)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sizeLe</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">集合属性的大小小于或等于特定值的情况</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sizeLe("transactions", 10)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sizeNe</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">集合属性的大小不等于特定值的情况</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sizeNe("transactions", 10)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sqlRestriction</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用任意SQL修改结果集</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sqlRestriction "char_length(first_name) = 4"</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>使用动态查找器，您可以访问诸如max，sort等选项。这些条件也可用于条件查询，但是它们具有不同的名称：</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">描述</th>
+<th class="tableblock halign-left valign-top">例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>order</strong>(String, String)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">指定排序列（第一个参数）和排序顺序（“ asc”或“ desc”）。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order "age", "desc"</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>firstResult</strong>(int)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">指定结果的偏移量。值为0将返回所有记录，直到指定的最大值。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>firstResult 20</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>maxResults</strong>(int)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">指定要返回的最大记录数。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>maxResults 10</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>cache</strong>(boolean)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">指示是否应缓存查询（如果启用了查询缓存）。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cache 'true'</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>条件也支持预测的概念。投影用于更改结果的性质。例如，以下查询使用投影来计算每个 <code>Account</code> 存在的不同 <code>branch</code> 名称的数量：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> c = Account.createCriteria()
+<span class="keyword">def</span> branchCount = c.get {
+    projections {
+        countDistinct <span class="string"><span class="delimiter">&quot;</span><span class="content">branch</span><span class="delimiter">&quot;</span></span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>下表总结了不同的预测及其作用：</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">描述</th>
+<th class="tableblock halign-left valign-top">例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>property</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">返回返回结果中的给定属性</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>property("firstName")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>distinct</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用单个或一组不同的属性名称返回结果</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>distinct("fn") or distinct(['fn', 'ln'])</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>avg</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">返回给定属性的平均值</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>avg("age")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>count</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">返回给定属性名称的计数</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>count("branch")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>countDistinct</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">返回不同行的给定属性名称的计数</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>countDistinct("branch")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>groupProperty</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">将结果按给定属性分组</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>groupProperty("lastName")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>max</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">返回给定属性的最大值</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>max("age")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>min</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">返回给定属性的最小值</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>min("age")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>sum</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">返回给定属性的总和</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sum("balance")</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>rowCount</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">返回返回的行数计数</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rowCount()</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+            </div>
+        </td>
+        <td id="col2">
+            <div class="local clearfix">
+                <div class="local-title">
+                    <a href="../../guide/index.html" target="mainFrame">Quick Reference</a>
+                    <span class="toggle">(<a href="#" onclick="localToggle(); return false;">hide</a>)</span>
+                </div>
+                <div class="menu">
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Command Line</h1>
+                        <div class="menu-sub">
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/bug-report.html">bug-report</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/clean.html">clean</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/compile.html">compile</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/console.html">console</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-app.html">create-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-command.html">create-command</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-controller.html">create-controller</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-domain-class.html">create-domain-class</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-functional-test.html">create-functional-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-hibernate-cfg-xml.html">create-hibernate-cfg-xml</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-integration-test.html">create-integration-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-interceptor.html">create-interceptor</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-plugin.html">create-plugin</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-profile.html">create-profile</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-script.html">create-script</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-service.html">create-service</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-taglib.html">create-taglib</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-unit-test.html">create-unit-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/dependency-report.html">dependency-report</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/docs.html">docs</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/generate-all.html">generate-all</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/generate-controller.html">generate-controller</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/generate-views.html">generate-views</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/help.html">help</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/install-templates.html">install-templates</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/list-plugins.html">list-plugins</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/list-profiles.html">list-profiles</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/package-plugin.html">package-plugin</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/package.html">package</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/plugin-info.html">plugin-info</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/profile-info.html">profile-info</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/run-app.html">run-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/run-command.html">run-command</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/run-script.html">run-script</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/schema-export.html">schema-export</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/shell.html">shell</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/stats.html">stats</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/stop-app.html">stop-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/test-app.html">test-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/war.html">war</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Constraints</h1>
+                        <div class="menu-sub">
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/attributes.html">attributes</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/bindable.html">bindable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/blank.html">blank</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/creditCard.html">creditCard</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/email.html">email</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/inList.html">inList</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/matches.html">matches</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/max.html">max</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/maxSize.html">maxSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/min.html">min</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/minSize.html">minSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/notEqual.html">notEqual</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/nullable.html">nullable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/range.html">range</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/scale.html">scale</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/size.html">size</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/unique.html">unique</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/url.html">url</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/validator.html">validator</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/widget.html">widget</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Controllers</h1>
+                        <div class="menu-sub">
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/actionName.html">actionName</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/allowedMethods.html">allowedMethods</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/bindData.html">bindData</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/chain.html">chain</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/controllerName.html">controllerName</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/defaultAction.html">defaultAction</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/errors.html">errors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/flash.html">flash</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/forward.html">forward</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/grailsApplication.html">grailsApplication</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/hasErrors.html">hasErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/namespace.html">namespace</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/params.html">params</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/redirect.html">redirect</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/render.html">render</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/request.html">request</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/respond.html">respond</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/response.html">response</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/responseFormats.html">responseFormats</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/scope.html">scope</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/servletContext.html">servletContext</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/session.html">session</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/withForm.html">withForm</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/withFormat.html">withFormat</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Database Mapping</h1>
+                        <div class="menu-sub">
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/autoImport.html">autoImport</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/autoTimestamp.html">autoTimestamp</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/batchSize.html">batchSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/cache.html">cache</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/cascade.html">cascade</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/column.html">column</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/comment.html">comment</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/discriminator.html">discriminator</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/dynamicInsert.html">dynamicInsert</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/dynamicUpdate.html">dynamicUpdate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/fetch.html">fetch</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/id.html">id</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/ignoreNotFound.html">ignoreNotFound</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/indexColumn.html">indexColumn</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/insertable.html">insertable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/joinTable.html">joinTable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/lazy.html">lazy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/order.html">order</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/sort.html">sort</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/table.html">table</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/type.html">type</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/updateable.html">updateable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/version.html">version</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Domain Classes</h1>
+                        <div class="menu-sub selected">
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/addTo.html">addTo</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/attach.html">attach</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/belongsTo.html">belongsTo</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/clearErrors.html">clearErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/constraints.html">constraints</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/count.html">count</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/countBy.html">countBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/createCriteria.html">createCriteria</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/delete.html">delete</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/discard.html">discard</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/embedded.html">embedded</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/errors.html">errors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/executeQuery.html">executeQuery</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/executeUpdate.html">executeUpdate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/exists.html">exists</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/fetchMode.html">fetchMode</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/find.html">find</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findAll.html">findAll</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findAllBy.html">findAllBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findAllWhere.html">findAllWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findBy.html">findBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findOrCreateBy.html">findOrCreateBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findOrCreateWhere.html">findOrCreateWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findOrSaveBy.html">findOrSaveBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findOrSaveWhere.html">findOrSaveWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findWhere.html">findWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/first.html">first</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/get.html">get</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/getAll.html">getAll</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/getDirtyPropertyNames.html">getDirtyPropertyNames</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/getPersistentValue.html">getPersistentValue</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/hasErrors.html">hasErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/hasMany.html">hasMany</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/hasOne.html">hasOne</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/ident.html">ident</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/instanceOf.html">instanceOf</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/isAttached.html">isAttached</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/isDirty.html">isDirty</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/last.html">last</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/list.html">list</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/listOrderBy.html">listOrderBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/load.html">load</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/lock.html">lock</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/mapWith.html">mapWith</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/mappedBy.html">mappedBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/mapping.html">mapping</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/merge.html">merge</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/namedQueries.html">namedQueries</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/properties.html">properties</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/read.html">read</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/refresh.html">refresh</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/removeFrom.html">removeFrom</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/save.html">save</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/transients.html">transients</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/validate.html">validate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/where.html">where</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/whereAny.html">whereAny</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/withCriteria.html">withCriteria</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/withNewSession.html">withNewSession</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/withSession.html">withSession</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/withTransaction.html">withTransaction</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Plug-ins</h1>
+                        <div class="menu-sub">
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/URL%20mappings.html">URL mappings</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/codecs.html">codecs</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/controllers.html">controllers</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/core.html">core</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/dataSource.html">dataSource</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/domainClasses.html">domainClasses</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/hibernate.html">hibernate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/i18n.html">i18n</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/logging.html">logging</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/scaffolding.html">scaffolding</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/services.html">services</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/servlets.html">servlets</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Services</h1>
+                        <div class="menu-sub">
+                            
+                            <div class="menu-item"><a href="../../ref/Services/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Services/scope.html">scope</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Services/transactional.html">transactional</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Servlet API</h1>
+                        <div class="menu-sub">
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Servlet%20API/request.html">request</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Servlet%20API/response.html">response</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Servlet%20API/servletContext.html">servletContext</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Servlet%20API/session.html">session</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<div id="footer">
+    Copies of this document may be made for your own use and for distribution to others, provided that you do not charge any fee for such copies and further provided that each copy contains this Copyright Notice, whether distributed in print or electronically.
+    
+</div>
+
+
+<script type="text/javascript" src="../../js/docs.js"></script>
+
+</body>
+</html>

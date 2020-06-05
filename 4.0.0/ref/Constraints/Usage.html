@@ -1,0 +1,1123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="/cdn-cgi/apps/head/3cOPSgo5Omz84ycX7CvigfX4cpw.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-82213539-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-82213539-2');
+    </script>
+    <title>The Grails Framework 4.0.0</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8"/>
+    <link rel="stylesheet" href="../../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8"/>
+    <script type="text/javascript">
+function addJsClass(el) {
+    var classes = document.body.className.split(" ");
+    classes.push("js");
+    document.body.className = classes.join(" ");
+}
+    </script>
+    <style>
+        .contribute-btn {
+            bottom: 0px;
+        }
+    </style>
+</head>
+
+<body class="body" onload="addJsClass();">
+
+<div id="navigation">
+    <div class="navTitle">
+        
+        The Grails Framework
+    </div>
+
+    <div class="navLinks">
+        <ul>
+            <li>
+                <div id="nav-summary" onmouseover="toggleNavSummary(false)" onmouseout="toggleNavSummary(true)">
+                    <a href="../../guide/index.html" class="button">Table of contents</a>
+
+                    <div id="nav-summary-childs">
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/introduction.html"><strong>1</strong><span>&#31616;&#20171;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/gettingStarted.html"><strong>2</strong><span>&#20837;&#38376;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/upgrading.html"><strong>3</strong><span>&#20174; Grails 3.3.x &#21319;&#32423;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/conf.html"><strong>4</strong><span>&#37197;&#32622;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/commandLine.html"><strong>5</strong><span>&#21629;&#20196;&#34892;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/profiles.html"><strong>6</strong><span>&#24212;&#29992;&#31243;&#24207;&#37197;&#32622;&#25991;&#20214;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/GORM.html"><strong>7</strong><span>&#23545;&#35937;&#20851;&#31995;&#26144;&#23556; &#65288;GORM&#65289;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/theWebLayer.html"><strong>8</strong><span>Web &#23618;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/traits.html"><strong>9</strong><span>&#29305;&#24449;&#65288;Trait&#65289;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/REST.html"><strong>10</strong><span>REST</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/async.html"><strong>11</strong><span>&#24322;&#27493;&#32534;&#31243;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/validation.html"><strong>12</strong><span>&#39564;&#35777;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/services.html"><strong>13</strong><span>&#26381;&#21153;&#23618;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/staticTypeCheckingAndCompilation.html"><strong>14</strong><span>&#38745;&#24577;&#31867;&#22411;&#26816;&#26597;&#21644;&#32534;&#35793;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/testing.html"><strong>15</strong><span>&#27979;&#35797;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/i18n.html"><strong>16</strong><span>&#22269;&#38469;&#21270;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/security.html"><strong>17</strong><span>&#23433;&#20840;&#24615;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/plugins.html"><strong>18</strong><span>&#25554;&#20214;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/spring.html"><strong>19</strong><span>Grails &#19982; Spring</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/scaffolding.html"><strong>20</strong><span>&#33050;&#25163;&#26550;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/deployment.html"><strong>21</strong><span>&#37096;&#32626;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/contributing.html"><strong>22</strong><span>&#32473; Grails &#36129;&#29486;&#20195;&#30721;</span></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="separator selected">
+                <a id="ref-button" onclick="localToggle(); return false;" href="#">Quick Reference</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<table id="colset" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td id="col1">
+            <div id="main" class="reference corner-all">
+
+                <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
+                
+                <div class='contribute-btn'>
+                    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/ref/Constraints.adoc"'>
+                        <i class='fa fa-pencil-square-o'></i> Improve this doc
+                    </button>
+                </div>
+                
+
+                <div class="sect2">
+<h3 id="_使用约束">使用约束</h3>
+<div class="paragraph">
+<p>约束为Grails提供了声明性DSL，用于定义验证规则，模式生成和CRUD生成元数据。例如，请考虑以下约束：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">User</span> {
+    ...
+
+    static constraints = {
+        login <span class="key">size</span>: <span class="integer">5</span>..<span class="integer">15</span>, <span class="key">blank</span>: <span class="predefined-constant">false</span>, <span class="key">unique</span>: <span class="predefined-constant">true</span>
+        password <span class="key">size</span>: <span class="integer">5</span>..<span class="integer">15</span>, <span class="key">blank</span>: <span class="predefined-constant">false</span>
+        email <span class="key">email</span>: <span class="predefined-constant">true</span>, <span class="key">blank</span>: <span class="predefined-constant">false</span>
+        age <span class="key">min</span>: <span class="integer">18</span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>有关详细信息，请参阅链接上的用户指南主题： <a href="../../guide/validation.html#constraints">Constraints</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_全局约束">全局约束</h3>
+<div class="paragraph">
+<p>您可以在 <code>grails-app/conf/application.groovy</code> 中全局应用约束，如下所示：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">grails.gorm.default.constraints = {
+    <span class="string"><span class="delimiter">'</span><span class="content">*</span><span class="delimiter">'</span></span>(<span class="key">nullable</span>: <span class="predefined-constant">true</span>, <span class="key">size</span>: <span class="integer">1</span>..<span class="integer">20</span>)
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>通配符表示约束适用于所有属性。 您还可以定义共享约束：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">grails.gorm.default.constraints = {
+    myShared(<span class="key">nullable</span>: <span class="predefined-constant">true</span>, <span class="key">size</span>: <span class="integer">1</span>..<span class="integer">20</span>)
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>可以在您的课程中重用：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">User</span> {
+    ...
+
+    static constraints = {
+        login(<span class="key">shared</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">myShared</span><span class="delimiter">&quot;</span></span>)
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_共享约束">共享约束</h3>
+<div class="paragraph">
+<p>全局约束是在不同类之间（例如，在域类和命令对象之间）共享约束的一种方式。 这不再是唯一的方法。Grails2为 <code>constraints</code> 块引入了新语法，使您可以直接从另一个类重用约束。</p>
+</div>
+<div class="paragraph">
+<p>假设您有一个像这样的域类：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">User</span> {
+    <span class="predefined-type">String</span> firstName
+    <span class="predefined-type">String</span> lastName
+    <span class="predefined-type">String</span> passwordHash
+
+    <span class="directive">static</span> constraints = {
+        firstName <span class="key">blank</span>: <span class="predefined-constant">false</span>, <span class="key">nullable</span>: <span class="predefined-constant">false</span>
+        lastName <span class="key">blank</span>: <span class="predefined-constant">false</span>, <span class="key">nullable</span>: <span class="predefined-constant">false</span>
+        passwordHash <span class="key">blank</span>: <span class="predefined-constant">false</span>, <span class="key">nullable</span>: <span class="predefined-constant">false</span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>然后，您要创建一个命令  <code>UserCommand</code> ，该对象共享域类的某些属性和相应的约束。 您可以使用 <code>importFrom()</code> 方法来实现：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">UserCommand</span> {
+    <span class="predefined-type">String</span> firstName
+    <span class="predefined-type">String</span> lastName
+    <span class="predefined-type">String</span> password
+    <span class="predefined-type">String</span> confirmPassword
+
+    <span class="directive">static</span> constraints = {
+        importFrom User
+
+        password <span class="key">blank</span>: <span class="predefined-constant">false</span>, <span class="key">nullable</span>: <span class="predefined-constant">false</span>
+        confirmPassword <span class="key">blank</span>: <span class="predefined-constant">false</span>, <span class="key">nullable</span>: <span class="predefined-constant">false</span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这将从 <code>User</code> 域类中导入所有约束，并将其应用于 <code>UserCommand</code> 。导入将忽略源类( <code>User</code> )中任何在导入类( <code>UserCommand</code> )中没有相应属性的约束。 在上述情况下，仅将&#8217;firstName&#8217;和&#8217;lastName&#8217;约束导入到 <code>UserCommand</code> 中。</p>
+</div>
+<div class="paragraph">
+<p>如果您想更多地控制导入哪些约束，请使用 <code>include</code> 和 <code>exclude</code> 命名参数。 这两个都接受与源约束中的属性名称匹配的简单或正则表达式字符串列表。 因此，例如，如果您只想导入 'lastName' 约束，则可以使用：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">...
+static constraints = {
+    importFrom User, <span class="key">include</span>: [<span class="string"><span class="delimiter">&quot;</span><span class="content">lastName</span><span class="delimiter">&quot;</span></span>]
+    ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者如果您想要所有以&#8217;Name&#8217;结尾的约束：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">...
+static constraints = {
+    importFrom User, <span class="key">include</span>: [<span class="regexp"><span class="delimiter">/</span><span class="content">.*Name</span><span class="delimiter">/</span></span>]
+    ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>当然，<code>exclude</code> 的作用相反，指定应不导入哪些约束。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_快速参考">快速参考</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">约束</th>
+<th class="tableblock halign-left valign-top">描述</th>
+<th class="tableblock halign-left valign-top">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">blank</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">验证字符串值不为空</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">login(blank:false)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">creditCard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">验证字符串值是有效的信用卡号</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cardNumber(creditCard: true)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">email</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">验证字符串值是有效的电子邮件地址。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">homeEmail(email: true)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">inList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">验证值是否在约束值的范围或集合内。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">name(inList: ["Joe", "Fred", "Bob"])</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">matches</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">验证String值是否匹配给定的正则表达使用Groovy范围来确保属性值出现在指定范围内式。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">login(matches: "[a-zA-Z]+")</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">max</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">验证值不超过给定的最大值。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">age(max: new Date())  price(max: 999F)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">maxSize</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">验证值的大小不超过给定的最大值。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">children(maxSize: 25)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">min</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">验证值不低于给定的最小值。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">age(min: new Date())  price(min: 0F)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">minSize</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">验证值的大小不小于给定的最小值。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">children(minSize: 25)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">notEqual</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">验证属性不等于指定值</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">login(notEqual: "Bob")</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nullable</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">允许将属性设置为" null"-默认为" false".</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">age(nullable: true)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">range</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用Groovy范围来确保属性值出现在指定范围内</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">age(range: 18..65)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">scale</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">设置为浮点数所需的标度（即小数点右边的位数）。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">salary(scale: 2)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用Groovy范围限制集合的大小或数字或字符串的长度。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">children(size: 5..15)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">unique</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">在数据库级别将属性约束为唯一</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">login(unique: true)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">url</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">验证字符串值是有效的URL。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">homePage(url: true)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">validator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">将自定义验证添加到字段。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">See documentation</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_脚手架">脚手架</h3>
+<div class="paragraph">
+<p>一些约束条件对持久性没有影响，但是可以自定义支架。 在您的域中包含UI信息通常不是一个好习惯，但是如果您广泛使用Grails的脚手架，那将是非常方便的。</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">约束</th>
+<th class="tableblock halign-left valign-top">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">display</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">布尔值，用于确定属性是否显示在支架视图中。 如果为 <code>true</code> （默认值），则显示属性。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">editable</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">布尔值，用于确定是否可以从支架视图中编辑属性。 如果为false，则关联的表单字段以只读模式显示。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">指定一种接受格式的显示格式，例如日期。 例如，'yyyy-MM-dd'。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">password</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">布尔值，指示这是否是属性，应与密码字段一起显示。 仅适用于通常与文本字段一起显示的字段。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">widget</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">控制使用什么窗口小部件来显示属性。 例如，'textarea&#8217;将强制脚手架使用&lt;textArea&gt;标签。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_程序访问">程序访问</h3>
+<div class="paragraph">
+<p>您可以通过访问域类的  <code>constrainedProperties</code>  静态属性，在另一个上下文中以编程方式访问域的约束。 该属性是 <code>Map&lt;String,</code> <a href="http://docs.grails.org/4.0.0/api/grails/validation/ConstrainedProperty.html">ConstrainedProperty</a>  <code>&gt;</code>  的实例。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">User</span> {
+    <span class="predefined-type">String</span> firstName
+    <span class="predefined-type">String</span> middleName
+
+    <span class="directive">static</span> constraints = {
+        firstName <span class="key">blank</span>: <span class="predefined-constant">false</span>, <span class="key">nullable</span>: <span class="predefined-constant">false</span>
+        middleName <span class="key">blank</span>: <span class="predefined-constant">true</span>, <span class="key">nullable</span>: <span class="predefined-constant">true</span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在上面的例子中，访问 <code>User.constrainedProperties.firstName.blank</code> 会产生 <code>false</code> ，而 <code>User.constrainedProperties.middleName.blank</code> 会产生 <code>true</code> 。</p>
+</div>
+<div class="sect3">
+<h4 id="_命令对象">命令对象</h4>
+<div class="paragraph">
+<p>访问命令对象上的约束略有不同。通过访问实现 <a href="http://docs.grails.org/4.0.0/api/grails/validation/Validateable.html">Validateable</a>类的 <code>constraintsMap</code> 静态属性，可以在另一个上下文中以编程方式访问命令对象的约束。该属性是 <code>Map&lt;String,</code> <a href="http://docs.grails.org/4.0.0/api/grails/validation/ConstrainedProperty.html">ConstrainedProperty</a> <code>&gt;</code> 的一个实例.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">User</span> <span class="directive">implements</span> Validateable {
+    <span class="predefined-type">String</span> firstName
+    <span class="predefined-type">String</span> middleName
+
+    <span class="directive">static</span> constraints = {
+        firstName <span class="key">blank</span>: <span class="predefined-constant">false</span>, <span class="key">nullable</span>: <span class="predefined-constant">false</span>
+        middleName <span class="key">blank</span>: <span class="predefined-constant">true</span>, <span class="key">nullable</span>: <span class="predefined-constant">true</span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在上面的示例中，访问 <code>User.constraintsMap.firstName.blank</code> 将产生 <code>false</code> ，而
+  <code>User.constraintsMap.middleName.blank</code> 将产生 <code>true</code> 。</p>
+</div>
+</div>
+</div>
+            </div>
+        </td>
+        <td id="col2">
+            <div class="local clearfix">
+                <div class="local-title">
+                    <a href="../../guide/index.html" target="mainFrame">Quick Reference</a>
+                    <span class="toggle">(<a href="#" onclick="localToggle(); return false;">hide</a>)</span>
+                </div>
+                <div class="menu">
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Command Line</h1>
+                        <div class="menu-sub">
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/bug-report.html">bug-report</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/clean.html">clean</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/compile.html">compile</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/console.html">console</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-app.html">create-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-command.html">create-command</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-controller.html">create-controller</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-domain-class.html">create-domain-class</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-functional-test.html">create-functional-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-hibernate-cfg-xml.html">create-hibernate-cfg-xml</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-integration-test.html">create-integration-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-interceptor.html">create-interceptor</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-plugin.html">create-plugin</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-profile.html">create-profile</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-script.html">create-script</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-service.html">create-service</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-taglib.html">create-taglib</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-unit-test.html">create-unit-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/dependency-report.html">dependency-report</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/docs.html">docs</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/generate-all.html">generate-all</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/generate-controller.html">generate-controller</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/generate-views.html">generate-views</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/help.html">help</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/install-templates.html">install-templates</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/list-plugins.html">list-plugins</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/list-profiles.html">list-profiles</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/package-plugin.html">package-plugin</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/package.html">package</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/plugin-info.html">plugin-info</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/profile-info.html">profile-info</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/run-app.html">run-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/run-command.html">run-command</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/run-script.html">run-script</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/schema-export.html">schema-export</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/shell.html">shell</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/stats.html">stats</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/stop-app.html">stop-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/test-app.html">test-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/war.html">war</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Constraints</h1>
+                        <div class="menu-sub selected">
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/attributes.html">attributes</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/bindable.html">bindable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/blank.html">blank</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/creditCard.html">creditCard</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/email.html">email</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/inList.html">inList</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/matches.html">matches</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/max.html">max</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/maxSize.html">maxSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/min.html">min</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/minSize.html">minSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/notEqual.html">notEqual</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/nullable.html">nullable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/range.html">range</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/scale.html">scale</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/size.html">size</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/unique.html">unique</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/url.html">url</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/validator.html">validator</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/widget.html">widget</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Controllers</h1>
+                        <div class="menu-sub">
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/actionName.html">actionName</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/allowedMethods.html">allowedMethods</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/bindData.html">bindData</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/chain.html">chain</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/controllerName.html">controllerName</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/defaultAction.html">defaultAction</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/errors.html">errors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/flash.html">flash</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/forward.html">forward</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/grailsApplication.html">grailsApplication</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/hasErrors.html">hasErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/namespace.html">namespace</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/params.html">params</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/redirect.html">redirect</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/render.html">render</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/request.html">request</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/respond.html">respond</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/response.html">response</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/responseFormats.html">responseFormats</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/scope.html">scope</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/servletContext.html">servletContext</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/session.html">session</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/withForm.html">withForm</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/withFormat.html">withFormat</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Database Mapping</h1>
+                        <div class="menu-sub">
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/autoImport.html">autoImport</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/autoTimestamp.html">autoTimestamp</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/batchSize.html">batchSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/cache.html">cache</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/cascade.html">cascade</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/column.html">column</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/comment.html">comment</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/discriminator.html">discriminator</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/dynamicInsert.html">dynamicInsert</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/dynamicUpdate.html">dynamicUpdate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/fetch.html">fetch</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/id.html">id</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/ignoreNotFound.html">ignoreNotFound</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/indexColumn.html">indexColumn</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/insertable.html">insertable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/joinTable.html">joinTable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/lazy.html">lazy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/order.html">order</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/sort.html">sort</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/table.html">table</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/type.html">type</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/updateable.html">updateable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/version.html">version</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Domain Classes</h1>
+                        <div class="menu-sub">
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/addTo.html">addTo</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/attach.html">attach</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/belongsTo.html">belongsTo</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/clearErrors.html">clearErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/constraints.html">constraints</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/count.html">count</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/countBy.html">countBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/createCriteria.html">createCriteria</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/delete.html">delete</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/discard.html">discard</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/embedded.html">embedded</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/errors.html">errors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/executeQuery.html">executeQuery</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/executeUpdate.html">executeUpdate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/exists.html">exists</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/fetchMode.html">fetchMode</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/find.html">find</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findAll.html">findAll</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findAllBy.html">findAllBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findAllWhere.html">findAllWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findBy.html">findBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findOrCreateBy.html">findOrCreateBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findOrCreateWhere.html">findOrCreateWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findOrSaveBy.html">findOrSaveBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findOrSaveWhere.html">findOrSaveWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findWhere.html">findWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/first.html">first</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/get.html">get</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/getAll.html">getAll</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/getDirtyPropertyNames.html">getDirtyPropertyNames</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/getPersistentValue.html">getPersistentValue</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/hasErrors.html">hasErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/hasMany.html">hasMany</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/hasOne.html">hasOne</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/ident.html">ident</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/instanceOf.html">instanceOf</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/isAttached.html">isAttached</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/isDirty.html">isDirty</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/last.html">last</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/list.html">list</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/listOrderBy.html">listOrderBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/load.html">load</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/lock.html">lock</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/mapWith.html">mapWith</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/mappedBy.html">mappedBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/mapping.html">mapping</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/merge.html">merge</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/namedQueries.html">namedQueries</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/properties.html">properties</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/read.html">read</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/refresh.html">refresh</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/removeFrom.html">removeFrom</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/save.html">save</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/transients.html">transients</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/validate.html">validate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/where.html">where</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/whereAny.html">whereAny</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/withCriteria.html">withCriteria</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/withNewSession.html">withNewSession</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/withSession.html">withSession</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/withTransaction.html">withTransaction</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Plug-ins</h1>
+                        <div class="menu-sub">
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/URL%20mappings.html">URL mappings</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/codecs.html">codecs</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/controllers.html">controllers</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/core.html">core</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/dataSource.html">dataSource</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/domainClasses.html">domainClasses</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/hibernate.html">hibernate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/i18n.html">i18n</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/logging.html">logging</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/scaffolding.html">scaffolding</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/services.html">services</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/servlets.html">servlets</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Services</h1>
+                        <div class="menu-sub">
+                            
+                            <div class="menu-item"><a href="../../ref/Services/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Services/scope.html">scope</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Services/transactional.html">transactional</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Servlet API</h1>
+                        <div class="menu-sub">
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Servlet%20API/request.html">request</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Servlet%20API/response.html">response</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Servlet%20API/servletContext.html">servletContext</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Servlet%20API/session.html">session</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<div id="footer">
+    Copies of this document may be made for your own use and for distribution to others, provided that you do not charge any fee for such copies and further provided that each copy contains this Copyright Notice, whether distributed in print or electronically.
+    
+</div>
+
+
+<script type="text/javascript" src="../../js/docs.js"></script>
+
+</body>
+</html>

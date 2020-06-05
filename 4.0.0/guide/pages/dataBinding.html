@@ -1,0 +1,1949 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="/cdn-cgi/apps/head/3cOPSgo5Omz84ycX7CvigfX4cpw.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-82213539-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-82213539-2');
+    </script>
+    <title>8.1.5 &#25968;&#25454;&#32465;&#23450; 4.0.0</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8"/>
+    <link rel="stylesheet" href="../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8"/>
+    <script type="text/javascript">
+function addJsClass() {
+    var classes = document.body.className.split(" ");
+    classes.push("js");
+    document.body.className = classes.join(" ");
+}
+    </script>
+</head>
+
+<body class="body" onload="addJsClass();">
+<div id="navigation">
+    <div class="navTitle">
+        
+        The Grails Framework
+    </div>
+    <div class="navLinks">
+        <ul>
+            <li>
+                <div id="nav-summary" onmouseover="toggleNavSummary(false)" onmouseout="toggleNavSummary(true)">
+                    <a href="../../guide/index.html" class="button">Table of contents</a>
+
+                    <div id="nav-summary-childs" style="display:none;">
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/introduction.html"><strong>1</strong><span>&#31616;&#20171;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/gettingStarted.html"><strong>2</strong><span>&#20837;&#38376;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/upgrading.html"><strong>3</strong><span>&#20174; Grails 3.3.x &#21319;&#32423;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/conf.html"><strong>4</strong><span>&#37197;&#32622;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/commandLine.html"><strong>5</strong><span>&#21629;&#20196;&#34892;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/profiles.html"><strong>6</strong><span>&#24212;&#29992;&#31243;&#24207;&#37197;&#32622;&#25991;&#20214;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/GORM.html"><strong>7</strong><span>&#23545;&#35937;&#20851;&#31995;&#26144;&#23556; &#65288;GORM&#65289;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/theWebLayer.html"><strong>8</strong><span>Web &#23618;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/traits.html"><strong>9</strong><span>&#29305;&#24449;&#65288;Trait&#65289;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/REST.html"><strong>10</strong><span>REST</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/async.html"><strong>11</strong><span>&#24322;&#27493;&#32534;&#31243;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/validation.html"><strong>12</strong><span>&#39564;&#35777;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/services.html"><strong>13</strong><span>&#26381;&#21153;&#23618;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/staticTypeCheckingAndCompilation.html"><strong>14</strong><span>&#38745;&#24577;&#31867;&#22411;&#26816;&#26597;&#21644;&#32534;&#35793;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/testing.html"><strong>15</strong><span>&#27979;&#35797;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/i18n.html"><strong>16</strong><span>&#22269;&#38469;&#21270;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/security.html"><strong>17</strong><span>&#23433;&#20840;&#24615;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/plugins.html"><strong>18</strong><span>&#25554;&#20214;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/spring.html"><strong>19</strong><span>Grails &#19982; Spring</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/scaffolding.html"><strong>20</strong><span>&#33050;&#25163;&#26550;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/deployment.html"><strong>21</strong><span>&#37096;&#32626;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/contributing.html"><strong>22</strong><span>&#32473; Grails &#36129;&#29486;&#20195;&#30721;</span></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="separator selected">
+                <a id="ref-button" onclick="localToggle(); return false;" href="#">Quick Reference</a>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+
+<table id="colset" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td id="col1">
+            <div id="main" class="corner-all">
+
+                
+                    <div class="toc-item prev-left"><a href="../../guide/GORM.html">&lt;&lt; <strong>7</strong><span>&#23545;&#35937;&#20851;&#31995;&#26144;&#23556; &#65288;GORM&#65289;</span></a></div>
+                
+
+                <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
+
+                
+                    <div class="toc-item next-right"><a href="../../guide/traits.html"><strong>9</strong><span>&#29305;&#24449;&#65288;Trait&#65289;</span> >></a></div>
+                
+
+
+                <div class="project">
+                    <h1>8.1.5 &#25968;&#25454;&#32465;&#23450;</h1>
+
+                    <p><strong>Version:</strong> 4.0.0</p>
+                </div>
+
+                
+
+                
+<a name="7.1.6 &#25968;&#25454;&#32465;&#23450;"><!-- Legacy link --></a>
+<h2 id="dataBinding">8.1.5 数据绑定</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/theWebLayer/controllers/dataBinding.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>数据绑定是将传入请求参数"binding"到对象或对象的整个图上的行为。 数据绑定应处理所有必要的类型转换，因为通常由表单提交提供的请求参数始终是字符串，而Groovy或Java对象的属性可能不是.</p>
+</div>
+<div class="sect3">
+<h4 id="_基于地图的绑定">基于地图的绑定</h4>
+<div class="paragraph">
+<p>数据绑定器能够将Map中的值转换并分配给对象的属性。 绑定器将使用Map中的键将Map中的条目与对象的属性相关联，这些键的值与对象上的属性名称相对应。 以下代码演示了基础知识:</p>
+</div>
+<div class="listingblock">
+<div class="title">grails-app/domain/Person.groovy</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">Person</span> {
+    <span class="predefined-type">String</span> firstName
+    <span class="predefined-type">String</span> lastName
+    <span class="predefined-type">Integer</span> age
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> bindingMap = [<span class="key">firstName</span>: <span class="string"><span class="delimiter">'</span><span class="content">Peter</span><span class="delimiter">'</span></span>, <span class="key">lastName</span>: <span class="string"><span class="delimiter">'</span><span class="content">Gabriel</span><span class="delimiter">'</span></span>, <span class="key">age</span>: <span class="integer">63</span>]
+
+<span class="keyword">def</span> person = <span class="keyword">new</span> Person(bindingMap)
+
+<span class="keyword">assert</span> person.firstName == <span class="string"><span class="delimiter">'</span><span class="content">Peter</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> person.lastName == <span class="string"><span class="delimiter">'</span><span class="content">Gabriel</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> person.age == <span class="integer">63</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>要更新域对象的属性，您可以将Map分配给域类的 <code>properties</code> 属性:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> bindingMap = [<span class="key">firstName</span>: <span class="string"><span class="delimiter">'</span><span class="content">Peter</span><span class="delimiter">'</span></span>, <span class="key">lastName</span>: <span class="string"><span class="delimiter">'</span><span class="content">Gabriel</span><span class="delimiter">'</span></span>, <span class="key">age</span>: <span class="integer">63</span>]
+
+<span class="keyword">def</span> person = Person.get(someId)
+person.properties = bindingMap
+
+<span class="keyword">assert</span> person.firstName == <span class="string"><span class="delimiter">'</span><span class="content">Peter</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> person.lastName == <span class="string"><span class="delimiter">'</span><span class="content">Gabriel</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> person.age == <span class="integer">63</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>活页夹可以使用Maps of Maps填充对象的完整图.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">Person</span> {
+    <span class="predefined-type">String</span> firstName
+    <span class="predefined-type">String</span> lastName
+    <span class="predefined-type">Integer</span> age
+    Address homeAddress
+}
+
+<span class="type">class</span> <span class="class">Address</span> {
+    <span class="predefined-type">String</span> county
+    <span class="predefined-type">String</span> country
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> bindingMap = [<span class="key">firstName</span>: <span class="string"><span class="delimiter">'</span><span class="content">Peter</span><span class="delimiter">'</span></span>, <span class="key">lastName</span>: <span class="string"><span class="delimiter">'</span><span class="content">Gabriel</span><span class="delimiter">'</span></span>, <span class="key">age</span>: <span class="integer">63</span>, <span class="key">homeAddress</span>: [<span class="key">county</span>: <span class="string"><span class="delimiter">'</span><span class="content">Surrey</span><span class="delimiter">'</span></span>, <span class="key">country</span>: <span class="string"><span class="delimiter">'</span><span class="content">England</span><span class="delimiter">'</span></span>] ]
+
+<span class="keyword">def</span> person = <span class="keyword">new</span> Person(bindingMap)
+
+<span class="keyword">assert</span> person.firstName == <span class="string"><span class="delimiter">'</span><span class="content">Peter</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> person.lastName == <span class="string"><span class="delimiter">'</span><span class="content">Gabriel</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> person.age == <span class="integer">63</span>
+<span class="keyword">assert</span> person.homeAddress.county == <span class="string"><span class="delimiter">'</span><span class="content">Surrey</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> person.homeAddress.country == <span class="string"><span class="delimiter">'</span><span class="content">England</span><span class="delimiter">'</span></span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_绑定到收藏夹和地图">绑定到收藏夹和地图</h4>
+<div class="paragraph">
+<p>数据绑定器可以填充和更新Collections 和 Maps。 以下代码显示了在域类中填充对象的 <code>List</code> 的简单示例:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">Band</span> {
+    <span class="predefined-type">String</span> name
+    <span class="directive">static</span> hasMany = [<span class="key">albums</span>: Album]
+    <span class="predefined-type">List</span> albums
+}
+
+<span class="type">class</span> <span class="class">Album</span> {
+    <span class="predefined-type">String</span> title
+    <span class="predefined-type">Integer</span> numberOfTracks
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> bindingMap = [<span class="key">name</span>: <span class="string"><span class="delimiter">'</span><span class="content">Genesis</span><span class="delimiter">'</span></span>,
+                  <span class="string"><span class="delimiter">'</span><span class="content">albums[0]</span><span class="delimiter">'</span></span>: [<span class="key">title</span>: <span class="string"><span class="delimiter">'</span><span class="content">Foxtrot</span><span class="delimiter">'</span></span>, <span class="key">numberOfTracks</span>: <span class="integer">6</span>],
+                  <span class="string"><span class="delimiter">'</span><span class="content">albums[1]</span><span class="delimiter">'</span></span>: [<span class="key">title</span>: <span class="string"><span class="delimiter">'</span><span class="content">Nursery Cryme</span><span class="delimiter">'</span></span>, <span class="key">numberOfTracks</span>: <span class="integer">7</span>]]
+
+<span class="keyword">def</span> band = <span class="keyword">new</span> Band(bindingMap)
+
+<span class="keyword">assert</span> band.name == <span class="string"><span class="delimiter">'</span><span class="content">Genesis</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> band.albums.size() == <span class="integer">2</span>
+<span class="keyword">assert</span> band.albums[<span class="integer">0</span>].title == <span class="string"><span class="delimiter">'</span><span class="content">Foxtrot</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> band.albums[<span class="integer">0</span>].numberOfTracks == <span class="integer">6</span>
+<span class="keyword">assert</span> band.albums[<span class="integer">1</span>].title == <span class="string"><span class="delimiter">'</span><span class="content">Nursery Cryme</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> band.albums[<span class="integer">1</span>].numberOfTracks == <span class="integer">7</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果 <code>albums</code> 是数组而不是 <code>List</code>，则该代码将以相同的方式工作.</p>
+</div>
+<div class="paragraph">
+<p>请注意，当绑定到 <code>Set</code> 时，将Map绑定到Set的结构与将 <code>Map</code> 绑定到 <code>List</code> 的结构相同，但是由于 <code>Set</code>  是无序的，因此 索引不一定与 <code>Set</code> 中元素的顺序相对应。 在上面的代码示例中，如果 <code>albums</code> 是 <code>Set</code> 而不是 <code>List</code>，则 <code>bindingMap</code> 可能看起来完全相同，但 <code>bindingMap</code>  可能是 <code>Set</code> 中的第一张专辑，也可能是第二。 当更新 <code>Set</code> 中的现有元素时，分配给 <code>Set</code> 的 <code>Map</code> 必须包含其中的id元素，这些id代表要更新 <code>Set</code> 中的元素，如以下示例所示:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="comment">/*
+ * The value of the indexes 0 and 1 in albums[0] and albums[1] are arbitrary
+ * values that can be anything as long as they are unique within the Map.
+ * They do not correspond to the order of elements in albums because albums
+ * is a Set.
+ */</span>
+<span class="keyword">def</span> bindingMap = [<span class="string"><span class="delimiter">'</span><span class="content">albums[0]</span><span class="delimiter">'</span></span>: [<span class="key">id</span>: <span class="integer">9</span>, <span class="key">title</span>: <span class="string"><span class="delimiter">'</span><span class="content">The Lamb Lies Down On Broadway</span><span class="delimiter">'</span></span>]
+                  <span class="string"><span class="delimiter">'</span><span class="content">albums[1]</span><span class="delimiter">'</span></span>: [<span class="key">id</span>: <span class="integer">4</span>, <span class="key">title</span>: <span class="string"><span class="delimiter">'</span><span class="content">Selling England By The Pound</span><span class="delimiter">'</span></span>]]
+
+<span class="keyword">def</span> band = Band.get(someBandId)
+
+<span class="comment">/*
+ * This will find the Album in albums that has an id of 9 and will set its title
+ * to 'The Lamb Lies Down On Broadway' and will find the Album in albums that has
+ * an id of 4 and set its title to 'Selling England By The Pound'.  In both
+ * cases if the Album cannot be found in albums then the album will be retrieved
+ * from the database by id, the Album will be added to albums and will be updated
+ * with the values described above.  If a Album with the specified id cannot be
+ * found in the database, then a binding error will be created and associated
+ * with the band object.  More on binding errors later.
+ */</span>
+band.properties = bindingMap</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>当绑定到 <code>Map</code> 时，绑定 <code>Map</code> 的结构与用于绑定到 <code>List</code>  或 <code>Set</code> 的 <code>Map</code> 的结构相同，方括号内的索引对应于键 在绑定到的 <code>Map</code> 中。 看下面的代码:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">Album</span> {
+    <span class="predefined-type">String</span> title
+    <span class="directive">static</span> hasMany = [<span class="key">players</span>: Player]
+    <span class="predefined-type">Map</span> players
+}
+
+<span class="type">class</span> <span class="class">Player</span> {
+    <span class="predefined-type">String</span> name
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> bindingMap = [<span class="key">title</span>: <span class="string"><span class="delimiter">'</span><span class="content">The Lamb Lies Down On Broadway</span><span class="delimiter">'</span></span>,
+                  <span class="string"><span class="delimiter">'</span><span class="content">players[guitar]</span><span class="delimiter">'</span></span>: [<span class="key">name</span>: <span class="string"><span class="delimiter">'</span><span class="content">Steve Hackett</span><span class="delimiter">'</span></span>],
+                  <span class="string"><span class="delimiter">'</span><span class="content">players[vocals]</span><span class="delimiter">'</span></span>: [<span class="key">name</span>: <span class="string"><span class="delimiter">'</span><span class="content">Peter Gabriel</span><span class="delimiter">'</span></span>],
+                  <span class="string"><span class="delimiter">'</span><span class="content">players[keyboards]</span><span class="delimiter">'</span></span>: [<span class="key">name</span>: <span class="string"><span class="delimiter">'</span><span class="content">Tony Banks</span><span class="delimiter">'</span></span>]]
+
+<span class="keyword">def</span> album = <span class="keyword">new</span> Album(bindingMap)
+
+<span class="keyword">assert</span> album.title == <span class="string"><span class="delimiter">'</span><span class="content">The Lamb Lies Down On Broadway</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> album.players.size() == <span class="integer">3</span>
+<span class="keyword">assert</span> album.players.guitar.name == <span class="string"><span class="delimiter">'</span><span class="content">Steve Hackett</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> album.players.vocals.name == <span class="string"><span class="delimiter">'</span><span class="content">Peter Gabriel</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> album.players.keyboards.name == <span class="string"><span class="delimiter">'</span><span class="content">Tony Banks</span><span class="delimiter">'</span></span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>当更新现有的 <code>Map</code> 时，如果绑定的 <code>Map</code> 中指定的键在绑定的 <code>Map</code> 中不存在，则将创建一个新值，并使用指定的键将其添加到 <code>Map</code> 中，如 下面的例子:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> bindingMap = [<span class="key">title</span>: <span class="string"><span class="delimiter">'</span><span class="content">The Lamb Lies Down On Broadway</span><span class="delimiter">'</span></span>,
+                  <span class="string"><span class="delimiter">'</span><span class="content">players[guitar]</span><span class="delimiter">'</span></span>: [<span class="key">name</span>: <span class="string"><span class="delimiter">'</span><span class="content">Steve Hackett</span><span class="delimiter">'</span></span>],
+                  <span class="string"><span class="delimiter">'</span><span class="content">players[vocals]</span><span class="delimiter">'</span></span>: [<span class="key">name</span>: <span class="string"><span class="delimiter">'</span><span class="content">Peter Gabriel</span><span class="delimiter">'</span></span>],
+                  <span class="string"><span class="delimiter">'</span><span class="content">players[keyboards]</span><span class="delimiter">'</span></span>: [<span class="key">name</span>: <span class="string"><span class="delimiter">'</span><span class="content">Tony Banks</span><span class="delimiter">'</span></span>]]
+
+<span class="keyword">def</span> album = <span class="keyword">new</span> Album(bindingMap)
+
+<span class="keyword">assert</span> album.title == <span class="string"><span class="delimiter">'</span><span class="content">The Lamb Lies Down On Broadway</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> album.players.size() == <span class="integer">3</span>
+<span class="keyword">assert</span> album.players.guitar.name == <span class="string"><span class="delimiter">'</span><span class="content">Steve Hackett</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> album.players.vocals.name  == <span class="string"><span class="delimiter">'</span><span class="content">Peter Gabriel</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> album.players.keyboards.name  == <span class="string"><span class="delimiter">'</span><span class="content">Tony Banks</span><span class="delimiter">'</span></span>
+
+<span class="keyword">def</span> updatedBindingMap = [<span class="string"><span class="delimiter">'</span><span class="content">players[drums]</span><span class="delimiter">'</span></span>: [<span class="key">name</span>: <span class="string"><span class="delimiter">'</span><span class="content">Phil Collins</span><span class="delimiter">'</span></span>],
+                         <span class="string"><span class="delimiter">'</span><span class="content">players[keyboards]</span><span class="delimiter">'</span></span>: [<span class="key">name</span>: <span class="string"><span class="delimiter">'</span><span class="content">Anthony George Banks</span><span class="delimiter">'</span></span>]]
+
+album.properties = updatedBindingMap
+
+<span class="keyword">assert</span> album.title == <span class="string"><span class="delimiter">'</span><span class="content">The Lamb Lies Down On Broadway</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> album.players.size() == <span class="integer">4</span>
+<span class="keyword">assert</span> album.players.guitar.name == <span class="string"><span class="delimiter">'</span><span class="content">Steve Hackett</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> album.players.vocals.name == <span class="string"><span class="delimiter">'</span><span class="content">Peter Gabriel</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> album.players.keyboards.name == <span class="string"><span class="delimiter">'</span><span class="content">Anthony George Banks</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> album.players.drums.name == <span class="string"><span class="delimiter">'</span><span class="content">Phil Collins</span><span class="delimiter">'</span></span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_将请求数据绑定到模型">将请求数据绑定到模型</h4>
+<div class="paragraph">
+<p><a href="../ref/Controllers/params.html">params</a>控制器中可用的对象具有特殊的行为，有助于将点的请求参数名称转换为数据绑定程序可以使用的嵌套Maps。 例如，如果请求包含名为 <code>person.homeAddress.country</code> 和 <code>person.homeAddress.city</code> 的请求参数，其值分别为 <code>USA</code> 和 <code>St</code> . 分别是路易斯，<code>params</code> 将包括这些条目:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">[<span class="key">person</span>: [<span class="key">homeAddress</span>: [<span class="key">country</span>: <span class="string"><span class="delimiter">'</span><span class="content">USA</span><span class="delimiter">'</span></span>, <span class="key">city</span>: <span class="string"><span class="delimiter">'</span><span class="content">St. Louis</span><span class="delimiter">'</span></span>]]]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>有两种方法可以将请求参数绑定到域类的属性上。 第一个涉及使用域类的Map构造函数:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> <span class="function">save</span>() {
+    <span class="keyword">def</span> b = <span class="keyword">new</span> <span class="predefined-type">Book</span>(params)
+    b.save()
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>数据绑定发生在代码 <code>new Book(params)</code> 中 . 通过传递 <a href="../ref/Controllers/params.html">params</a> 域类构造函数的对象Grails自动识别出您正在尝试从请求参数进行绑定。 因此，如果我们有一个传入请求，例如:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code>/book/save?title=The%20Stand&amp;author=Stephen%20King</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>然后，将在域类上自动设置 <code>title</code> 和 <code>author</code> 请求参数。 您可以使用<a href="../ref/Domain%20Classes/properties.html">properties</a> 属性将数据绑定到现有实例上:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> <span class="function">save</span>() {
+    <span class="keyword">def</span> b = <span class="predefined-type">Book</span>.get(params.id)
+    b.properties = params
+    b.save()
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>与使用隐式构造函数的效果相同.</p>
+</div>
+<div class="paragraph">
+<p>绑定空字符串（其中没有字符，甚至没有空格的字符串）时，数据绑定器会将空字符串转换为null。 这简化了最常见的情况，其目的是将空表单字段视为具有值null，因为没有一种方法可以实际提交null作为请求参数。 当这种行为不是所希望的时，应用程序可以直接分配值.</p>
+</div>
+<div class="paragraph">
+<p>质量属性绑定机制默认情况下将在绑定时自动修剪所有字符串。 要禁用此行为，请将 <code>grails-app/conf/application.groovy</code> 的 <code>grails.databinding.trimStrings</code> 属性设置为false.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="comment">// the default value is true</span>
+grails.databinding.trimStrings = <span class="predefined-constant">false</span>
+
+<span class="comment">// ...</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>质量属性绑定机制将默认在绑定时自动将所有空字符串转换为null。 要禁用此行为，请将  <code>grails-app/conf/application.groovy</code> 中的 <code>grails.databinding.convertEmptyStringsToNull</code> 属性设置为false.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="comment">// the default value is true</span>
+grails.databinding.convertEmptyStringsToNull = <span class="predefined-constant">false</span>
+
+<span class="comment">// ...</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>事件发生的顺序是发生字符串修整，然后发生空转换，因此，如果 <code>trimStrings</code>  为 <code>true</code> 和 <code>convertEmptyStringsToNull</code> 为 <code>true</code> ，不仅空字符串将转换为null，空字符串也将转换为空。 空字符串是任何字符串，这样 <code>trim（）</code> 方法将返回一个空字符串.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Grails中的这些形式的数据绑定非常方便，但也是不加区别的。 换句话说，它们将绑定目标对象的_all_非临时性，类型化实例属性，包括您可能不想绑定的属性。 仅仅因为UI中的表单没有提交所有属性，攻击者仍然可以通过原始HTTP请求发送恶意数据。 幸运的是，Grails还可轻松防止此类攻击-有关更多信息，请参见标题为 "Data Binding and Security concerns" 的部分.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_数据绑定和单端关联">数据绑定和单端关联</h4>
+<div class="paragraph">
+<p>如果您具有 <code>one-to-one</code> 或 <code>many-to-one</code> 关联，则也可以使用Grails的数据绑定功能来更新这些关系。 例如，如果您有一个传入请求，例如:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code>/book/save?author.id=20</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在进行数据绑定（例如）时，Grails会自动检测request参数上的 <code>.id</code> 后缀，并在给定id的 <code>Author</code> 实例中查找:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> b = <span class="keyword">new</span> <span class="predefined-type">Book</span>(params)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>通过传递文字 <code>String</code>  "null"，可以将关联属性设置为 <code>null</code> 。 例如:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code>/book/save?author.id=null</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_数据绑定和多端关联">数据绑定和多端关联</h4>
+<div class="paragraph">
+<p>如果您具有一对多或多对多关联，则根据关联类型，可以使用不同的数据绑定技术.</p>
+</div>
+<div class="paragraph">
+<p>如果您有一个基于 <code>Set</code> 的关联（<code>hasMany</code> 的默认设置），那么填充关联的最简单方法是发送一个标识符列表。 例如，考虑下面的 <code>&lt;g:select&gt;</code> 的用法:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;g:select</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">books</span><span class="delimiter">&quot;</span></span>
+          <span class="attribute-name">from</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">${Book.list()}</span><span class="delimiter">&quot;</span></span>
+          <span class="attribute-name">size</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">5</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">multiple</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">yes</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">optionKey</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">id</span><span class="delimiter">&quot;</span></span>
+          <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">${author?.books}</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这将产生一个选择框，使您可以选择多个值。 在这种情况下，如果您提交表单，Grails将自动使用选择框中的标识符来填充 <code>books</code> 关联.</p>
+</div>
+<div class="paragraph">
+<p>但是，如果您想更新关联对象的属性，则此技术将不起作用。 而是使用下标运算符:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;g:textField</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">books[0].title</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">the Stand</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+<span class="tag">&lt;g:textField</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">books[1].title</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">the Shining</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>但是，对于基于 <code>Set</code> 的关联，至关重要的是，以与计划进行更新时相同的顺序来呈现标记。这是因为 <code>Set</code> 没有顺序的概念，因此尽管我们指的是 对于 <code>books [0]</code> 和 <code>books [1]</code>，除非您自己进行一些明确的排序，否则不能保证关联的顺序在服务器端是正确的.</p>
+</div>
+<div class="paragraph">
+<p>如果您使用基于 <code>List</code> 的关联，这不是问题，因为 <code>List</code> 具有定义的顺序和可以引用的索引。 基于 <code>Map</code> 的关联也是如此.</p>
+</div>
+<div class="paragraph">
+<p>还要注意，如果要绑定的关联的大小为2，并且引用的元素超出了关联的大小:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;g:textField</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">books[0].title</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">the Stand</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+<span class="tag">&lt;g:textField</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">books[1].title</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">the Shining</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+<span class="tag">&lt;g:textField</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">books[2].title</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">Red Madder</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>然后Grails将在定义的位置自动为您创建一个新实例.</p>
+</div>
+<div class="paragraph">
+<p>您可以使用与单端关联相同的 <code>.id</code> 语法将关联类型的现有实例绑定到 <code>List</code> 。 例如:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;g:select</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">books[0].id</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">from</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">${bookList}</span><span class="delimiter">&quot;</span></span>
+          <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">${author?.books[0]?.id}</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+
+<span class="tag">&lt;g:select</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">books[1].id</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">from</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">${bookList}</span><span class="delimiter">&quot;</span></span>
+          <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">${author?.books[1]?.id}</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+
+<span class="tag">&lt;g:select</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">books[2].id</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">from</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">${bookList}</span><span class="delimiter">&quot;</span></span>
+          <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">${author?.books[2]?.id}</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>允许单独选择 <code>books List</code> 中的各个条目.</p>
+</div>
+<div class="paragraph">
+<p>特定索引的条目也可以用相同的方法删除。 例如:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;g:select</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">books[0].id</span><span class="delimiter">&quot;</span></span>
+          <span class="attribute-name">from</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">${Book.list()}</span><span class="delimiter">&quot;</span></span>
+          <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">${author?.books[0]?.id}</span><span class="delimiter">&quot;</span></span>
+          <span class="attribute-name">noSelection</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">['null': '']</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果选择了空选项，将呈现一个选择框，该选择框将删除 <code>books[0]</code> 处的关联.</p>
+</div>
+<div class="paragraph">
+<p>绑定到 <code>Map</code> 属性的工作方式相同，只是参数名中的列表索引被map键替换。:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;g:select</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">images[cover].id</span><span class="delimiter">&quot;</span></span>
+          <span class="attribute-name">from</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">${Image.list()}</span><span class="delimiter">&quot;</span></span>
+          <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">${book?.images[cover]?.id}</span><span class="delimiter">&quot;</span></span>
+          <span class="attribute-name">noSelection</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">['null': '']</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这会将选定的图像绑定到 <code>"cover"</code> 键下的 <code>Map</code> 属性 <code>images</code> 中.</p>
+</div>
+<div class="paragraph">
+<p>绑定到Maps，Arrays和Collections时，数据绑定器将根据需要自动增大collections的大小.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+绑定程序将集合增长到多大的默认限制是256。如果数据绑定器遇到一个要求将集合增长到该限制之外的条目，则该条目将被忽略。 可以通过为 <code>application.groovy</code> 中的 <code>grails.databinding.autoGrowCollectionLimit</code> 属性分配一个值来配置限制。.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">grails-app/conf/application.groovy</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="comment">// the default value is 256</span>
+grails.databinding.autoGrowCollectionLimit = <span class="integer">128</span>
+
+<span class="comment">// ...</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_具有多个域类的数据绑定">具有多个域类的数据绑定</h4>
+<div class="paragraph">
+<p>可以通过以下链接将数据绑定到多个域对象 <a href="../ref/Controllers/params.html">params</a> .</p>
+</div>
+<div class="paragraph">
+<p>例如，您有一个传入请求:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">/book/save?book.title=The%20Stand&amp;author.name=Stephen%20King</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>您会注意到与上述请求的不同之处在于，每个参数都有一个前缀，例如 <code>author.</code> 或 <code>book.</code>，用于区分哪些参数属于哪种类型。 Grails的 <code>params</code> 对象就像一个多维哈希，您可以对其进行索引以仅隔离要绑定的参数的子集.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> b = <span class="keyword">new</span> <span class="predefined-type">Book</span>(params.book)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>请注意，我们如何在 <code>book.title</code> 参数的第一个点之前使用前缀，以仅隔离此级别以下的参数进行绑定。 我们可以对 <code>Author</code> 域类做同样的事情:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> a = <span class="keyword">new</span> Author(params.author)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_数据绑定和动作参数">数据绑定和动作参数</h4>
+<div class="paragraph">
+<p>控制器操作参数受请求参数数据绑定的约束。 控制器动作参数有2类。 第一类是命令对象。 复杂类型被视为命令对象。 有关详细信息，请参见用户指南中的<a href="theWebLayer.html#commandObjects">Command Objects</a> 部分。 另一类是基本对象类型。 支持的类型是8个原语，它们对应的类型包装器和 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">java.lang.String</a>. 默认行为是按名称将请求参数映射到操作参数:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">AccountingController</span> {
+
+   <span class="comment">// accountNumber will be initialized with the value of params.accountNumber</span>
+   <span class="comment">// accountType will be initialized with params.accountType</span>
+   <span class="keyword">def</span> <span class="function">displayInvoice</span>(<span class="predefined-type">String</span> accountNumber, <span class="type">int</span> accountType) {
+       <span class="comment">// ...</span>
+   }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>对于原始参数和作为任何原始类型包装器类实例的参数，必须在将请求参数值绑定到动作参数之前执行类型转换。 类型转换自动发生。 在上面显示的示例中， <code>params.accountType</code> 请求参数必须转换为 <code>int</code>. 如果由于某种原因类型转换失败，则该参数将具有每个常规Java行为的默认值（类型包装器引用为null，布尔值为false，数字为零），并且相应的错误将添加到定义的 <code>errors</code> 属性中 控制者.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">/accounting/displayInvoice?accountNumber=B59786&amp;accountType=bogusValue</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>由于无法将"bogusValue"转换为int类型，accountType的值将为零，控制器的 <code>errors.hasErrors()</code> 为true，控制器的 <code>errors.errorCount</code> 将等于1，控制器的 <code>errors.getFieldError('accountType')</code> 将包含相应的错误.</p>
+</div>
+<div class="paragraph">
+<p>如果参数名称与请求参数的名称不匹配，则可以将  <code>@grails.web.RequestParameter</code> 批注应用于参数，以表达应绑定到该参数的请求参数的名称:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.web.RequestParameter</span>
+
+<span class="type">class</span> <span class="class">AccountingController</span> {
+
+   <span class="comment">// mainAccountNumber will be initialized with the value of params.accountNumber</span>
+   <span class="comment">// accountType will be initialized with params.accountType</span>
+   <span class="keyword">def</span> <span class="function">displayInvoice</span>(<span class="annotation">@RequestParameter</span>(<span class="string"><span class="delimiter">'</span><span class="content">accountNumber</span><span class="delimiter">'</span></span>) <span class="predefined-type">String</span> mainAccountNumber, <span class="type">int</span> accountType) {
+       <span class="comment">// ...</span>
+   }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_数据绑定和类型转换错误">数据绑定和类型转换错误</h4>
+<div class="paragraph">
+<p>有时在执行数据绑定时，无法将特定的String转换为特定的目标类型。 这导致类型转换错误。 Grails将在Grails域类的<a href="../ref/Domain%20Classes/errors.html">errors</a>属性内保留类型转换错误。 例如:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">Book</span> {
+    ...
+    URL publisherURL
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这里我们有一个域类 <code>Book</code> ，它使用 <code>java.net.URL</code> 类来表示URL。 给定一个传入请求，例如:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">/book/save?publisherURL=a-bad-url</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>由于发生类型不匹配错误，因此无法将字符串 <code>a-bad-url</code> 绑定到 <code>publisherURL</code> 属性。 您可以像这样检查这些:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> b = <span class="keyword">new</span> <span class="predefined-type">Book</span>(params)
+
+<span class="keyword">if</span> (b.hasErrors()) {
+    println <span class="string"><span class="delimiter">&quot;</span><span class="content">The value </span><span class="inline"><span class="inline-delimiter">${</span>b.errors.getFieldError(<span class="string"><span class="delimiter">'</span><span class="content">publisherURL</span><span class="delimiter">'</span></span>).rejectedValue<span class="inline-delimiter">}</span></span><span class="delimiter">&quot;</span></span> +
+            <span class="string"><span class="delimiter">&quot;</span><span class="content"> is not a valid URL!</span><span class="delimiter">&quot;</span></span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>尽管我们尚未涵盖错误代码（有关更多信息，请参见<a href="validation.html">validation</a>上的部分），但对于类型转换错误，您希望将消息从 <code>grails-app/i18n/messages.properties</code> 文件发送到 用于错误。 您可以使用通用错误消息处理程序，例如:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">typeMismatch.java.net.URL=The field {<span class="integer">0</span>} is not a valid <span class="predefined-type">URL</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或更具体的一个:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">typeMismatch.Book.publisherURL=The publisher <span class="predefined-type">URL</span> you specified is not a valid <span class="predefined-type">URL</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_bindusing注释">BindUsing注释</h4>
+<div class="paragraph">
+<p><a href="http://docs.grails.org/4.0.0/api/grails/databinding/BindUsing.html">BindUsing</a> 注释可以用于为类中的特定字段定义自定义绑定机制。 每当将数据绑定应用于字段时，便会使用2个参数来调用注释的闭包值. 第一个参数是要应用数据绑定的对象，第二个参数是 <a href="http://docs.grails.org/4.0.0/api/grails/databinding/DataBindingSource.html">DataBindingSource</a> 它是数据绑定的数据源. 从闭包返回的值将绑定到该属性。 以下示例将导致在数据绑定期间将源中的 <code>name</code> 值的大写版本应用于 <code>name</code> 字段.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.databinding.BindUsing</span>
+
+<span class="type">class</span> <span class="class">SomeClass</span> {
+    <span class="annotation">@BindUsing</span>({obj, source -&gt;
+
+        <span class="comment">//source is DataSourceBinding which is similar to a Map</span>
+        <span class="comment">//and defines getAt operation but source.name cannot be used here.</span>
+        <span class="comment">//In order to get name from source use getAt instead as shown below.</span>
+
+        source[<span class="string"><span class="delimiter">'</span><span class="content">name</span><span class="delimiter">'</span></span>]?.toUpperCase()
+    })
+    <span class="predefined-type">String</span> name
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+请注意，仅当请求参数的名称与类中的字段名称匹配时，才可以进行数据绑定.
+在这里，请求参数中的 <code>name</code> 与 <code>SomeClass</code> 中的 <code>name</code> 相匹配.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><a href="http://docs.grails.org/4.0.0/api/grails/databinding/BindUsing.html">BindUsing</a> 注释可用于为特定类上的所有字段定义自定义绑定机制. 当将注释应用于一个类时，分配给该注释的值应该是一个实现 <a href="http://docs.grails.org/4.0.0/api/grails/databinding/BindingHelper.html">BindingHelper</a> 接口.  每当将值绑定到该注释已应用于的类中的属性时，都将使用该类的实例.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="annotation">@BindUsing</span>(SomeClassWhichImplementsBindingHelper)
+<span class="type">class</span> <span class="class">SomeClass</span> {
+    <span class="predefined-type">String</span> someProperty
+    <span class="predefined-type">Integer</span> someOtherProperty
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_bindinitializer批注">BindInitializer批注</h4>
+<div class="paragraph">
+<p><a href="http://docs.grails.org/4.0.0/api/grails/databinding/BindInitializer.html">BindInitializer</a> 如果未定义，则注释可用于初始化类中的关联字段.
+不像 <a href="http://docs.grails.org/4.0.0/api/grails/databinding/BindUsing.html">BindUsing</a> 注释，数据绑定将继续绑定此关联上的所有嵌套属性.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.databinding.BindInitializer</span>
+
+<span class="type">class</span> <span class="class">Account</span>{}
+
+<span class="type">class</span> <span class="class">User</span> {
+  Account account
+
+  <span class="comment">// BindInitializer expects you to return a instance of the type</span>
+  <span class="comment">// where it's declared on. You can use source as a parameter, in this case user.</span>
+  <span class="annotation">@BindInitializer</span>({user-&gt; <span class="keyword">new</span> Contact(<span class="key">account</span>:user.account) })
+  Contact contact
+}
+<span class="type">class</span> <span class="class">Contact</span>{
+  Account account
+  <span class="predefined-type">String</span> firstName
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+根据此用例，@BindInitializer 仅对关联的实体有意义.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_定制数据转换器">定制数据转换器</h4>
+<div class="paragraph">
+<p>活页夹将自动执行很多类型转换。 一些应用程序可能想要定义自己的用于转换值的机制，而执行此操作的一种简单方法是编写一个实现 <a href="http://docs.grails.org/4.0.0/api/grails/databinding/converters/ValueConverter.html">ValueConverter</a> 并在Spring应用程序上下文中将该类的实例注册为Bean.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> com.myapp.converters
+
+<span class="keyword">import</span> <span class="include">grails.databinding.converters.ValueConverter</span>
+
+<span class="comment">/**
+ * A custom converter which will convert String of the
+ * form 'city:state' into an Address object.
+ */</span>
+<span class="type">class</span> <span class="class">AddressValueConverter</span> <span class="directive">implements</span> ValueConverter {
+
+    <span class="type">boolean</span> canConvert(value) {
+        value <span class="keyword">instanceof</span> <span class="predefined-type">String</span>
+    }
+
+    <span class="keyword">def</span> <span class="function">convert</span>(value) {
+        <span class="keyword">def</span> pieces = value.split(<span class="string"><span class="delimiter">'</span><span class="content">:</span><span class="delimiter">'</span></span>)
+        <span class="keyword">new</span> com.myapp.Address(<span class="key">city</span>: pieces[<span class="integer">0</span>], <span class="key">state</span>: pieces[<span class="integer">1</span>])
+    }
+
+    <span class="predefined-type">Class</span>&lt;?&gt; getTargetType() {
+        com.myapp.Address
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>该类的实例需要在Spring应用程序上下文中注册为Bean。 Bean名称并不重要。 所有实现ValueConverter的bean将自动插入到数据绑定过程中.</p>
+</div>
+<div class="listingblock">
+<div class="title">grails-app/conf/spring/resources.groovy</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">beans = {
+    addressConverter com.myapp.converters.AddressValueConverter
+    <span class="comment">// ...</span>
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">Person</span> {
+    <span class="predefined-type">String</span> firstName
+    Address homeAddress
+}
+
+<span class="type">class</span> <span class="class">Address</span> {
+    <span class="predefined-type">String</span> city
+    <span class="predefined-type">String</span> state
+}
+
+<span class="keyword">def</span> person = <span class="keyword">new</span> Person()
+person.properties = [<span class="key">firstName</span>: <span class="string"><span class="delimiter">'</span><span class="content">Jeff</span><span class="delimiter">'</span></span>, <span class="key">homeAddress</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">O'Fallon:Missouri</span><span class="delimiter">&quot;</span></span>]
+<span class="keyword">assert</span> person.firstName == <span class="string"><span class="delimiter">'</span><span class="content">Jeff</span><span class="delimiter">'</span></span>
+<span class="keyword">assert</span> person.homeAddress.city = <span class="string"><span class="delimiter">&quot;</span><span class="content">O'Fallon</span><span class="delimiter">&quot;</span></span>
+<span class="keyword">assert</span> person.homeAddress.state = <span class="string"><span class="delimiter">'</span><span class="content">Missouri</span><span class="delimiter">'</span></span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_数据绑定的日期格式">数据绑定的日期格式</h4>
+<div class="paragraph">
+<p>通过将字符串绑定到Date值时，可以指定要使用的自定义日期格式 <a href="http://docs.grails.org/4.0.0/api/grails/databinding/BindingFormat.html">BindingFormat</a> 日期字段的注释.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.databinding.BindingFormat</span>
+
+<span class="type">class</span> <span class="class">Person</span> {
+    <span class="annotation">@BindingFormat</span>(<span class="string"><span class="delimiter">'</span><span class="content">MMddyyyy</span><span class="delimiter">'</span></span>)
+    <span class="predefined-type">Date</span> birthDate
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>可以在 <code>application.groovy</code> 中配置一个全局设置来定义日期格式，当绑定到Date时将在整个应用程序中使用.</p>
+</div>
+<div class="listingblock">
+<div class="title">grails-app/conf/application.groovy</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">grails.databinding.dateFormats = [<span class="string"><span class="delimiter">'</span><span class="content">MMddyyyy</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">yyyy-MM-dd HH:mm:ss.S</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">yyyy-MM-dd'T'hh:mm:ss'Z'</span><span class="delimiter">&quot;</span></span>]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>将尝试按照在列表中包含的顺序尝试 <code>grails.databinding.dateFormats</code> 中指定的格式。如果一个属性标有 <code>@BindingFormat</code> ，则 <code>@BindingFormat</code> 将优先于 <code>grails.databinding.dateFormats</code> 中指定的值。</p>
+</div>
+<div class="paragraph">
+<p>默认配置的格式为：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>yyyy-MM-dd HH:mm:ss.S</code></p>
+</li>
+<li>
+<p><code>yyyy-MM-dd&#8217;T&#8217;hh:mm:ss&#8217;Z'</code></p>
+</li>
+<li>
+<p><code>yyyy-MM-dd HH:mm:ss.S z</code></p>
+</li>
+<li>
+<p><code>yyyy-MM-dd&#8217;T&#8217;HH:mm:ss.SSSX</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_定制格式转换器">定制格式转换器</h4>
+<div class="paragraph">
+<p>您可以通过编写实现<a href="http://docs.grails.org/4.0.0/api/grails/databinding/converters/FormattedValueConverter.html">FormattedValueConverter</a> 接口的类并注册一个实例来为 <a href="http://docs.grails.org/4.0.0/api/grails/databinding/BindingFormat.html">BindingFormat</a> 注释提供自己的处理程序。 该类在Spring应用程序上下文中作为bean。 下面是一个简单的自定义String格式化程序的示例，该格式化程序可以根据分配给BindingFormat批注的值来转换String的大小写.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> com.myapp.converters
+
+<span class="keyword">import</span> <span class="include">grails.databinding.converters.FormattedValueConverter</span>
+
+<span class="type">class</span> <span class="class">FormattedStringValueConverter</span> <span class="directive">implements</span> FormattedValueConverter {
+    <span class="keyword">def</span> <span class="function">convert</span>(value, <span class="predefined-type">String</span> format) {
+        <span class="keyword">if</span>(<span class="string"><span class="delimiter">'</span><span class="content">UPPERCASE</span><span class="delimiter">'</span></span> == format) {
+            value = value.toUpperCase()
+        } <span class="keyword">else</span> <span class="keyword">if</span>(<span class="string"><span class="delimiter">'</span><span class="content">LOWERCASE</span><span class="delimiter">'</span></span> == format) {
+            value = value.toLowerCase()
+        }
+        value
+    }
+
+    <span class="predefined-type">Class</span> getTargetType() {
+        <span class="comment">// specifies the type to which this converter may be applied</span>
+        <span class="predefined-type">String</span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>该类的实例需要在Spring应用程序上下文中注册为Bean。 Bean名称并不重要。 所有实现FormattedValueConverter的bean将自动插入到数据绑定过程中.</p>
+</div>
+<div class="listingblock">
+<div class="title">grails-app/conf/spring/resources.groovy</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">beans = {
+    formattedStringConverter com.myapp.converters.FormattedStringValueConverter
+    <span class="comment">// ...</span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>有了适当的绑定之后，就可以将 <code>BindingFormat</code> 注释应用于 <code>String</code> 字段，以通知数据绑定器利用自定义转换器.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.databinding.BindingFormat</span>
+
+<span class="type">class</span> <span class="class">Person</span> {
+    <span class="annotation">@BindingFormat</span>(<span class="string"><span class="delimiter">'</span><span class="content">UPPERCASE</span><span class="delimiter">'</span></span>)
+    <span class="predefined-type">String</span> someUpperCaseString
+
+    <span class="annotation">@BindingFormat</span>(<span class="string"><span class="delimiter">'</span><span class="content">LOWERCASE</span><span class="delimiter">'</span></span>)
+    <span class="predefined-type">String</span> someLowerCaseString
+
+    <span class="predefined-type">String</span> someOtherString
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_本地绑定格式">本地绑定格式</h4>
+<div class="paragraph">
+<p><code>BindingFormat</code> 批注通过使用可选的 <code>code</code> 属性来支持本地化的格式字符串。 如果将值分配给了code属性，则该值将用作消息代码，以在Spring应用程序上下文中从 <code>messageSource</code> bean中检索绑定格式字符串，并且该查找将被本地化.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.databinding.BindingFormat</span>
+
+<span class="type">class</span> <span class="class">Person</span> {
+    <span class="annotation">@BindingFormat</span>(code=<span class="string"><span class="delimiter">'</span><span class="content">date.formats.birthdays</span><span class="delimiter">'</span></span>)
+    <span class="predefined-type">Date</span> birthDate
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">#</span> grails-app/conf/i18n/messages.properties
+date.formats.birthdays=MMddyyyy</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">#</span> grails-app/conf/i18n/messages_es.properties
+date.formats.birthdays=ddMMyyyy</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_结构化数据绑定编辑器">结构化数据绑定编辑器</h4>
+<div class="paragraph">
+<p>结构化数据绑定编辑器是一个帮助程序类，可以将结构化请求参数绑定到属性。 结构化绑定的常见用例是绑定到一个 <code>日期</code> 对象，该对象可能是由几个请求参数中包含的一些较小的信息片段构成的，它们的名称分别为 <code>birthday_month</code> , <code>birthday_date</code> 和 <code>birthday_year</code> 。 结构化的编辑器将检索所有这些单独的信息，并使用它们来构建一个 <code>Date</code>.</p>
+</div>
+<div class="paragraph">
+<p>该框架提供了用于绑定到 <code>Date</code> 对象的结构化编辑器。 应用程序可以注册适合任何类型的自己的结构化编辑器。 考虑以下课程:</p>
+</div>
+<div class="listingblock">
+<div class="title">src/main/groovy/databinding/Gadget.groovy</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> databinding
+
+<span class="type">class</span> <span class="class">Gadget</span> {
+    <span class="predefined-type">Shape</span> expandedShape
+    <span class="predefined-type">Shape</span> compressedShape
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">src/main/groovy/databinding/Shape.groovy</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> databinding
+
+<span class="type">class</span> <span class="class">Shape</span> {
+    <span class="type">int</span> area
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>一个 <code>Gadget</code> 具有2个 <code>Shape</code> 字段。 <code>Shape</code> 具有 <code>area</code> 属性。 可能是应用程序想要接受诸如 <code>width</code> 和 <code>height</code> 的请求参数，并在绑定时使用这些参数来计算 <code>Shape</code> 的 <code>area</code>。 结构化绑定编辑器非常适合.</p>
+</div>
+<div class="paragraph">
+<p>在数据绑定过程中注册结构化编辑器的方法是将 <a href="http://docs.grails.org/4.0.0/api/grails/databinding/TypedStructuredBindingEditor.html">grails.databinding.TypedStructuredBindingEditor</a> 接口的实例添加到Spring应用程序上下文。 实现 <code>TypedStructuredBindingEditor</code> 接口的最简单方法是继承 <a href="http://docs.grails.org/4.0.0/api/org/grails/databinding/converters/AbstractStructuredDateBindingEditor.html">org.grails.databinding.converters.AbstractStructuredBindingEditor</a> 抽象类并覆盖 <code>getPropertyValue</code> 方法，如图所示 下面:</p>
+</div>
+<div class="listingblock">
+<div class="title">src/main/groovy/databinding/converters/StructuredShapeEditor.groovy</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> databinding.converters
+
+<span class="keyword">import</span> <span class="include">databinding.Shape</span>
+
+<span class="keyword">import</span> <span class="include">org.grails.databinding.converters.AbstractStructuredBindingEditor</span>
+
+<span class="type">class</span> <span class="class">StructuredShapeEditor</span> <span class="directive">extends</span> AbstractStructuredBindingEditor&lt;<span class="predefined-type">Shape</span>&gt; {
+
+    <span class="directive">public</span> <span class="predefined-type">Shape</span> getPropertyValue(<span class="predefined-type">Map</span> values) {
+        <span class="comment">// retrieve the individual values from the Map</span>
+        <span class="keyword">def</span> width = values.width <span class="keyword">as</span> <span class="type">int</span>
+        <span class="keyword">def</span> height = values.height <span class="keyword">as</span> <span class="type">int</span>
+
+        <span class="comment">// use the values to calculate the area of the Shape</span>
+        <span class="keyword">def</span> area = width * height
+
+        <span class="comment">// create and return a Shape with the appropriate area</span>
+        <span class="keyword">new</span> <span class="predefined-type">Shape</span>(<span class="key">area</span>: area)
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>该类的实例需要在Spring应用程序上下文中注册:</p>
+</div>
+<div class="listingblock">
+<div class="title">grails-app/conf/spring/resources.groovy</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">beans = {
+    shapeEditor databinding.converters.StructuredShapeEditor
+    <span class="comment">// ...</span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>当数据绑定器绑定到 <code>Gadget</code> 类的实例时，它将检查是否存在名称为 <code>compressedShape</code> 和 <code>expandedShape</code> 的请求参数，其值均为"struct"，如果确实存在，则会触发 使用 <code>StructuredShapeEditor</code> 。 结构的各个组件必须具有格式为propertyName_structuredElementName的参数名称。 在上述 <code>Gadget</code> 类的情况下，这意味着 <code>compressedShape</code> 请求参数应具有"struct"值，而 <code>compressedShape_width</code> 和 <code>compressedShape_height</code> 参数应具有代表宽度和高度的值。 压缩的 <code>Shape</code> 。 同样，expandedShape请求参数应具有"struct"值，expandedShape_width和expandedShape_height参数应具有表示扩展 <code>Shape</code> 宽度和高度的值.</p>
+</div>
+<div class="listingblock">
+<div class="title">grails-app/controllers/demo/DemoController.groovy</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">DemoController</span> {
+
+    <span class="keyword">def</span> <span class="function">createGadget</span>(Gadget gadget) {
+        <span class="comment">/*
+        /demo/createGadget?expandedShape=struct&amp;expandedShape_width=80&amp;expandedShape_height=30
+                          &amp;compressedShape=struct&amp;compressedShape_width=10&amp;compressedShape_height=3
+
+        */</span>
+
+        <span class="comment">// with the request parameters shown above gadget.expandedShape.area would be 2400</span>
+        <span class="comment">// and gadget.compressedShape.area would be 30</span>
+        <span class="comment">// ...</span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>通常，以"struct"作为其值的请求参数将由隐藏的表单字段表示.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_数据绑定事件侦听器">数据绑定事件侦听器</h4>
+<div class="paragraph">
+<p><a href="http://docs.grails.org/4.0.0/api/grails/databinding/events/DataBindingListener.html">DataBindingListener</a> 接口提供了一种机制，可将数据绑定事件通知给侦听器。 界面看起来像这样:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> grails.databinding.events;
+
+<span class="keyword">import</span> <span class="include">grails.databinding.errors.BindingError</span>;
+
+<span class="comment">/**
+ * A listener which will be notified of events generated during data binding.
+ *
+ * @author Jeff Brown
+ * @since 3.0
+ * @see DataBindingListenerAdapter
+ */</span>
+<span class="directive">public</span> <span class="type">interface</span> DataBindingListener {
+
+    <span class="comment">/**
+     * @return true if the listener is interested in events for the specified type.
+     */</span>
+    <span class="type">boolean</span> supports(<span class="predefined-type">Class</span>&lt;?&gt; clazz);
+
+    <span class="comment">/**
+     * Called when data binding is about to start.
+     *
+     * @param target The object data binding is being imposed upon
+     * @param errors the Spring Errors instance (a org.springframework.validation.BindingResult)
+     * @return true if data binding should continue
+     */</span>
+    <span class="predefined-type">Boolean</span> beforeBinding(<span class="predefined-type">Object</span> target, <span class="predefined-type">Object</span> errors);
+
+    <span class="comment">/**
+     * Called when data binding is about to imposed on a property
+     *
+     * @param target The object data binding is being imposed upon
+     * @param propertyName The name of the property being bound to
+     * @param value The value of the property being bound
+     * @param errors the Spring Errors instance (a org.springframework.validation.BindingResult)
+     * @return true if data binding should continue, otherwise return false
+     */</span>
+    <span class="predefined-type">Boolean</span> beforeBinding(<span class="predefined-type">Object</span> target, <span class="predefined-type">String</span> propertyName, <span class="predefined-type">Object</span> value, <span class="predefined-type">Object</span> errors);
+
+    <span class="comment">/**
+     * Called after data binding has been imposed on a property
+     *
+     * @param target The object data binding is being imposed upon
+     * @param propertyName The name of the property that was bound to
+     * @param errors the Spring Errors instance (a org.springframework.validation.BindingResult)
+     */</span>
+    <span class="type">void</span> afterBinding(<span class="predefined-type">Object</span> target, <span class="predefined-type">String</span> propertyName, <span class="predefined-type">Object</span> errors);
+
+    <span class="comment">/**
+     * Called after data binding has finished.
+     *
+     * @param target The object data binding is being imposed upon
+     * @param errors the Spring Errors instance (a org.springframework.validation.BindingResult)
+     */</span>
+    <span class="type">void</span> afterBinding(<span class="predefined-type">Object</span> target, <span class="predefined-type">Object</span> errors);
+
+    <span class="comment">/**
+     * Called when an error occurs binding to a property
+     * @param error encapsulates information about the binding error
+     * @param errors the Spring Errors instance (a org.springframework.validation.BindingResult)
+     * @see BindingError
+     */</span>
+    <span class="type">void</span> bindingError(BindingError error, <span class="predefined-type">Object</span> errors);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Spring应用程序上下文中实现该接口的任何bean都会自动向数据绑定器注册.  <a href="http://docs.grails.org/4.0.0/api/grails/databinding/events/DataBindingListenerAdapter.html">DataBindingListenerAdapter</a> 类实现了 <code>DataBindingListener</code> 接口，并为接口中的所有方法提供了默认实现，因此此类非常适合于子类化，因此您的侦听器类仅需要为您的侦听器感兴趣的方法提供实现.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_直接使用数据绑定器">直接使用数据绑定器</h4>
+<div class="paragraph">
+<p>在某些情况下，应用程序可能希望直接使用数据绑定器。 例如，在服务上对不是域类的任意对象进行绑定。 以下内容将不起作用，因为 <code>properties</code> 属性是只读的.</p>
+</div>
+<div class="listingblock">
+<div class="title">src/main/groovy/bindingdemo/Widget.groovy</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> bindingdemo
+
+<span class="type">class</span> <span class="class">Widget</span> {
+    <span class="predefined-type">String</span> name
+    <span class="predefined-type">Integer</span> size
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">grails-app/services/bindingdemo/WidgetService.groovy</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> bindingdemo
+
+<span class="type">class</span> <span class="class">WidgetService</span> {
+
+    <span class="keyword">def</span> <span class="function">updateWidget</span>(Widget widget, <span class="predefined-type">Map</span> data) {
+        <span class="comment">// this will throw an exception because</span>
+        <span class="comment">// properties is read-only</span>
+        widget.properties = data
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>数据绑定器的一个实例在Spring应用程序上下文中，其bean名称为 <code>grailsWebDataBinder</code> .  该bean实现 <a href="http://docs.grails.org/4.0.0/api/grails/databinding/DataBinder.html">DataBinder</a>接口.  以下代码演示了如何直接使用数据绑定器.</p>
+</div>
+<div class="listingblock">
+<div class="title">grails-app/services/bindingdmeo/WidgetService</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> bindingdemo
+
+<span class="keyword">import</span> <span class="include">grails.databinding.SimpleMapDataBindingSource</span>
+
+<span class="type">class</span> <span class="class">WidgetService</span> {
+
+    <span class="comment">// this bean will be autowired into the service</span>
+    <span class="keyword">def</span> grailsWebDataBinder
+
+    <span class="keyword">def</span> <span class="function">updateWidget</span>(Widget widget, <span class="predefined-type">Map</span> data) {
+        grailsWebDataBinder.bind widget, data <span class="keyword">as</span> SimpleMapDataBindingSource
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>有关重载版本的更多信息，请参见 <a href="http://docs.grails.org/4.0.0/api/grails/databinding/DataBinder.html">DataBinder</a> 文档。
+ <code>bind</code> 方法.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_数据绑定和安全问题">数据绑定和安全问题</h4>
+<div class="paragraph">
+<p>从请求参数批量更新属性时，需要注意不要允许客户端将恶意数据绑定到域类并保留在数据库中。 您可以使用下标运算符限制将哪些属性绑定到给定的域类:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> p = Person.get(<span class="integer">1</span>)
+
+p.properties[<span class="string"><span class="delimiter">'</span><span class="content">firstName</span><span class="delimiter">'</span></span>,<span class="string"><span class="delimiter">'</span><span class="content">lastName</span><span class="delimiter">'</span></span>] = params</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在这种情况下，只会绑定 <code>firstName</code> 和 <code>lastName</code> 属性.</p>
+</div>
+<div class="paragraph">
+<p>另一种方法是使用 <a href="theWebLayer.html#commandObjects">Command Objects</a> 作为数据绑定的目标而不是域类. 另外，也有灵活的 <a href="../ref/Controllers/bindData.html">bindData</a> 方法.</p>
+</div>
+<div class="paragraph">
+<p><code>bindData</code> 方法允许相同的数据绑定功能，但可以绑定到任意对象:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> p = <span class="keyword">new</span> Person()
+bindData(p, params)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>bindData</code> 方法还允许您排除某些不想更新的参数:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> p = <span class="keyword">new</span> Person()
+bindData(p, params, [<span class="key">exclude</span>: <span class="string"><span class="delimiter">'</span><span class="content">dateOfBirth</span><span class="delimiter">'</span></span>])</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或仅包含某些属性:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> p = <span class="keyword">new</span> Person()
+bindData(p, params, [<span class="key">include</span>: [<span class="string"><span class="delimiter">'</span><span class="content">firstName</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">lastName</span><span class="delimiter">'</span></span>]])</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+如果提供了一个空的List作为 <code>include</code> 参数的值，那么如果未明确排除所有字段，则将对其进行绑定.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><a href="../ref/Constraints/bindable.html">bindable</a> 约束可用于全局阻止某些属性的数据绑定.</p>
+</div>
+</div>
+
+
+                <div style="clear:both;margin-top:15px;"></div>
+                
+                    <div class="toc-item prev-left"><a href="../../guide/GORM.html">&lt;&lt; <strong>7</strong><span>&#23545;&#35937;&#20851;&#31995;&#26144;&#23556; &#65288;GORM&#65289;</span></a></div>
+                
+                    <div class="toc-item next-right"><a href="../../guide/traits.html"><strong>9</strong><span>&#29305;&#24449;&#65288;Trait&#65289;</span> >></a></div>
+                
+                <div style="clear:both"></div>
+            </div>
+        </td>
+        <td id="col2">
+            <div class="local clearfix">
+                <div class="local-title">
+                    <a href="../../guide/index.html" target="mainFrame">Quick Reference</a>
+                    <span class="toggle">(<a href="#" onclick="localToggle(); return false;">hide</a>)</span>
+                </div>
+                <div class="menu">
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Command Line</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../../ref/Command%20Line/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/bug-report.html">bug-report</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/clean.html">clean</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/compile.html">compile</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/console.html">console</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-app.html">create-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-command.html">create-command</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-controller.html">create-controller</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-domain-class.html">create-domain-class</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-functional-test.html">create-functional-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-hibernate-cfg-xml.html">create-hibernate-cfg-xml</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-integration-test.html">create-integration-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-interceptor.html">create-interceptor</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-plugin.html">create-plugin</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-profile.html">create-profile</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-script.html">create-script</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-service.html">create-service</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-taglib.html">create-taglib</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-unit-test.html">create-unit-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/dependency-report.html">dependency-report</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/docs.html">docs</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/generate-all.html">generate-all</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/generate-controller.html">generate-controller</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/generate-views.html">generate-views</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/help.html">help</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/install-templates.html">install-templates</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/list-plugins.html">list-plugins</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/list-profiles.html">list-profiles</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/package-plugin.html">package-plugin</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/package.html">package</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/plugin-info.html">plugin-info</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/profile-info.html">profile-info</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/run-app.html">run-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/run-command.html">run-command</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/run-script.html">run-script</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/schema-export.html">schema-export</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/shell.html">shell</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/stats.html">stats</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/stop-app.html">stop-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/test-app.html">test-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/war.html">war</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Constraints</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../../ref/Constraints/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/attributes.html">attributes</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/bindable.html">bindable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/blank.html">blank</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/creditCard.html">creditCard</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/email.html">email</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/inList.html">inList</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/matches.html">matches</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/max.html">max</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/maxSize.html">maxSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/min.html">min</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/minSize.html">minSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/notEqual.html">notEqual</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/nullable.html">nullable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/range.html">range</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/scale.html">scale</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/size.html">size</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/unique.html">unique</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/url.html">url</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/validator.html">validator</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/widget.html">widget</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Controllers</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../../ref/Controllers/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/actionName.html">actionName</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/allowedMethods.html">allowedMethods</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/bindData.html">bindData</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/chain.html">chain</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/controllerName.html">controllerName</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/defaultAction.html">defaultAction</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/errors.html">errors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/flash.html">flash</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/forward.html">forward</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/grailsApplication.html">grailsApplication</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/hasErrors.html">hasErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/namespace.html">namespace</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/params.html">params</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/redirect.html">redirect</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/render.html">render</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/request.html">request</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/respond.html">respond</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/response.html">response</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/responseFormats.html">responseFormats</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/scope.html">scope</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/servletContext.html">servletContext</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/session.html">session</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/withForm.html">withForm</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/withFormat.html">withFormat</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Database Mapping</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/autoImport.html">autoImport</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/autoTimestamp.html">autoTimestamp</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/batchSize.html">batchSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/cache.html">cache</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/cascade.html">cascade</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/column.html">column</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/comment.html">comment</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/discriminator.html">discriminator</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/dynamicInsert.html">dynamicInsert</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/dynamicUpdate.html">dynamicUpdate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/fetch.html">fetch</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/id.html">id</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/ignoreNotFound.html">ignoreNotFound</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/indexColumn.html">indexColumn</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/insertable.html">insertable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/joinTable.html">joinTable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/lazy.html">lazy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/order.html">order</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/sort.html">sort</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/table.html">table</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/type.html">type</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/updateable.html">updateable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/version.html">version</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Domain Classes</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/addTo.html">addTo</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/attach.html">attach</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/belongsTo.html">belongsTo</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/clearErrors.html">clearErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/constraints.html">constraints</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/count.html">count</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/countBy.html">countBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/createCriteria.html">createCriteria</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/delete.html">delete</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/discard.html">discard</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/embedded.html">embedded</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/errors.html">errors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/executeQuery.html">executeQuery</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/executeUpdate.html">executeUpdate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/exists.html">exists</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/fetchMode.html">fetchMode</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/find.html">find</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findAll.html">findAll</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findAllBy.html">findAllBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findAllWhere.html">findAllWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findBy.html">findBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findOrCreateBy.html">findOrCreateBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findOrCreateWhere.html">findOrCreateWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findOrSaveBy.html">findOrSaveBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findOrSaveWhere.html">findOrSaveWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findWhere.html">findWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/first.html">first</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/get.html">get</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/getAll.html">getAll</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/getDirtyPropertyNames.html">getDirtyPropertyNames</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/getPersistentValue.html">getPersistentValue</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/hasErrors.html">hasErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/hasMany.html">hasMany</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/hasOne.html">hasOne</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/ident.html">ident</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/instanceOf.html">instanceOf</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/isAttached.html">isAttached</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/isDirty.html">isDirty</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/last.html">last</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/list.html">list</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/listOrderBy.html">listOrderBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/load.html">load</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/lock.html">lock</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/mapWith.html">mapWith</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/mappedBy.html">mappedBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/mapping.html">mapping</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/merge.html">merge</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/namedQueries.html">namedQueries</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/properties.html">properties</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/read.html">read</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/refresh.html">refresh</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/removeFrom.html">removeFrom</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/save.html">save</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/transients.html">transients</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/validate.html">validate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/where.html">where</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/whereAny.html">whereAny</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/withCriteria.html">withCriteria</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/withNewSession.html">withNewSession</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/withSession.html">withSession</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/withTransaction.html">withTransaction</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Plug-ins</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../../ref/Plug-ins/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/URL%20mappings.html">URL mappings</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/codecs.html">codecs</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/controllers.html">controllers</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/core.html">core</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/dataSource.html">dataSource</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/domainClasses.html">domainClasses</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/hibernate.html">hibernate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/i18n.html">i18n</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/logging.html">logging</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/scaffolding.html">scaffolding</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/services.html">services</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/servlets.html">servlets</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Services</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../../ref/Services/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Services/scope.html">scope</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Services/transactional.html">transactional</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Servlet API</h1><div class="menu-sub">
+                        
+                            
+                            <div class="menu-item"><a href="../../ref/Servlet%20API/request.html">request</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Servlet%20API/response.html">response</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Servlet%20API/servletContext.html">servletContext</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Servlet%20API/session.html">session</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<div id="footer">
+    Copies of this document may be made for your own use and for distribution to others, provided that you do not charge any fee for such copies and further provided that each copy contains this Copyright Notice, whether distributed in print or electronically.
+    
+</div>
+
+<script type="text/javascript" src="../js/docs.js"></script>
+
+</body>
+</html>

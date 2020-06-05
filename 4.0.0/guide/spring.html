@@ -1,0 +1,1774 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="/cdn-cgi/apps/head/3cOPSgo5Omz84ycX7CvigfX4cpw.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-82213539-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-82213539-2');
+    </script>
+    <title>19 Grails &#19982; Spring 4.0.0</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8"/>
+    <link rel="stylesheet" href="../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8"/>
+    <script type="text/javascript">
+function addJsClass() {
+    var classes = document.body.className.split(" ");
+    classes.push("js");
+    document.body.className = classes.join(" ");
+}
+    </script>
+</head>
+
+<body class="body" onload="addJsClass();">
+<div id="navigation">
+    <div class="navTitle">
+        
+        The Grails Framework
+    </div>
+    <div class="navLinks">
+        <ul>
+            <li>
+                <div id="nav-summary" onmouseover="toggleNavSummary(false)" onmouseout="toggleNavSummary(true)">
+                    <a href="../guide/index.html" class="button">Table of contents</a>
+
+                    <div id="nav-summary-childs" style="display:none;">
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/introduction.html"><strong>1</strong><span>&#31616;&#20171;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/gettingStarted.html"><strong>2</strong><span>&#20837;&#38376;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/upgrading.html"><strong>3</strong><span>&#20174; Grails 3.3.x &#21319;&#32423;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/conf.html"><strong>4</strong><span>&#37197;&#32622;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/commandLine.html"><strong>5</strong><span>&#21629;&#20196;&#34892;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/profiles.html"><strong>6</strong><span>&#24212;&#29992;&#31243;&#24207;&#37197;&#32622;&#25991;&#20214;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/GORM.html"><strong>7</strong><span>&#23545;&#35937;&#20851;&#31995;&#26144;&#23556; &#65288;GORM&#65289;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/theWebLayer.html"><strong>8</strong><span>Web &#23618;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/traits.html"><strong>9</strong><span>&#29305;&#24449;&#65288;Trait&#65289;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/REST.html"><strong>10</strong><span>REST</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/async.html"><strong>11</strong><span>&#24322;&#27493;&#32534;&#31243;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/validation.html"><strong>12</strong><span>&#39564;&#35777;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/services.html"><strong>13</strong><span>&#26381;&#21153;&#23618;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/staticTypeCheckingAndCompilation.html"><strong>14</strong><span>&#38745;&#24577;&#31867;&#22411;&#26816;&#26597;&#21644;&#32534;&#35793;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/testing.html"><strong>15</strong><span>&#27979;&#35797;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/i18n.html"><strong>16</strong><span>&#22269;&#38469;&#21270;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/security.html"><strong>17</strong><span>&#23433;&#20840;&#24615;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/plugins.html"><strong>18</strong><span>&#25554;&#20214;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/spring.html"><strong>19</strong><span>Grails &#19982; Spring</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/scaffolding.html"><strong>20</strong><span>&#33050;&#25163;&#26550;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/deployment.html"><strong>21</strong><span>&#37096;&#32626;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/contributing.html"><strong>22</strong><span>&#32473; Grails &#36129;&#29486;&#20195;&#30721;</span></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="separator selected">
+                <a id="ref-button" onclick="localToggle(); return false;" href="#">Quick Reference</a>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+
+<table id="colset" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td id="col1">
+            <div id="main" class="corner-all">
+
+                
+                    <div class="toc-item prev-left"><a href="../guide/plugins.html">&lt;&lt; <strong>18</strong><span>&#25554;&#20214;</span></a></div>
+                
+
+                <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
+
+                
+                    <div class="toc-item next-right"><a href="../guide/scaffolding.html"><strong>20</strong><span>&#33050;&#25163;&#26550;</span> >></a></div>
+                
+
+
+                <div class="project">
+                    <h1>19 Grails &#19982; Spring</h1>
+
+                    <p><strong>Version:</strong> 4.0.0</p>
+                </div>
+
+                
+                <div id="table-of-content">
+                    <h2>Table of Contents</h2>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#springdslAdditional"><strong>19.1</strong><span>&#37197;&#32622;&#20854;&#20182; bean</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#springdsl"><strong>19.2</strong><span>&#20351;&#29992; Bean DSL &#36816;&#34892;&#26102;Spring</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#theBeanBuilderDSLExplained"><strong>19.3</strong><span>Bean&#26500;&#24314;&#22120;DSL&#35299;&#37322;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#propertyPlaceholderConfiguration"><strong>19.4</strong><span>&#23646;&#24615;&#21344;&#20301;&#31526;&#37197;&#32622;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#propertyOverrideConfiguration"><strong>19.5</strong><span>&#23646;&#24615;&#35206;&#30422;&#37197;&#32622;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#actuators"><strong>19.6</strong><span>Spring Boot &#25191;&#34892;&#22120;</span></a>
+                    </div>
+                    
+                </div>
+                
+
+                
+<a name="16. Grails &#21644; Spring"><!-- Legacy link --></a>
+<h1 id="spring">19 Grails 与 Spring</h1>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/spring.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>本部分面向高级用户和对Grails如何与 <a href="http://spring.io/">Spring Framework</a>集成并在其上构建感兴趣的用户. 考虑进行运行时配置Grails时，它对于 <a href="plugins.html">插件开发人员</a> 也是有用的。</p>
+</div>
+
+<a name="16.2 &#37197;&#32622;&#20854;&#20182; Bean"><!-- Legacy link --></a>
+<h2 id="springdslAdditional">19.1 配置其他 bean</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/spring/springdslAdditional.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="sect3">
+<h4 id="_使用spring_bean_dsl">使用Spring Bean DSL</h4>
+<div class="paragraph">
+<p>您可以通过在 <code>grails-app/conf/spring/resources.groovy</code> 中配置新的(或覆盖现有的)bean来轻松注册它们。使用Grails <a href="#springdsl">Spring DSL</a>。bean定义在一个 <code>beans</code> 属性(一个闭包)中:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">beans = {
+    <span class="comment">// beans here</span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>作为一个简单的例子，你可以用下面的语法配置一个bean:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">my.company.MyBeanImpl</span>
+
+beans = {
+    myBean(MyBeanImpl) {
+        someProperty = <span class="integer">42</span>
+        otherProperty = <span class="string"><span class="delimiter">&quot;</span><span class="content">blue</span><span class="delimiter">&quot;</span></span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>一旦配置好，bean就可以自动连接到Grails工件和其他支持依赖注入的类中(例如 <code>BootStrap.groovy</code> )。通过声明一个公共字段，它的名字是你的bean的名字(在本例中是 <code>myBean</code>):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">ExampleController</span> {
+
+     <span class="keyword">def</span> myBean
+     ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>使用DSL的好处是你可以混合bean声明和逻辑，例如基于链接:<a href="conf.html#environments">environment</a>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.util.Environment</span>
+<span class="keyword">import</span> <span class="include">my.company.mock.MockImpl</span>
+<span class="keyword">import</span> <span class="include">my.company.MyBeanImpl</span>
+
+beans = {
+    <span class="keyword">switch</span>(Environment.current) {
+        <span class="keyword">case</span> Environment.PRODUCTION:
+            myBean(MyBeanImpl) {
+                someProperty = <span class="integer">42</span>
+                otherProperty = <span class="string"><span class="delimiter">&quot;</span><span class="content">blue</span><span class="delimiter">&quot;</span></span>
+            }
+            <span class="keyword">break</span>
+
+        <span class="keyword">case</span> Environment.DEVELOPMENT:
+            myBean(MockImpl) {
+                someProperty = <span class="integer">42</span>
+                otherProperty = <span class="string"><span class="delimiter">&quot;</span><span class="content">blue</span><span class="delimiter">&quot;</span></span>
+            }
+            <span class="keyword">break</span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>可以使用 <code>application</code> 变量访问 <code>GrailsApplication</code> 对象，并可用于访问Grails配置(以及其他配置):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.util.Environment</span>
+<span class="keyword">import</span> <span class="include">my.company.mock.MockImpl</span>
+<span class="keyword">import</span> <span class="include">my.company.MyBeanImpl</span>
+
+beans = {
+    <span class="keyword">if</span> (application.config.my.company.mockService) {
+        myBean(MockImpl) {
+            someProperty = <span class="integer">42</span>
+            otherProperty = <span class="string"><span class="delimiter">&quot;</span><span class="content">blue</span><span class="delimiter">&quot;</span></span>
+        }
+    } <span class="keyword">else</span> {
+        myBean(MyBeanImpl) {
+            someProperty = <span class="integer">42</span>
+            otherProperty = <span class="string"><span class="delimiter">&quot;</span><span class="content">blue</span><span class="delimiter">&quot;</span></span>
+        }
+    }
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+如果在 <code>resources.groovy</code> 中定义bean。您的bean将使用与以前Grails或已安装的插件注册的名称相同的名称来替代以前的注册。这是一种方便的定制行为的方法，而不需要编辑插件代码或其他会影响可维护性的方法。
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_使用xml">使用XML</h4>
+<div class="paragraph">
+<p>还可以使用 <code>grails-app/conf/spring/resources.xml</code> 配置bean。在Grails的早期版本中，这个文件是由 <code>run-app</code> 脚本自动生成的，但是DSL在 <code>resources.groovy</code> 中。现在首选的方法是groovy，所以现在不会自动生成它。但它仍然是受支持的-您只需要自己创建它。</p>
+</div>
+<div class="paragraph">
+<p>这个文件是典型的Spring XML文件，Spring文档有一个 <a href="http://docs.spring.io/spring/docs/4.0.x/spring-framework-reference/html/beans.html#beans-basics">优秀参考</a>。关于如何配置Spring bean的基本知识。</p>
+</div>
+<div class="paragraph">
+<p>我们使用DSL配置的 <code>myBean</code> bean将在XML文件中配置如下语法:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;bean</span> <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">myBean</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">my.company.MyBeanImpl</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;property</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">someProperty</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">42</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+    <span class="tag">&lt;property</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">otherProperty</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">blue</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+<span class="tag">&lt;/bean&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>和其他bean一样，它可以自动连接到任何支持依赖注入的类中:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">ExampleController</span> {
+
+     <span class="keyword">def</span> myBean
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_引用现有的bean">引用现有的bean</h4>
+<div class="paragraph">
+<p>在约定中声明的 <code>resources.groovy</code> 或 <code>resources.xml</code> 可以按照约定引用其他bean。例如，如果你有一个 <code>BookService</code> 类，它的Spring bean名会是 <code>bookService</code>，所以你的bean会像这样在DSL中引用它:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">beans = {
+    myBean(MyBeanImpl) {
+        someProperty = <span class="integer">42</span>
+        otherProperty = <span class="string"><span class="delimiter">&quot;</span><span class="content">blue</span><span class="delimiter">&quot;</span></span>
+        bookService = ref(<span class="string"><span class="delimiter">&quot;</span><span class="content">bookService</span><span class="delimiter">&quot;</span></span>)
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者像这样的XML:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;bean</span> <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">myBean</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">my.company.MyBeanImpl</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;property</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">someProperty</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">42</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+    <span class="tag">&lt;property</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">otherProperty</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">blue</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+    <span class="tag">&lt;property</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">bookService</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">ref</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">bookService</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+<span class="tag">&lt;/bean&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>bean需要一个用于bean引用的公共setter(以及两个简单属性)，在Groovy中定义如下:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> my.company
+
+<span class="type">class</span> <span class="class">MyBeanImpl</span> {
+    <span class="predefined-type">Integer</span> someProperty
+    <span class="predefined-type">String</span> otherProperty
+    BookService bookService <span class="comment">// 或者只是 &quot;def bookService&quot;</span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者在Java中是这样的:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> my.company;
+
+<span class="type">class</span> <span class="class">MyBeanImpl</span> {
+
+    <span class="directive">private</span> BookService bookService;
+    <span class="directive">private</span> <span class="predefined-type">Integer</span> someProperty;
+    <span class="directive">private</span> <span class="predefined-type">String</span> otherProperty;
+
+    <span class="directive">public</span> <span class="type">void</span> setBookService(BookService theBookService) {
+        <span class="local-variable">this</span>.bookService = theBookService;
+    }
+
+    <span class="directive">public</span> <span class="type">void</span> setSomeProperty(<span class="predefined-type">Integer</span> someProperty) {
+        <span class="local-variable">this</span>.someProperty = someProperty;
+    }
+
+    <span class="directive">public</span> <span class="type">void</span> setOtherProperty(<span class="predefined-type">String</span> otherProperty) {
+        <span class="local-variable">this</span>.otherProperty = otherProperty;
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>使用 <code>ref</code> (在XML或DSL中)非常强大，因为它配置了一个运行时引用，所以引用的bean不必存在。只要在最后的应用程序上下文配置发生时它已经就位，就可以正确地解决所有问题。</p>
+</div>
+<div class="paragraph">
+<p>有关可用bean的完整参考，请参阅参考指南中的插件参考。</p>
+</div>
+</div>
+
+<a name="16.3 &#24102; Bebe DSL &#30340;&#36816;&#34892;&#26102; Spring"><!-- Legacy link --></a>
+<h2 id="springdsl">19.2 使用 Bean DSL 运行时Spring</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/spring/springdsl.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>Grails中的这个Bean builder旨在提供一种简化的方式，将依赖项连接在一起，并在其核心部分使用Spring。</p>
+</div>
+<div class="paragraph">
+<p>此外，Spring的常规配置方式(通过XML和注释)是静态的，很难在运行时修改和配置，除了编程式的XML创建之外，这种方式容易出错，而且冗长。Grails的<a href="http://docs.grails.org/4.0.0/api/grails/spring/BeanBuilder.html">BeanBuilder</a>通过在运行时以编程方式将组件连接在一起改变了这一切，允许您根据系统属性或环境变量调整逻辑。</p>
+</div>
+<div class="paragraph">
+<p>这使代码能够适应其环境，并避免了不必要的代码重复(为测试、开发和生产环境提供不同的Spring配置)</p>
+</div>
+<div class="sect3">
+<h4 id="_beanbuilder类">BeanBuilder类</h4>
+<div class="paragraph">
+<p>Grails提供了一个<a href="http://docs.grails.org/4.0.0/api/grails/spring/BeanBuilder.html">grails.spring.BeanBuilder</a>。使用动态Groovy构造bean定义的类。基本情况如下:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">org.apache.commons.dbcp.BasicDataSource</span>
+<span class="keyword">import</span> <span class="include">org.grails.orm.hibernate.ConfigurableLocalSessionFactoryBean</span>
+<span class="keyword">import</span> <span class="include">org.springframework.context.ApplicationContext</span>
+<span class="keyword">import</span> <span class="include">grails.spring.BeanBuilder</span>
+
+<span class="keyword">def</span> bb = <span class="keyword">new</span> BeanBuilder()
+
+bb.beans {
+
+    dataSource(BasicDataSource) {
+        driverClassName = <span class="string"><span class="delimiter">&quot;</span><span class="content">org.h2.Driver</span><span class="delimiter">&quot;</span></span>
+        url = <span class="string"><span class="delimiter">&quot;</span><span class="content">jdbc:h2:mem:grailsDB</span><span class="delimiter">&quot;</span></span>
+        username = <span class="string"><span class="delimiter">&quot;</span><span class="content">sa</span><span class="delimiter">&quot;</span></span>
+        password = <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>
+    }
+
+    sessionFactory(ConfigurableLocalSessionFactoryBean) {
+        dataSource = ref(<span class="string"><span class="delimiter">'</span><span class="content">dataSource</span><span class="delimiter">'</span></span>)
+        hibernateProperties = [<span class="string"><span class="delimiter">&quot;</span><span class="content">hibernate.hbm2ddl.auto</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">create-drop</span><span class="delimiter">&quot;</span></span>,
+                               <span class="string"><span class="delimiter">&quot;</span><span class="content">hibernate.show_sql</span><span class="delimiter">&quot;</span></span>:     <span class="string"><span class="delimiter">&quot;</span><span class="content">true</span><span class="delimiter">&quot;</span></span>]
+    }
+}
+
+ApplicationContext appContext = bb.createApplicationContext()</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+内部链接 <a href="plugins.html">plugins</a> 和 <code>grails-app/conf/spring/resources.groovy</code> 资源。你不需要创建一个新的实例 <code>BeanBuilder</code> 。相反，DSL可以隐式地分别在 <code>doWithSpring</code> 和 <code>beans</code> 块中使用。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>这个示例展示了如何使用`BeanBuilder`类的数据源配置Hibernate。</p>
+</div>
+<div class="paragraph">
+<p>在Spring中，每个方法调用(在本例中是 <code>dataSource</code> 和 <code>sessionFactory</code> 调用)都映射到bean的名称。该方法的第一个参数是bean的类，而最后一个参数是块。在块体中，可以使用标准的Groovy语法设置bean的属性。</p>
+</div>
+<div class="paragraph">
+<p>使用Bean的名称自动解析Bean引用。在上面的例子中，可以看到 <code>sessionFactory</code> bean解析 <code>dataSource</code> 引用的方式。</p>
+</div>
+<div class="paragraph">
+<p>构建器还可以设置与bean管理相关的某些特殊属性，如下面的代码所示:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">sessionFactory(ConfigurableLocalSessionFactoryBean) { bean -&gt;
+    <span class="comment">// Autowiring behaviour. The other option is 'byType'. &lt;&lt;autowire&gt;&gt;</span>
+    bean.autowire = <span class="string"><span class="delimiter">'</span><span class="content">byName</span><span class="delimiter">'</span></span>
+    <span class="comment">// Sets the initialisation method to 'init'. [init-method]</span>
+    bean.initMethod = <span class="string"><span class="delimiter">'</span><span class="content">init</span><span class="delimiter">'</span></span>
+    <span class="comment">// Sets the destruction method to 'destroy'. [destroy-method]</span>
+    bean.destroyMethod = <span class="string"><span class="delimiter">'</span><span class="content">destroy</span><span class="delimiter">'</span></span>
+    <span class="comment">// Sets the scope of the bean. &lt;&lt;scope&gt;&gt;</span>
+    bean.scope = <span class="string"><span class="delimiter">'</span><span class="content">request</span><span class="delimiter">'</span></span>
+    dataSource = ref(<span class="string"><span class="delimiter">'</span><span class="content">dataSource</span><span class="delimiter">'</span></span>)
+    hibernateProperties = [<span class="string"><span class="delimiter">&quot;</span><span class="content">hibernate.hbm2ddl.auto</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">create-drop</span><span class="delimiter">&quot;</span></span>,
+                           <span class="string"><span class="delimiter">&quot;</span><span class="content">hibernate.show_sql</span><span class="delimiter">&quot;</span></span>:     <span class="string"><span class="delimiter">&quot;</span><span class="content">true</span><span class="delimiter">&quot;</span></span>]
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>方括号中的字符串是Spring XML定义中等价bean属性的名称。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_在spring_mvc中使用beanbuilder">在Spring MVC中使用BeanBuilder</h4>
+<div class="paragraph">
+<p>包括 <code>grails-spring-&lt;version&gt;.jar</code> 。在常规的Spring MVC应用程序中使用BeanBuilder。然后将以下 <code>&lt;context-param&gt;</code> 值添加到您的 <code>/WEB-INF/web.xml</code> 的文件:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;context-param&gt;</span>
+    <span class="tag">&lt;param-name&gt;</span>contextConfigLocation<span class="tag">&lt;/param-name&gt;</span>
+    <span class="tag">&lt;param-value&gt;</span>/WEB-INF/applicationContext.groovy<span class="tag">&lt;/param-value&gt;</span>
+<span class="tag">&lt;/context-param&gt;</span>
+
+<span class="tag">&lt;context-param&gt;</span>
+    <span class="tag">&lt;param-name&gt;</span>contextClass<span class="tag">&lt;/param-name&gt;</span>
+    <span class="tag">&lt;param-value&gt;</span>
+      grails.web.servlet.context.GrailsWebApplicationContext
+    <span class="tag">&lt;/param-value&gt;</span>
+<span class="tag">&lt;/context-param&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>然后创建一个 <code>/WEB-INF/applicationContext.groovy</code> 。完成其余工作的groovy文件:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">org.apache.commons.dbcp.BasicDataSource</span>
+
+beans {
+    dataSource(BasicDataSource) {
+        driverClassName = <span class="string"><span class="delimiter">&quot;</span><span class="content">org.h2.Driver</span><span class="delimiter">&quot;</span></span>
+        url = <span class="string"><span class="delimiter">&quot;</span><span class="content">jdbc:h2:mem:grailsDB</span><span class="delimiter">&quot;</span></span>
+        username = <span class="string"><span class="delimiter">&quot;</span><span class="content">sa</span><span class="delimiter">&quot;</span></span>
+        password = <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_从文件系统加载bean定义">从文件系统加载Bean定义</h4>
+<div class="paragraph">
+<p>您可以使用 <code>BeanBuilder</code> 类来加载外部Groovy脚本，这些脚本使用与这里定义的语法相同的路径来定义bean。例如:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> bb = <span class="keyword">new</span> BeanBuilder()
+bb.loadBeans(<span class="string"><span class="delimiter">&quot;</span><span class="content">classpath:*SpringBeans.groovy</span><span class="delimiter">&quot;</span></span>)
+
+<span class="keyword">def</span> applicationContext = bb.createApplicationContext()</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在这里， <code>BeanBuilder</code> 加载以 <code>SpringBeans.groovy</code> 结尾的类路径上的所有Groovy文件。并将它们解析为bean定义。一个例子脚本可以看到如下:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">org.apache.commons.dbcp.BasicDataSource</span>
+<span class="keyword">import</span> <span class="include">org.grails.orm.hibernate.ConfigurableLocalSessionFactoryBean</span>
+
+beans {
+
+    dataSource(BasicDataSource) {
+        driverClassName = <span class="string"><span class="delimiter">&quot;</span><span class="content">org.h2.Driver</span><span class="delimiter">&quot;</span></span>
+        url = <span class="string"><span class="delimiter">&quot;</span><span class="content">jdbc:h2:mem:grailsDB</span><span class="delimiter">&quot;</span></span>
+        username = <span class="string"><span class="delimiter">&quot;</span><span class="content">sa</span><span class="delimiter">&quot;</span></span>
+        password = <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>
+    }
+
+    sessionFactory(ConfigurableLocalSessionFactoryBean) {
+        dataSource = dataSource
+        hibernateProperties = [<span class="string"><span class="delimiter">&quot;</span><span class="content">hibernate.hbm2ddl.auto</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">create-drop</span><span class="delimiter">&quot;</span></span>,
+                               <span class="string"><span class="delimiter">&quot;</span><span class="content">hibernate.show_sql</span><span class="delimiter">&quot;</span></span>:     <span class="string"><span class="delimiter">&quot;</span><span class="content">true</span><span class="delimiter">&quot;</span></span>]
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_向绑定_上下文_添加变量">向绑定(上下文)添加变量</h4>
+<div class="paragraph">
+<p>如果你从脚本中加载bean，你可以通过创建一个Groovy <code>Binding</code> 来设置绑定:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> binding = <span class="keyword">new</span> <span class="predefined-type">Binding</span>()
+binding.maxSize = <span class="integer">10000</span>
+binding.productGroup = <span class="string"><span class="delimiter">'</span><span class="content">finance</span><span class="delimiter">'</span></span>
+
+<span class="keyword">def</span> bb = <span class="keyword">new</span> BeanBuilder()
+bb.binding = binding
+bb.loadBeans(<span class="string"><span class="delimiter">&quot;</span><span class="content">classpath:*SpringBeans.groovy</span><span class="delimiter">&quot;</span></span>)
+
+<span class="keyword">def</span> ctx = bb.createApplicationContext()</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>然后可以在DSL文件中访问 <code>maxSize</code> 和 <code>productGroup</code> 属性。</p>
+</div>
+</div>
+
+<a name="16.4 Bean &#26500;&#24314;&#22120; DSL &#35299;&#37322;"><!-- Legacy link --></a>
+<h2 id="theBeanBuilderDSLExplained">19.3 Bean构建器DSL解释</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/spring/theBeanBuilderDSLExplained.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="sect3">
+<h4 id="_使用构造函数参数">使用构造函数参数</h4>
+<div class="paragraph">
+<p>可以使用每个bean定义方法的参数来定义构造函数参数。将它们放在第一个参数(类)之后:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">bb.beans {
+    exampleBean(MyExampleBean, <span class="string"><span class="delimiter">&quot;</span><span class="content">firstArgument</span><span class="delimiter">&quot;</span></span>, <span class="integer">2</span>) {
+        someProperty = [<span class="integer">1</span>, <span class="integer">2</span>, <span class="integer">3</span>]
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这个配置对应于一个 <code>MyExampleBean</code> ，其构造函数如下:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">MyExampleBean(<span class="predefined-type">String</span> foo, <span class="type">int</span> bar) {
+   ...
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_配置beandefinition_使用工厂方法">配置BeanDefinition(使用工厂方法)</h4>
+<div class="paragraph">
+<p>关闭的第一个参数是一个引用bean配置实例,可以配置使用工厂方法和调用任何方法 <a href="https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/beans/factory/support/AbstractBeanDefinition.html">AbstractBeanDefinition</a>类:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">bb.beans {
+    exampleBean(MyExampleBean) { bean -&gt;
+        bean.factoryMethod = <span class="string"><span class="delimiter">&quot;</span><span class="content">getInstance</span><span class="delimiter">&quot;</span></span>
+        bean.singleton = <span class="predefined-constant">false</span>
+        someProperty = [<span class="integer">1</span>, <span class="integer">2</span>, <span class="integer">3</span>]
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>作为替代，你也可以使用bean定义方法的返回值来配置bean:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">bb.beans {
+    <span class="keyword">def</span> example = exampleBean(MyExampleBean) {
+        someProperty = [<span class="integer">1</span>, <span class="integer">2</span>, <span class="integer">3</span>]
+    }
+    example.factoryMethod = <span class="string"><span class="delimiter">&quot;</span><span class="content">getInstance</span><span class="delimiter">&quot;</span></span>
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_使用工厂bean">使用工厂bean</h4>
+<div class="paragraph">
+<p>Spring定义了工厂bean的概念，通常bean不是直接从类的新实例创建的，而是从这些工厂之一创建的。在这种情况下，bean没有类参数，相反，您必须将工厂bean的名称传递给bean定义方法:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">bb.beans {
+
+    myFactory(ExampleFactoryBean) {
+        someProperty = [<span class="integer">1</span>, <span class="integer">2</span>, <span class="integer">3</span>]
+    }
+
+    myBean(myFactory) {
+        name = <span class="string"><span class="delimiter">&quot;</span><span class="content">blah</span><span class="delimiter">&quot;</span></span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>另一种常见的方法是提供工厂方法的名称来调用工厂bean。这可以使用Groovy的命名参数语法实现:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">bb.beans {
+
+    myFactory(ExampleFactoryBean) {
+        someProperty = [<span class="integer">1</span>, <span class="integer">2</span>, <span class="integer">3</span>]
+    }
+
+    myBean(<span class="key">myFactory</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">getInstance</span><span class="delimiter">&quot;</span></span>) {
+        name = <span class="string"><span class="delimiter">&quot;</span><span class="content">blah</span><span class="delimiter">&quot;</span></span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在这里， <code>ExampleFactoryBean</code>  bean上的 <code>getInstance</code> 方法将被调用来创建 <code>myBean</code> bean。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_在运行时创建bean引用">在运行时创建Bean引用</h4>
+<div class="paragraph">
+<p>有时直到运行时您才知道要创建的bean的名称。在这种情况下，你可以使用一个字符串插值表达式来动态调用一个bean定义方法:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> beanName = <span class="string"><span class="delimiter">&quot;</span><span class="content">example</span><span class="delimiter">&quot;</span></span>
+bb.beans {
+    <span class="string"><span class="delimiter">&quot;</span><span class="inline"><span class="inline-delimiter">${</span>beanName<span class="inline-delimiter">}</span></span><span class="content">Bean</span><span class="delimiter">&quot;</span></span>(MyExampleBean) {
+        someProperty = [<span class="integer">1</span>, <span class="integer">2</span>, <span class="integer">3</span>]
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在这种情况下，在调用bean定义方法时使用前面定义的 <code>beanName</code> 变量。这个例子有一个硬编码的值，但是对于根据配置、系统属性等以编程方式生成的名称也同样适用。</p>
+</div>
+<div class="paragraph">
+<p>此外，由于有时直到运行时才知道bean的名称，所以在连接其他bean时，可能需要按名称引用它们，在这种情况下使用 <code>ref</code> 方法:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> beanName = <span class="string"><span class="delimiter">&quot;</span><span class="content">example</span><span class="delimiter">&quot;</span></span>
+bb.beans {
+
+    <span class="string"><span class="delimiter">&quot;</span><span class="inline"><span class="inline-delimiter">${</span>beanName<span class="inline-delimiter">}</span></span><span class="content">Bean</span><span class="delimiter">&quot;</span></span>(MyExampleBean) {
+        someProperty = [<span class="integer">1</span>, <span class="integer">2</span>, <span class="integer">3</span>]
+    }
+
+    anotherBean(AnotherBean) {
+        example = ref(<span class="string"><span class="delimiter">&quot;</span><span class="inline"><span class="inline-delimiter">${</span>beanName<span class="inline-delimiter">}</span></span><span class="content">Bean</span><span class="delimiter">&quot;</span></span>)
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这里， <code>AnotherBean</code> 的示例属性是使用 <code>exampleBean</code> 的运行时引用设置的。 <code>ref</code> 方法也可以用来引用来自父类 <code>ApplicationContext</code> 的bean，该父类在 <code>BeanBuilder</code> 的构造函数中提供:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">ApplicationContext parent = ...<span class="comment">//</span>
+<span class="keyword">def</span> bb = <span class="keyword">new</span> BeanBuilder(parent)
+bb.beans {
+    anotherBean(AnotherBean) {
+        example = ref(<span class="string"><span class="delimiter">&quot;</span><span class="inline"><span class="inline-delimiter">${</span>beanName<span class="inline-delimiter">}</span></span><span class="content">Bean</span><span class="delimiter">&quot;</span></span>, <span class="predefined-constant">true</span>)
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这里第二个参数 <code>true</code> 指定引用将在父上下文中查找bean。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_使用匿名_内部_bean">使用匿名(内部)bean</h4>
+<div class="paragraph">
+<p>您可以使用匿名内部bean，方法是将bean的一个属性设置为一个块，该块接受一个bean类型的参数:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">bb.beans {
+
+    marge(Person) {
+        name = <span class="string"><span class="delimiter">&quot;</span><span class="content">Marge</span><span class="delimiter">&quot;</span></span>
+        husband = { Person p -&gt;
+            name = <span class="string"><span class="delimiter">&quot;</span><span class="content">Homer</span><span class="delimiter">&quot;</span></span>
+            age = <span class="integer">45</span>
+            props = [<span class="key">overweight</span>: <span class="predefined-constant">true</span>, <span class="key">height</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">1.8m</span><span class="delimiter">&quot;</span></span>]
+        }
+        children = [ref(<span class="string"><span class="delimiter">'</span><span class="content">bart</span><span class="delimiter">'</span></span>), ref(<span class="string"><span class="delimiter">'</span><span class="content">lisa</span><span class="delimiter">'</span></span>)]
+    }
+
+    bart(Person) {
+        name = <span class="string"><span class="delimiter">&quot;</span><span class="content">Bart</span><span class="delimiter">&quot;</span></span>
+        age = <span class="integer">11</span>
+    }
+
+    lisa(Person) {
+        name = <span class="string"><span class="delimiter">&quot;</span><span class="content">Lisa</span><span class="delimiter">&quot;</span></span>
+        age = <span class="integer">9</span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在上面的例子中，我们将 <code>marge</code> bean的husband属性设置为一个创建内部bean引用的块。或者，如果你有一个工厂bean，你可以省略类型，只使用指定的bean定义来设置工厂:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">bb.beans {
+
+    personFactory(PersonFactory)
+
+    marge(Person) {
+        name = <span class="string"><span class="delimiter">&quot;</span><span class="content">Marge</span><span class="delimiter">&quot;</span></span>
+        husband = { bean -&gt;
+            bean.factoryBean = <span class="string"><span class="delimiter">&quot;</span><span class="content">personFactory</span><span class="delimiter">&quot;</span></span>
+            bean.factoryMethod = <span class="string"><span class="delimiter">&quot;</span><span class="content">newInstance</span><span class="delimiter">&quot;</span></span>
+            name = <span class="string"><span class="delimiter">&quot;</span><span class="content">Homer</span><span class="delimiter">&quot;</span></span>
+            age = <span class="integer">45</span>
+            props = [<span class="key">overweight</span>: <span class="predefined-constant">true</span>, <span class="key">height</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">1.8m</span><span class="delimiter">&quot;</span></span>]
+        }
+        children = [ref(<span class="string"><span class="delimiter">'</span><span class="content">bart</span><span class="delimiter">'</span></span>), ref(<span class="string"><span class="delimiter">'</span><span class="content">lisa</span><span class="delimiter">'</span></span>)]
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_抽象bean和父bean定义">抽象Bean和父Bean定义</h4>
+<div class="paragraph">
+<p>创建一个抽象的bean定义定义一个没有 <code>Class</code> 参数的bean:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">HolyGrailQuest</span> {
+    <span class="keyword">def</span> <span class="function">start</span>() { println <span class="string"><span class="delimiter">&quot;</span><span class="content">lets begin</span><span class="delimiter">&quot;</span></span> }
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">KnightOfTheRoundTable</span> {
+
+    <span class="predefined-type">String</span> name
+    <span class="predefined-type">String</span> leader
+    HolyGrailQuest quest
+
+    KnightOfTheRoundTable(<span class="predefined-type">String</span> name) {
+        <span class="local-variable">this</span>.name = name
+    }
+
+    <span class="keyword">def</span> <span class="function">embarkOnQuest</span>() {
+        quest.start()
+    }
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.spring.BeanBuilder</span>
+
+<span class="keyword">def</span> bb = <span class="keyword">new</span> BeanBuilder()
+bb.beans {
+    abstractBean {
+        leader = <span class="string"><span class="delimiter">&quot;</span><span class="content">Lancelot</span><span class="delimiter">&quot;</span></span>
+    }
+    ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在这里，我们定义了一个抽象bean，它有一个 <code>leader</code> 属性，其值为 <code>"Lancelot"</code> 。要使用抽象bean，请将它设置为子bean的父bean:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">bb.beans {
+    ...
+    quest(HolyGrailQuest)
+
+    knights(KnightOfTheRoundTable, <span class="string"><span class="delimiter">&quot;</span><span class="content">Camelot</span><span class="delimiter">&quot;</span></span>) { bean -&gt;
+        bean.parent = abstractBean
+        quest = ref(<span class="string"><span class="delimiter">'</span><span class="content">quest</span><span class="delimiter">'</span></span>)
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>笔记: 使用父bean时，必须在设置bean上的任何其他属性之前设置bean的父属性!</p>
+</div>
+<div class="paragraph">
+<p>如果你想要一个抽象的bean有一个指定的 <code>Class</code> ，你可以这样做:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.spring.BeanBuilder</span>
+
+<span class="keyword">def</span> bb = <span class="keyword">new</span> BeanBuilder()
+bb.beans {
+
+    abstractBean(KnightOfTheRoundTable) { bean -&gt;
+        bean.<span class="string"><span class="delimiter">'</span><span class="content">abstract</span><span class="delimiter">'</span></span> = <span class="predefined-constant">true</span>
+        leader = <span class="string"><span class="delimiter">&quot;</span><span class="content">Lancelot</span><span class="delimiter">&quot;</span></span>
+    }
+
+    quest(HolyGrailQuest)
+
+    knights(<span class="string"><span class="delimiter">&quot;</span><span class="content">Camelot</span><span class="delimiter">&quot;</span></span>) { bean -&gt;
+        bean.parent = abstractBean
+        quest = quest
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在本例中，我们创建了一个类型为 <code>KnightOfTheRoundTable</code> 的抽象bean，并使用bean参数将其设置为abstract。稍后我们将定义一个knights bean，它没有定义 <code>Class</code> ，但是继承了父bean的 <code>Class</code> 。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_使用spring名称空间">使用Spring名称空间</h4>
+<div class="paragraph">
+<p>自Spring 2.0以来，Spring的用户更容易通过XML名称空间访问关键特性。你可以在BeanBuilder中使用Spring命名空间，用如下语法声明:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">xmlns <span class="key">context</span>:<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.springframework.org/schema/context</span><span class="delimiter">&quot;</span></span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>然后调用一个方法来匹配Spring名称空间标签及其相关属性的名称:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">context.<span class="string"><span class="delimiter">'</span><span class="content">component-scan</span><span class="delimiter">'</span></span>(<span class="string"><span class="delimiter">'</span><span class="content">base-package</span><span class="delimiter">'</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">my.company.domain</span><span class="delimiter">&quot;</span></span>)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>您可以使用Spring名称空间做一些有用的事情，比如查找JNDI资源:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">xmlns <span class="key">jee</span>:<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.springframework.org/schema/jee</span><span class="delimiter">&quot;</span></span>
+
+jee.<span class="string"><span class="delimiter">'</span><span class="content">jndi-lookup</span><span class="delimiter">'</span></span>(<span class="key">id</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">dataSource</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">jndi-name</span><span class="delimiter">'</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">java:comp/env/myDataSource</span><span class="delimiter">&quot;</span></span>)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>此示例将通过对给定的JNDI名称执行JNDI查找来创建标识符为 <code>dataSource</code> 的Spring bean。使用Spring名称空间，您还可以完全访问BeanBuilder在Spring中提供的所有强大的AOP支持。例如，给定这两个类:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">Person</span> {
+
+    <span class="type">int</span> age
+    <span class="predefined-type">String</span> name
+
+    <span class="type">void</span> birthday() {
+        ++age;
+    }
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">BirthdayCardSender</span> {
+
+    <span class="predefined-type">List</span> peopleSentCards = <span class="type">[]</span>
+
+    <span class="type">void</span> onBirthday(Person person) {
+        peopleSentCards &lt;&lt; person
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>您可以定义一个方面，它使用切入点来检测何时调用 <code>birthday()</code> 方法:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">xmlns <span class="key">aop</span>:<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.springframework.org/schema/aop</span><span class="delimiter">&quot;</span></span>
+
+fred(Person) {
+    name = <span class="string"><span class="delimiter">&quot;</span><span class="content">Fred</span><span class="delimiter">&quot;</span></span>
+    age = <span class="integer">45</span>
+}
+
+birthdayCardSenderAspect(BirthdayCardSender)
+
+aop {
+    config(<span class="string"><span class="delimiter">&quot;</span><span class="content">proxy-target-class</span><span class="delimiter">&quot;</span></span>: <span class="predefined-constant">true</span>) {
+        aspect(<span class="key">id</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">sendBirthdayCard</span><span class="delimiter">&quot;</span></span>, <span class="key">ref</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">birthdayCardSenderAspect</span><span class="delimiter">&quot;</span></span>) {
+            after <span class="key">method</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">onBirthday</span><span class="delimiter">&quot;</span></span>,
+            <span class="key">pointcut</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">execution(void ..Person.birthday()) and this(person)</span><span class="delimiter">&quot;</span></span>
+        }
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+
+<a name="16.5 &#23646;&#24615;&#21344;&#20301;&#31526;&#37197;&#32622;"><!-- Legacy link --></a>
+<h2 id="propertyPlaceholderConfiguration">19.4 属性占位符配置</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/spring/propertyPlaceholderConfiguration.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>Grails支持通过一个扩展属性占位符配置的概念版本的Spring的 <a href="https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/beans/factory/config/PropertyPlaceholderConfigurer.html">PropertyPlaceholderConfigurer</a>。</p>
+</div>
+<div class="paragraph">
+<p>在 <a href="http://docs.groovy-lang.org/latest/html/gapi/groovy/util/ConfigSlurper.html">ConfigSlurper</a> 中定义的设置或Java属性文件可以用作Spring配置的占位符值在 <code>grails-app/conf/spring/resources.xml</code>  和 <code>grails-app/conf/spring/resources.groovy</code> 。例如，在 <code>grails-app/conf/application.groovy</code> (或外部化配置)中给出以下条目。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">database.driver=<span class="string"><span class="delimiter">&quot;</span><span class="content">com.mysql.jdbc.Driver</span><span class="delimiter">&quot;</span></span>
+database.dbname=<span class="string"><span class="delimiter">&quot;</span><span class="content">mysql:mydb</span><span class="delimiter">&quot;</span></span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>然后可以在 <code>resources.xml</code> 中指定占位符。使用熟悉的${..}语法:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;bean</span> <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">dataSource</span><span class="delimiter">&quot;</span></span>
+      <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">org.springframework.jdbc.datasource.DriverManagerDataSource</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;property</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">driverClassName</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;value&gt;</span>${database.driver}<span class="tag">&lt;/value&gt;</span>
+    <span class="tag">&lt;/property&gt;</span>
+    <span class="tag">&lt;property</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">url</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;value&gt;</span>jdbc:${database.dbname}<span class="tag">&lt;/value&gt;</span>
+    <span class="tag">&lt;/property&gt;</span>
+ <span class="tag">&lt;/bean&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在 <code>resources.groovy</code> 中指定占位符。你需要使用单引号:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">dataSource(org.springframework.jdbc.datasource.DriverManagerDataSource) {
+    driverClassName = <span class="string"><span class="delimiter">'</span><span class="content">${database.driver}</span><span class="delimiter">'</span></span>
+    url = <span class="string"><span class="delimiter">'</span><span class="content">jdbc:${database.dbname}</span><span class="delimiter">'</span></span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这将属性值设置为文字字符串，该字符串稍后由Spring的PropertyPlaceholderConfigurer根据配置解析。</p>
+</div>
+<div class="paragraph">
+<p>资源的更好选择 <code>resources.groovy</code> 是通过 <code>grailsApplication</code> 变量来访问属性的:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">dataSource(org.springframework.jdbc.datasource.DriverManagerDataSource) {
+    driverClassName = grailsApplication.config.database.driver
+    url = <span class="string"><span class="delimiter">&quot;</span><span class="content">jdbc</span><span class="content">\:</span><span class="inline"><span class="inline-delimiter">${</span>grailsApplication.config.database.dbname<span class="inline-delimiter">}</span></span><span class="delimiter">&quot;</span></span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>使用此方法将保留配置中定义的类型。</p>
+</div>
+
+<a name="16.6 &#23646;&#24615;&#35206;&#30422;&#37197;&#32622;"><!-- Legacy link --></a>
+<h2 id="propertyOverrideConfiguration">19.5 属性覆盖配置</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/spring/propertyOverrideConfiguration.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>Grails支持通过 <a href="conf.html">configuration</a>设置bean属性。</p>
+</div>
+<div class="paragraph">
+<p>定义一个 <code>bean</code> 块，其中包含bean的名称和它们的值:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">beans {
+    bookService {
+        webServiceURL = <span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.amazon.com</span><span class="delimiter">&quot;</span></span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>一般格式为:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">&lt;&lt;bean name&gt;&gt;.&lt;&lt;property name&gt;&gt; = &lt;&lt;value&gt;&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Java属性文件中的相同配置是:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">beans.bookService.webServiceURL=<span class="key">http</span>:<span class="comment">//www.amazon.com</span></code></pre>
+</div>
+</div>
+
+
+<h2 id="actuators">19.6 Spring Boot 执行器</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/spring/actuators.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p><a href="https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html">Spring Boot Actuator endpoints</a>允许您监视应用程序并与之交互。Spring Boot包含许多内置的端点。例如， <code>health</code> 端点提供基本的应用程序健康信息。</p>
+</div>
+<div class="paragraph">
+<p>从grails 3.1.8开始，这些端点默认是禁用的。</p>
+</div>
+<div class="paragraph">
+<p>您可以在 <code>application.yml</code> 启用执行器端点。如下:</p>
+</div>
+<div class="listingblock">
+<div class="title">grails-app/conf/application.yml</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="yml"><span class="key">endpoints</span>:
+    <span class="key">enabled</span>: <span class="string"><span class="content">true</span></span></code></pre>
+</div>
+</div>
+
+
+                <div style="clear:both;margin-top:15px;"></div>
+                
+                    <div class="toc-item prev-left"><a href="../guide/plugins.html">&lt;&lt; <strong>18</strong><span>&#25554;&#20214;</span></a></div>
+                
+                    <div class="toc-item next-right"><a href="../guide/scaffolding.html"><strong>20</strong><span>&#33050;&#25163;&#26550;</span> >></a></div>
+                
+                <div style="clear:both"></div>
+            </div>
+        </td>
+        <td id="col2">
+            <div class="local clearfix">
+                <div class="local-title">
+                    <a href="../guide/index.html" target="mainFrame">Quick Reference</a>
+                    <span class="toggle">(<a href="#" onclick="localToggle(); return false;">hide</a>)</span>
+                </div>
+                <div class="menu">
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Command Line</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Command%20Line/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/bug-report.html">bug-report</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/clean.html">clean</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/compile.html">compile</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/console.html">console</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-app.html">create-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-command.html">create-command</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-controller.html">create-controller</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-domain-class.html">create-domain-class</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-functional-test.html">create-functional-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-hibernate-cfg-xml.html">create-hibernate-cfg-xml</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-integration-test.html">create-integration-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-interceptor.html">create-interceptor</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-plugin.html">create-plugin</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-profile.html">create-profile</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-script.html">create-script</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-service.html">create-service</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-taglib.html">create-taglib</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-unit-test.html">create-unit-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/dependency-report.html">dependency-report</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/docs.html">docs</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/generate-all.html">generate-all</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/generate-controller.html">generate-controller</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/generate-views.html">generate-views</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/help.html">help</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/install-templates.html">install-templates</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/list-plugins.html">list-plugins</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/list-profiles.html">list-profiles</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/package-plugin.html">package-plugin</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/package.html">package</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/plugin-info.html">plugin-info</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/profile-info.html">profile-info</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/run-app.html">run-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/run-command.html">run-command</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/run-script.html">run-script</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/schema-export.html">schema-export</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/shell.html">shell</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/stats.html">stats</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/stop-app.html">stop-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/test-app.html">test-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/war.html">war</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Constraints</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Constraints/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/attributes.html">attributes</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/bindable.html">bindable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/blank.html">blank</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/creditCard.html">creditCard</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/email.html">email</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/inList.html">inList</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/matches.html">matches</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/max.html">max</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/maxSize.html">maxSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/min.html">min</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/minSize.html">minSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/notEqual.html">notEqual</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/nullable.html">nullable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/range.html">range</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/scale.html">scale</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/size.html">size</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/unique.html">unique</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/url.html">url</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/validator.html">validator</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/widget.html">widget</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Controllers</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Controllers/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/actionName.html">actionName</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/allowedMethods.html">allowedMethods</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/bindData.html">bindData</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/chain.html">chain</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/controllerName.html">controllerName</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/defaultAction.html">defaultAction</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/errors.html">errors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/flash.html">flash</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/forward.html">forward</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/grailsApplication.html">grailsApplication</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/hasErrors.html">hasErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/namespace.html">namespace</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/params.html">params</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/redirect.html">redirect</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/render.html">render</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/request.html">request</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/respond.html">respond</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/response.html">response</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/responseFormats.html">responseFormats</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/scope.html">scope</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/servletContext.html">servletContext</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/session.html">session</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/withForm.html">withForm</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/withFormat.html">withFormat</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Database Mapping</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/autoImport.html">autoImport</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/autoTimestamp.html">autoTimestamp</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/batchSize.html">batchSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/cache.html">cache</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/cascade.html">cascade</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/column.html">column</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/comment.html">comment</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/discriminator.html">discriminator</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/dynamicInsert.html">dynamicInsert</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/dynamicUpdate.html">dynamicUpdate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/fetch.html">fetch</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/id.html">id</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/ignoreNotFound.html">ignoreNotFound</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/indexColumn.html">indexColumn</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/insertable.html">insertable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/joinTable.html">joinTable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/lazy.html">lazy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/order.html">order</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/sort.html">sort</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/table.html">table</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/type.html">type</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/updateable.html">updateable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/version.html">version</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Domain Classes</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/addTo.html">addTo</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/attach.html">attach</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/belongsTo.html">belongsTo</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/clearErrors.html">clearErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/constraints.html">constraints</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/count.html">count</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/countBy.html">countBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/createCriteria.html">createCriteria</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/delete.html">delete</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/discard.html">discard</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/embedded.html">embedded</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/errors.html">errors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/executeQuery.html">executeQuery</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/executeUpdate.html">executeUpdate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/exists.html">exists</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/fetchMode.html">fetchMode</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/find.html">find</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findAll.html">findAll</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findAllBy.html">findAllBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findAllWhere.html">findAllWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findBy.html">findBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findOrCreateBy.html">findOrCreateBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findOrCreateWhere.html">findOrCreateWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findOrSaveBy.html">findOrSaveBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findOrSaveWhere.html">findOrSaveWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findWhere.html">findWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/first.html">first</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/get.html">get</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/getAll.html">getAll</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/getDirtyPropertyNames.html">getDirtyPropertyNames</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/getPersistentValue.html">getPersistentValue</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/hasErrors.html">hasErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/hasMany.html">hasMany</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/hasOne.html">hasOne</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/ident.html">ident</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/instanceOf.html">instanceOf</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/isAttached.html">isAttached</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/isDirty.html">isDirty</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/last.html">last</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/list.html">list</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/listOrderBy.html">listOrderBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/load.html">load</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/lock.html">lock</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/mapWith.html">mapWith</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/mappedBy.html">mappedBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/mapping.html">mapping</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/merge.html">merge</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/namedQueries.html">namedQueries</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/properties.html">properties</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/read.html">read</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/refresh.html">refresh</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/removeFrom.html">removeFrom</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/save.html">save</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/transients.html">transients</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/validate.html">validate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/where.html">where</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/whereAny.html">whereAny</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/withCriteria.html">withCriteria</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/withNewSession.html">withNewSession</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/withSession.html">withSession</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/withTransaction.html">withTransaction</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Plug-ins</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Plug-ins/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/URL%20mappings.html">URL mappings</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/codecs.html">codecs</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/controllers.html">controllers</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/core.html">core</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/dataSource.html">dataSource</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/domainClasses.html">domainClasses</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/hibernate.html">hibernate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/i18n.html">i18n</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/logging.html">logging</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/scaffolding.html">scaffolding</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/services.html">services</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/servlets.html">servlets</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Services</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Services/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Services/scope.html">scope</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Services/transactional.html">transactional</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Servlet API</h1><div class="menu-sub">
+                        
+                            
+                            <div class="menu-item"><a href="../ref/Servlet%20API/request.html">request</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Servlet%20API/response.html">response</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Servlet%20API/servletContext.html">servletContext</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Servlet%20API/session.html">session</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<div id="footer">
+    Copies of this document may be made for your own use and for distribution to others, provided that you do not charge any fee for such copies and further provided that each copy contains this Copyright Notice, whether distributed in print or electronically.
+    
+</div>
+
+<script type="text/javascript" src="../js/docs.js"></script>
+
+</body>
+</html>

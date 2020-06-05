@@ -1,0 +1,1345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="/cdn-cgi/apps/head/3cOPSgo5Omz84ycX7CvigfX4cpw.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-82213539-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-82213539-2');
+    </script>
+    <title>10.12 &#36229;&#23186;&#20307;&#20316;&#20026;&#24212;&#29992;&#31243;&#24207;&#29366;&#24577;&#30340;&#24341;&#25806; 4.0.0</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8"/>
+    <link rel="stylesheet" href="../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8"/>
+    <script type="text/javascript">
+function addJsClass() {
+    var classes = document.body.className.split(" ");
+    classes.push("js");
+    document.body.className = classes.join(" ");
+}
+    </script>
+</head>
+
+<body class="body" onload="addJsClass();">
+<div id="navigation">
+    <div class="navTitle">
+        
+        The Grails Framework
+    </div>
+    <div class="navLinks">
+        <ul>
+            <li>
+                <div id="nav-summary" onmouseover="toggleNavSummary(false)" onmouseout="toggleNavSummary(true)">
+                    <a href="../../guide/index.html" class="button">Table of contents</a>
+
+                    <div id="nav-summary-childs" style="display:none;">
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/introduction.html"><strong>1</strong><span>&#31616;&#20171;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/gettingStarted.html"><strong>2</strong><span>&#20837;&#38376;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/upgrading.html"><strong>3</strong><span>&#20174; Grails 3.3.x &#21319;&#32423;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/conf.html"><strong>4</strong><span>&#37197;&#32622;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/commandLine.html"><strong>5</strong><span>&#21629;&#20196;&#34892;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/profiles.html"><strong>6</strong><span>&#24212;&#29992;&#31243;&#24207;&#37197;&#32622;&#25991;&#20214;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/GORM.html"><strong>7</strong><span>&#23545;&#35937;&#20851;&#31995;&#26144;&#23556; &#65288;GORM&#65289;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/theWebLayer.html"><strong>8</strong><span>Web &#23618;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/traits.html"><strong>9</strong><span>&#29305;&#24449;&#65288;Trait&#65289;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/REST.html"><strong>10</strong><span>REST</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/async.html"><strong>11</strong><span>&#24322;&#27493;&#32534;&#31243;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/validation.html"><strong>12</strong><span>&#39564;&#35777;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/services.html"><strong>13</strong><span>&#26381;&#21153;&#23618;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/staticTypeCheckingAndCompilation.html"><strong>14</strong><span>&#38745;&#24577;&#31867;&#22411;&#26816;&#26597;&#21644;&#32534;&#35793;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/testing.html"><strong>15</strong><span>&#27979;&#35797;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/i18n.html"><strong>16</strong><span>&#22269;&#38469;&#21270;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/security.html"><strong>17</strong><span>&#23433;&#20840;&#24615;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/plugins.html"><strong>18</strong><span>&#25554;&#20214;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/spring.html"><strong>19</strong><span>Grails &#19982; Spring</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/scaffolding.html"><strong>20</strong><span>&#33050;&#25163;&#26550;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/deployment.html"><strong>21</strong><span>&#37096;&#32626;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/contributing.html"><strong>22</strong><span>&#32473; Grails &#36129;&#29486;&#20195;&#30721;</span></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="separator selected">
+                <a id="ref-button" onclick="localToggle(); return false;" href="#">Quick Reference</a>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+
+<table id="colset" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td id="col1">
+            <div id="main" class="corner-all">
+
+                
+                    <div class="toc-item prev-left"><a href="../../guide/traits.html">&lt;&lt; <strong>9</strong><span>&#29305;&#24449;&#65288;Trait&#65289;</span></a></div>
+                
+
+                <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
+
+                
+                    <div class="toc-item next-right"><a href="../../guide/async.html"><strong>11</strong><span>&#24322;&#27493;&#32534;&#31243;</span> >></a></div>
+                
+
+
+                <div class="project">
+                    <h1>10.12 &#36229;&#23186;&#20307;&#20316;&#20026;&#24212;&#29992;&#31243;&#24207;&#29366;&#24577;&#30340;&#24341;&#25806;</h1>
+
+                    <p><strong>Version:</strong> 4.0.0</p>
+                </div>
+
+                
+                <div id="table-of-content">
+                    <h2>Table of Contents</h2>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#hal"><strong>10.1</strong><span>HAL &#25903;&#25345;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#atom"><strong>10.2</strong><span>Atom &#25903;&#25345;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#vndError"><strong>10.3</strong><span>Vnd.&#38169;&#35823;&#25903;&#25345;</span></a>
+                    </div>
+                    
+                </div>
+                
+
+                
+
+<h2 id="hypermedia">10.12 超媒体作为应用程序状态的引擎</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/REST/hypermedia.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p><a href="http://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>是Hypermedia作为应用程序状态引擎的缩写，是一种应用到REST体系结构的通用模式，该模式使用超媒体并通过链接来定义REST API。</p>
+</div>
+<div class="paragraph">
+<p>超媒体（也称为Mime或媒体类型）用于描述REST资源的状态，链接告诉客户端如何过渡到下一个状态。响应的格式通常为JSON或XML，尽管标准格式如 <a href="http://tools.ietf.org/html/rfc4287">Atom</a>和/或 <a href="http://stateless.co/hal_specification.html">HAL</a>是经常使用。</p>
+</div>
+
+
+<h2 id="hal">10.12.1 HAL 支持</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/REST/hypermedia/hal.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p><a href="http://stateless.co/hal_specification.html">HAL</a>是开发遵循HATEOAS原理的REST API时常用的标准交换格式。代表订单列表的示例HAL文档如下所示：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="javascript">{
+    <span class="key"><span class="delimiter">&quot;</span><span class="content">_links</span><span class="delimiter">&quot;</span></span>: {
+        <span class="key"><span class="delimiter">&quot;</span><span class="content">self</span><span class="delimiter">&quot;</span></span>: { <span class="key"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">/orders</span><span class="delimiter">&quot;</span></span> },
+        <span class="key"><span class="delimiter">&quot;</span><span class="content">next</span><span class="delimiter">&quot;</span></span>: { <span class="key"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">/orders?page=2</span><span class="delimiter">&quot;</span></span> },
+        <span class="key"><span class="delimiter">&quot;</span><span class="content">find</span><span class="delimiter">&quot;</span></span>: {
+            <span class="key"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">/orders{?id}</span><span class="delimiter">&quot;</span></span>,
+            <span class="key"><span class="delimiter">&quot;</span><span class="content">templated</span><span class="delimiter">&quot;</span></span>: <span class="predefined-constant">true</span>
+        },
+        <span class="key"><span class="delimiter">&quot;</span><span class="content">admin</span><span class="delimiter">&quot;</span></span>: [{
+            <span class="key"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">/admins/2</span><span class="delimiter">&quot;</span></span>,
+            <span class="key"><span class="delimiter">&quot;</span><span class="content">title</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Fred</span><span class="delimiter">&quot;</span></span>
+        }, {
+            <span class="key"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">/admins/5</span><span class="delimiter">&quot;</span></span>,
+            <span class="key"><span class="delimiter">&quot;</span><span class="content">title</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Kate</span><span class="delimiter">&quot;</span></span>
+        }]
+    },
+    <span class="key"><span class="delimiter">&quot;</span><span class="content">currentlyProcessing</span><span class="delimiter">&quot;</span></span>: <span class="integer">14</span>,
+    <span class="key"><span class="delimiter">&quot;</span><span class="content">shippedToday</span><span class="delimiter">&quot;</span></span>: <span class="integer">20</span>,
+    <span class="key"><span class="delimiter">&quot;</span><span class="content">_embedded</span><span class="delimiter">&quot;</span></span>: {
+        <span class="key"><span class="delimiter">&quot;</span><span class="content">order</span><span class="delimiter">&quot;</span></span>: [{
+            <span class="key"><span class="delimiter">&quot;</span><span class="content">_links</span><span class="delimiter">&quot;</span></span>: {
+                <span class="key"><span class="delimiter">&quot;</span><span class="content">self</span><span class="delimiter">&quot;</span></span>: { <span class="key"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">/orders/123</span><span class="delimiter">&quot;</span></span> },
+                <span class="key"><span class="delimiter">&quot;</span><span class="content">basket</span><span class="delimiter">&quot;</span></span>: { <span class="key"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">/baskets/98712</span><span class="delimiter">&quot;</span></span> },
+                <span class="key"><span class="delimiter">&quot;</span><span class="content">customer</span><span class="delimiter">&quot;</span></span>: { <span class="key"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">/customers/7809</span><span class="delimiter">&quot;</span></span> }
+            },
+            <span class="key"><span class="delimiter">&quot;</span><span class="content">total</span><span class="delimiter">&quot;</span></span>: <span class="float">30.00</span>,
+            <span class="key"><span class="delimiter">&quot;</span><span class="content">currency</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">USD</span><span class="delimiter">&quot;</span></span>,
+            <span class="key"><span class="delimiter">&quot;</span><span class="content">status</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">shipped</span><span class="delimiter">&quot;</span></span>
+        }, {
+            <span class="key"><span class="delimiter">&quot;</span><span class="content">_links</span><span class="delimiter">&quot;</span></span>: {
+                <span class="key"><span class="delimiter">&quot;</span><span class="content">self</span><span class="delimiter">&quot;</span></span>: { <span class="key"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">/orders/124</span><span class="delimiter">&quot;</span></span> },
+                <span class="key"><span class="delimiter">&quot;</span><span class="content">basket</span><span class="delimiter">&quot;</span></span>: { <span class="key"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">/baskets/97213</span><span class="delimiter">&quot;</span></span> },
+                <span class="key"><span class="delimiter">&quot;</span><span class="content">customer</span><span class="delimiter">&quot;</span></span>: { <span class="key"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">/customers/12369</span><span class="delimiter">&quot;</span></span> }
+            },
+            <span class="key"><span class="delimiter">&quot;</span><span class="content">total</span><span class="delimiter">&quot;</span></span>: <span class="float">20.00</span>,
+            <span class="key"><span class="delimiter">&quot;</span><span class="content">currency</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">USD</span><span class="delimiter">&quot;</span></span>,
+            <span class="key"><span class="delimiter">&quot;</span><span class="content">status</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">processing</span><span class="delimiter">&quot;</span></span>
+        }]
+    }
+}</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_使用hal公开资源">使用HAL公开资源</h4>
+<div class="paragraph">
+<p>要为资源返回HAL而不是常规JSON，您可以简单地在 <code>grails-app/conf/spring/resources.groovy</code> 中使用 <code>grails.rest.render.hal.HalJsonRenderer</code> （或 <code>HalXmlRenderer</code> ）实例覆盖渲染器对于XML版本）：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.rest.render.hal.*</span>
+beans = {
+    halBookRenderer(HalJsonRenderer, rest.test.Book)
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>您还需要更新资源的可接受响应格式，以便包含HAL格式。不这样做将导致服务器返回406-Not Acceptable响应。</p>
+</div>
+<div class="paragraph">
+<p>这可以通过设置 <code>资源</code> 转换的 <code>格式</code> 属性来完成：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.rest.*</span>
+
+<span class="annotation">@Resource</span>(uri=<span class="string"><span class="delimiter">'</span><span class="content">/books</span><span class="delimiter">'</span></span>, formats=[<span class="string"><span class="delimiter">'</span><span class="content">json</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">xml</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">hal</span><span class="delimiter">'</span></span>])
+<span class="type">class</span> <span class="class">Book</span> {
+    ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或通过更新控制器中的 <code>responseFormats</code> ：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">BookController</span> <span class="directive">extends</span> RestfulController {
+    <span class="directive">static</span> responseFormats = [<span class="string"><span class="delimiter">'</span><span class="content">json</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">xml</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">hal</span><span class="delimiter">'</span></span>]
+
+    <span class="comment">// ...</span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>放置适当的bean并请求HAL内容类型时，将返回HAL：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">$</span> curl -i -H <span class="string"><span class="delimiter">&quot;</span><span class="content">Accept: application/hal+json</span><span class="delimiter">&quot;</span></span> <span class="key">http</span>:<span class="comment">//localhost:8080/books/1</span>
+
+HTTP/<span class="float">1.1</span> <span class="integer">200</span> OK
+<span class="key">Server</span>: Apache-Coyote/<span class="float">1.1</span>
+Content-<span class="predefined-type">Type</span>: application/hal+json;charset=ISO-<span class="integer">8859</span>-<span class="integer">1</span>
+
+{
+  <span class="string"><span class="delimiter">&quot;</span><span class="content">_links</span><span class="delimiter">&quot;</span></span>: {
+    <span class="string"><span class="delimiter">&quot;</span><span class="content">self</span><span class="delimiter">&quot;</span></span>: {
+      <span class="string"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:8080/books/1</span><span class="delimiter">&quot;</span></span>,
+      <span class="string"><span class="delimiter">&quot;</span><span class="content">hreflang</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">en</span><span class="delimiter">&quot;</span></span>,
+      <span class="string"><span class="delimiter">&quot;</span><span class="content">type</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">application/hal+json</span><span class="delimiter">&quot;</span></span>
+    }
+  },
+  <span class="string"><span class="delimiter">&quot;</span><span class="content">title</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="char">\&quot;</span><span class="content">The Stand</span><span class="char">\&quot;</span><span class="delimiter">&quot;</span></span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>要使用HAL XML格式，只需更改渲染器即可：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.rest.render.hal.*</span>
+beans = {
+    halBookRenderer(HalXmlRenderer, rest.test.Book)
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_使用hal渲染集合">使用HAL渲染集合</h4>
+<div class="paragraph">
+<p>要返回HAL而不是常规JSON作为资源列表，您可以简单地在 <code>grails-app / conf / spring / resources.groovy</code> 中使用 <code>grails.rest.render.hal.HalJsonCollectionRenderer</code> 实例覆盖渲染器：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.rest.render.hal.*</span>
+beans = {
+    halBookCollectionRenderer(HalJsonCollectionRenderer, rest.test.Book)
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>放置适当的bean并请求HAL内容类型时，将返回HAL：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">$</span> curl -i -H <span class="string"><span class="delimiter">&quot;</span><span class="content">Accept: application/hal+json</span><span class="delimiter">&quot;</span></span> <span class="key">http</span>:<span class="comment">//localhost:8080/books</span>
+HTTP/<span class="float">1.1</span> <span class="integer">200</span> OK
+<span class="key">Server</span>: Apache-Coyote/<span class="float">1.1</span>
+Content-<span class="predefined-type">Type</span>: application/hal+json;charset=UTF-<span class="integer">8</span>
+Transfer-<span class="key">Encoding</span>: chunked
+<span class="predefined-type">Date</span>: Thu, <span class="integer">17</span> Oct <span class="integer">2013</span> <span class="octal">02</span>:<span class="integer">34</span>:<span class="integer">14</span> GMT
+
+{
+  <span class="string"><span class="delimiter">&quot;</span><span class="content">_links</span><span class="delimiter">&quot;</span></span>: {
+    <span class="string"><span class="delimiter">&quot;</span><span class="content">self</span><span class="delimiter">&quot;</span></span>: {
+      <span class="string"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:8080/books</span><span class="delimiter">&quot;</span></span>,
+      <span class="string"><span class="delimiter">&quot;</span><span class="content">hreflang</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">en</span><span class="delimiter">&quot;</span></span>,
+      <span class="string"><span class="delimiter">&quot;</span><span class="content">type</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">application/hal+json</span><span class="delimiter">&quot;</span></span>
+    }
+  },
+  <span class="string"><span class="delimiter">&quot;</span><span class="content">_embedded</span><span class="delimiter">&quot;</span></span>: {
+    <span class="string"><span class="delimiter">&quot;</span><span class="content">book</span><span class="delimiter">&quot;</span></span>: [
+      {
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">_links</span><span class="delimiter">&quot;</span></span>: {
+          <span class="string"><span class="delimiter">&quot;</span><span class="content">self</span><span class="delimiter">&quot;</span></span>: {
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:8080/books/1</span><span class="delimiter">&quot;</span></span>,
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">hreflang</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">en</span><span class="delimiter">&quot;</span></span>,
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">type</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">application/hal+json</span><span class="delimiter">&quot;</span></span>
+          }
+        },
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">title</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">The Stand</span><span class="delimiter">&quot;</span></span>
+      },
+      {
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">_links</span><span class="delimiter">&quot;</span></span>: {
+          <span class="string"><span class="delimiter">&quot;</span><span class="content">self</span><span class="delimiter">&quot;</span></span>: {
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:8080/books/2</span><span class="delimiter">&quot;</span></span>,
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">hreflang</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">en</span><span class="delimiter">&quot;</span></span>,
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">type</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">application/hal+json</span><span class="delimiter">&quot;</span></span>
+          }
+        },
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">title</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Infinite Jest</span><span class="delimiter">&quot;</span></span>
+      },
+      {
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">_links</span><span class="delimiter">&quot;</span></span>: {
+          <span class="string"><span class="delimiter">&quot;</span><span class="content">self</span><span class="delimiter">&quot;</span></span>: {
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:8080/books/3</span><span class="delimiter">&quot;</span></span>,
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">hreflang</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">en</span><span class="delimiter">&quot;</span></span>,
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">type</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">application/hal+json</span><span class="delimiter">&quot;</span></span>
+          }
+        },
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">title</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Walden</span><span class="delimiter">&quot;</span></span>
+      }
+    ]
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>注意，与呈现的JSON中的Book对象列表相关的键是book，它是从集合中的对象类型Book派生的。为了自定义此键的值，将一个值分配给 <code>HalJsonCollectionRenderer</code>  bean上的 <code>collectionName</code> 属性，如下所示：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.rest.render.hal.*</span>
+beans = {
+    halBookCollectionRenderer(HalCollectionJsonRenderer, rest.test.Book) {
+        collectionName = <span class="string"><span class="delimiter">'</span><span class="content">publications</span><span class="delimiter">'</span></span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>设置好之后，渲染的HAL将如下所示：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">$</span> curl -i -H <span class="string"><span class="delimiter">&quot;</span><span class="content">Accept: application/hal+json</span><span class="delimiter">&quot;</span></span> <span class="key">http</span>:<span class="comment">//localhost:8080/books</span>
+HTTP/<span class="float">1.1</span> <span class="integer">200</span> OK
+<span class="key">Server</span>: Apache-Coyote/<span class="float">1.1</span>
+Content-<span class="predefined-type">Type</span>: application/hal+json;charset=UTF-<span class="integer">8</span>
+Transfer-<span class="key">Encoding</span>: chunked
+<span class="predefined-type">Date</span>: Thu, <span class="integer">17</span> Oct <span class="integer">2013</span> <span class="octal">02</span>:<span class="integer">34</span>:<span class="integer">14</span> GMT
+
+{
+  <span class="string"><span class="delimiter">&quot;</span><span class="content">_links</span><span class="delimiter">&quot;</span></span>: {
+    <span class="string"><span class="delimiter">&quot;</span><span class="content">self</span><span class="delimiter">&quot;</span></span>: {
+      <span class="string"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:8080/books</span><span class="delimiter">&quot;</span></span>,
+      <span class="string"><span class="delimiter">&quot;</span><span class="content">hreflang</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">en</span><span class="delimiter">&quot;</span></span>,
+      <span class="string"><span class="delimiter">&quot;</span><span class="content">type</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">application/hal+json</span><span class="delimiter">&quot;</span></span>
+    }
+  },
+  <span class="string"><span class="delimiter">&quot;</span><span class="content">_embedded</span><span class="delimiter">&quot;</span></span>: {
+    <span class="string"><span class="delimiter">&quot;</span><span class="content">publications</span><span class="delimiter">&quot;</span></span>: [
+      {
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">_links</span><span class="delimiter">&quot;</span></span>: {
+          <span class="string"><span class="delimiter">&quot;</span><span class="content">self</span><span class="delimiter">&quot;</span></span>: {
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:8080/books/1</span><span class="delimiter">&quot;</span></span>,
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">hreflang</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">en</span><span class="delimiter">&quot;</span></span>,
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">type</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">application/hal+json</span><span class="delimiter">&quot;</span></span>
+          }
+        },
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">title</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">The Stand</span><span class="delimiter">&quot;</span></span>
+      },
+      {
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">_links</span><span class="delimiter">&quot;</span></span>: {
+          <span class="string"><span class="delimiter">&quot;</span><span class="content">self</span><span class="delimiter">&quot;</span></span>: {
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:8080/books/2</span><span class="delimiter">&quot;</span></span>,
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">hreflang</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">en</span><span class="delimiter">&quot;</span></span>,
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">type</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">application/hal+json</span><span class="delimiter">&quot;</span></span>
+          }
+        },
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">title</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Infinite Jest</span><span class="delimiter">&quot;</span></span>
+      },
+      {
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">_links</span><span class="delimiter">&quot;</span></span>: {
+          <span class="string"><span class="delimiter">&quot;</span><span class="content">self</span><span class="delimiter">&quot;</span></span>: {
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:8080/books/3</span><span class="delimiter">&quot;</span></span>,
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">hreflang</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">en</span><span class="delimiter">&quot;</span></span>,
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">type</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">application/hal+json</span><span class="delimiter">&quot;</span></span>
+          }
+        },
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">title</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Walden</span><span class="delimiter">&quot;</span></span>
+      }
+    ]
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_使用自定义媒体_mime类型">使用自定义媒体/ MIME类型</h4>
+<div class="paragraph">
+<p>如果您想使用自定义的Mime类型，则首先需要在grails-app/conf/application.groovy中声明Mime类型：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">grails.mime.types = [
+    <span class="key">all</span>:      <span class="string"><span class="delimiter">&quot;</span><span class="content">*/*</span><span class="delimiter">&quot;</span></span>,
+    <span class="key">book</span>:     <span class="string"><span class="delimiter">&quot;</span><span class="content">application/vnd.books.org.book+json</span><span class="delimiter">&quot;</span></span>,
+    <span class="key">bookList</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">application/vnd.books.org.booklist+json</span><span class="delimiter">&quot;</span></span>,
+    ...
+]</code></pre>
+</div>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+将新的MIME类型放在 <code>所有</code>  MIME类型之后非常重要，因为如果无法建立请求的内容类型，则映射中的第一个条目将用作响应。如果您的新Mime类型位于顶部，那么在无法建立请求的Mime类型时，Grails将始终尝试发送新的Mime类型。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>然后覆盖渲染器以使用自定义Mime类型返回HAL：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.rest.render.hal.*</span>
+<span class="keyword">import</span> <span class="include">grails.web.mime.*</span>
+
+beans = {
+    halBookRenderer(HalJsonRenderer, rest.test.Book, <span class="keyword">new</span> MimeType(<span class="string"><span class="delimiter">&quot;</span><span class="content">application/vnd.books.org.book+json</span><span class="delimiter">&quot;</span></span>, [<span class="key">v</span>:<span class="string"><span class="delimiter">&quot;</span><span class="content">1.0</span><span class="delimiter">&quot;</span></span>]))
+    halBookListRenderer(HalJsonCollectionRenderer, rest.test.Book, <span class="keyword">new</span> MimeType(<span class="string"><span class="delimiter">&quot;</span><span class="content">application/vnd.books.org.booklist+json</span><span class="delimiter">&quot;</span></span>, [<span class="key">v</span>:<span class="string"><span class="delimiter">&quot;</span><span class="content">1.0</span><span class="delimiter">&quot;</span></span>]))
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在上面的示例中，第一个bean为单个图书实例定义了一个HAL渲染器，该实例返回Mime类型为application/vnd.books.org.book + json的Hime渲染器。第二个bean定义了用于呈现书籍集合的Mime Type（在本例中为application/vnd.books.org.booklist + json）。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<code>application/vnd.books.org.booklist+json</code> 是媒体范围的一个例子 (<a href="http://www.w3.org/Protocols/rfc2616/rfc2616.html" class="bare">http://www.w3.org/Protocols/rfc2616/rfc2616.html</a> - 标头字段定义).  本示例使用实体（书）和操作（列表）形成媒体​​范围值，但实际上，可能没有必要为每个操作创建单独的Mime类型。此外，可能没有必要在实体级别创建Mime类型。有关如何定义自己的Mime类型的更多信息，请参见 <code>版本化REST资源</code> 部分。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>通过此操作发出对新Mime类型的请求，将返回必要的HAL：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">$ curl -i -H &quot;Accept: application/vnd.books.org.book+json&quot; http://localhost:8080/books/1
+
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: application/vnd.books.org.book+json;charset=ISO-8859-1
+
+{
+  &quot;_links&quot;: {
+    &quot;self&quot;: {
+      &quot;href&quot;: &quot;http://localhost:8080/books/1&quot;,
+      &quot;hreflang&quot;: &quot;en&quot;,
+      &quot;type&quot;: &quot;application/vnd.books.org.book+json&quot;
+    }
+  },
+  &quot;title&quot;: &quot;\&quot;The Stand\&quot;&quot;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_自定义链接渲染">自定义链接渲染</h4>
+<div class="paragraph">
+<p>HATEOAS的一个重要方面是链接的使用，这些链接描述了客户端可以用来与REST API交互的过渡。默认情况下， <code>HalJsonRenderer</code> 将自动为您创建关联以链接到资源本身（使用 <code>自我</code> 关系）。</p>
+</div>
+<div class="paragraph">
+<p>但是，您可以使用 <code>链接</code> 方法来自定义链接渲染，该方法添加到所有以 <code>grails.rest.Resource</code> 注释的域类或任何以 <code>grails.rest.Linkable</code> 注释的类中。例如，可以对show动作进行如下修改，以在结果输出中提供新的链接：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> <span class="function">show</span>(<span class="predefined-type">Book</span> book) {
+    book.link <span class="key">rel</span>:<span class="string"><span class="delimiter">'</span><span class="content">publisher</span><span class="delimiter">'</span></span>, <span class="key">href</span>: g.createLink(<span class="key">absolute</span>: <span class="predefined-constant">true</span>, <span class="key">resource</span>:<span class="string"><span class="delimiter">&quot;</span><span class="content">publisher</span><span class="delimiter">&quot;</span></span>, <span class="key">params</span>:[<span class="key">bookId</span>: book.id])
+    respond book
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这将导致输出，例如：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="javascript">{
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">_links</span><span class="delimiter">&quot;</span></span>: {
+    <span class="key"><span class="delimiter">&quot;</span><span class="content">self</span><span class="delimiter">&quot;</span></span>: {
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:8080/books/1</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">hreflang</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">en</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">type</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">application/vnd.books.org.book+json</span><span class="delimiter">&quot;</span></span>
+    }
+    <span class="string"><span class="delimiter">&quot;</span><span class="content">publisher</span><span class="delimiter">&quot;</span></span>: {
+        <span class="key"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:8080/books/1/publisher</span><span class="delimiter">&quot;</span></span>,
+        <span class="key"><span class="delimiter">&quot;</span><span class="content">hreflang</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">en</span><span class="delimiter">&quot;</span></span>
+    }
+  },
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">title</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="char">\&quot;</span><span class="content">The Stand</span><span class="char">\&quot;</span><span class="delimiter">&quot;</span></span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>可以传递 <code>link</code> 方法的命名参数来匹配 <code>grails.rest.Link</code> 类的属性。</p>
+</div>
+</div>
+
+
+<h2 id="atom">10.12.2 Atom 支持</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/REST/hypermedia/atom.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p><a href="http://tools.ietf.org/html/rfc4287">Atom</a> 是用于实现REST API的另一种标准交换格式。 Atom输出的示例如下所示：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="tag">&lt;feed</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.w3.org/2005/Atom</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+
+ <span class="tag">&lt;title&gt;</span>Example Feed<span class="tag">&lt;/title&gt;</span>
+ <span class="tag">&lt;link</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://example.org/</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
+ <span class="tag">&lt;updated&gt;</span>2003-12-13T18:30:02Z<span class="tag">&lt;/updated&gt;</span>
+ <span class="tag">&lt;author&gt;</span>
+   <span class="tag">&lt;name&gt;</span>John Doe<span class="tag">&lt;/name&gt;</span>
+ <span class="tag">&lt;/author&gt;</span>
+ <span class="tag">&lt;id&gt;</span>urn:uuid:60a76c80-d399-11d9-b93C-0003939e0af6<span class="tag">&lt;/id&gt;</span>
+
+ <span class="tag">&lt;entry&gt;</span>
+   <span class="tag">&lt;title&gt;</span>Atom-Powered Robots Run Amok<span class="tag">&lt;/title&gt;</span>
+   <span class="tag">&lt;link</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://example.org/2003/12/13/atom03</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
+   <span class="tag">&lt;id&gt;</span>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a<span class="tag">&lt;/id&gt;</span>
+   <span class="tag">&lt;updated&gt;</span>2003-12-13T18:30:02Z<span class="tag">&lt;/updated&gt;</span>
+   <span class="tag">&lt;summary&gt;</span>Some text.<span class="tag">&lt;/summary&gt;</span>
+ <span class="tag">&lt;/entry&gt;</span>
+
+<span class="tag">&lt;/feed&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>要再次使用Atom渲染，只需定义一个自定义渲染器即可：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.rest.render.atom.*</span>
+beans = {
+    halBookRenderer(AtomRenderer, rest.test.Book)
+    halBookListRenderer(AtomCollectionRenderer, rest.test.Book)
+}</code></pre>
+</div>
+</div>
+
+
+<h2 id="vndError">10.12.3 Vnd.错误支持</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/REST/hypermedia/vndError.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p><a href="https://github.com/blongden/vnd.error">Vnd.Error</a> 是表达错误响应的标准化方法。</p>
+</div>
+<div class="paragraph">
+<p>默认情况下，当尝试发布新资源时发生验证错误时，错误对象将以422响应代码发送回allow：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">$</span> curl -i -H <span class="string"><span class="delimiter">&quot;</span><span class="content">Accept: application/json</span><span class="delimiter">&quot;</span></span>  -H <span class="string"><span class="delimiter">&quot;</span><span class="content">Content-Type: application/json</span><span class="delimiter">&quot;</span></span> -X POST -d <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span> <span class="key">http</span>:<span class="comment">//localhost:8080/books</span>
+
+HTTP/<span class="float">1.1</span> <span class="integer">422</span> Unprocessable <span class="predefined-type">Entity</span>
+<span class="key">Server</span>: Apache-Coyote/<span class="float">1.1</span>
+Content-<span class="predefined-type">Type</span>: application/json;charset=ISO-<span class="integer">8859</span>-<span class="integer">1</span>
+
+{
+  <span class="string"><span class="delimiter">&quot;</span><span class="content">errors</span><span class="delimiter">&quot;</span></span>: [
+    {
+      <span class="string"><span class="delimiter">&quot;</span><span class="content">object</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">rest.test.Book</span><span class="delimiter">&quot;</span></span>,
+      <span class="string"><span class="delimiter">&quot;</span><span class="content">field</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">title</span><span class="delimiter">&quot;</span></span>,
+      <span class="string"><span class="delimiter">&quot;</span><span class="content">rejected-value</span><span class="delimiter">&quot;</span></span>: <span class="predefined-constant">null</span>,
+      <span class="string"><span class="delimiter">&quot;</span><span class="content">message</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Property [title] of class [class rest.test.Book] cannot be null</span><span class="delimiter">&quot;</span></span>
+    }
+  ]
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果您想将格式更改为Vnd.Error，则只需在grails-app/conf/spring/resources.groovy中注册 <code>grails.rest.render.errors.VndErrorJsonRenderer</code>  bean：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">beans = {
+    vndJsonErrorRenderer(grails.rest.render.errors.VndErrorJsonRenderer)
+    <span class="comment">// for Vnd.Error XML format</span>
+    vndXmlErrorRenderer(grails.rest.render.errors.VndErrorXmlRenderer)
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>然后，如果您更改客户端请求以接受Vnd.Error，则会得到适当的响应：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">$</span> curl -i -H <span class="string"><span class="delimiter">&quot;</span><span class="content">Accept: application/vnd.error+json,application/json</span><span class="delimiter">&quot;</span></span> -H <span class="string"><span class="delimiter">&quot;</span><span class="content">Content-Type: application/json</span><span class="delimiter">&quot;</span></span> -X POST -d <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span> <span class="key">http</span>:<span class="comment">//localhost:8080/books</span>
+HTTP/<span class="float">1.1</span> <span class="integer">200</span> OK
+<span class="key">Server</span>: Apache-Coyote/<span class="float">1.1</span>
+Content-<span class="predefined-type">Type</span>: application/vnd.error+json;charset=ISO-<span class="integer">8859</span>-<span class="integer">1</span>
+
+[
+    {
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">logref</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">book.nullable,</span></span><span class="error">
+</span>        <span class="string"><span class="delimiter">&quot;</span><span class="content">message</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Property [title] of class [class rest.test.Book] cannot be null</span><span class="delimiter">&quot;</span></span>,
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">_links</span><span class="delimiter">&quot;</span></span>: {
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">resource</span><span class="delimiter">&quot;</span></span>: {
+                <span class="string"><span class="delimiter">&quot;</span><span class="content">href</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:8080/rest-test/books</span><span class="delimiter">&quot;</span></span>
+            }
+        }
+    }
+]</code></pre>
+</div>
+</div>
+
+
+                <div style="clear:both;margin-top:15px;"></div>
+                
+                    <div class="toc-item prev-left"><a href="../../guide/traits.html">&lt;&lt; <strong>9</strong><span>&#29305;&#24449;&#65288;Trait&#65289;</span></a></div>
+                
+                    <div class="toc-item next-right"><a href="../../guide/async.html"><strong>11</strong><span>&#24322;&#27493;&#32534;&#31243;</span> >></a></div>
+                
+                <div style="clear:both"></div>
+            </div>
+        </td>
+        <td id="col2">
+            <div class="local clearfix">
+                <div class="local-title">
+                    <a href="../../guide/index.html" target="mainFrame">Quick Reference</a>
+                    <span class="toggle">(<a href="#" onclick="localToggle(); return false;">hide</a>)</span>
+                </div>
+                <div class="menu">
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Command Line</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../../ref/Command%20Line/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/bug-report.html">bug-report</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/clean.html">clean</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/compile.html">compile</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/console.html">console</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-app.html">create-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-command.html">create-command</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-controller.html">create-controller</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-domain-class.html">create-domain-class</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-functional-test.html">create-functional-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-hibernate-cfg-xml.html">create-hibernate-cfg-xml</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-integration-test.html">create-integration-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-interceptor.html">create-interceptor</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-plugin.html">create-plugin</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-profile.html">create-profile</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-script.html">create-script</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-service.html">create-service</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-taglib.html">create-taglib</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/create-unit-test.html">create-unit-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/dependency-report.html">dependency-report</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/docs.html">docs</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/generate-all.html">generate-all</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/generate-controller.html">generate-controller</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/generate-views.html">generate-views</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/help.html">help</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/install-templates.html">install-templates</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/list-plugins.html">list-plugins</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/list-profiles.html">list-profiles</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/package-plugin.html">package-plugin</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/package.html">package</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/plugin-info.html">plugin-info</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/profile-info.html">profile-info</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/run-app.html">run-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/run-command.html">run-command</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/run-script.html">run-script</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/schema-export.html">schema-export</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/shell.html">shell</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/stats.html">stats</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/stop-app.html">stop-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/test-app.html">test-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Command%20Line/war.html">war</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Constraints</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../../ref/Constraints/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/attributes.html">attributes</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/bindable.html">bindable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/blank.html">blank</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/creditCard.html">creditCard</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/email.html">email</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/inList.html">inList</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/matches.html">matches</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/max.html">max</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/maxSize.html">maxSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/min.html">min</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/minSize.html">minSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/notEqual.html">notEqual</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/nullable.html">nullable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/range.html">range</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/scale.html">scale</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/size.html">size</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/unique.html">unique</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/url.html">url</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/validator.html">validator</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Constraints/widget.html">widget</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Controllers</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../../ref/Controllers/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/actionName.html">actionName</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/allowedMethods.html">allowedMethods</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/bindData.html">bindData</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/chain.html">chain</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/controllerName.html">controllerName</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/defaultAction.html">defaultAction</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/errors.html">errors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/flash.html">flash</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/forward.html">forward</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/grailsApplication.html">grailsApplication</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/hasErrors.html">hasErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/namespace.html">namespace</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/params.html">params</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/redirect.html">redirect</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/render.html">render</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/request.html">request</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/respond.html">respond</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/response.html">response</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/responseFormats.html">responseFormats</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/scope.html">scope</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/servletContext.html">servletContext</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/session.html">session</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/withForm.html">withForm</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Controllers/withFormat.html">withFormat</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Database Mapping</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/autoImport.html">autoImport</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/autoTimestamp.html">autoTimestamp</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/batchSize.html">batchSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/cache.html">cache</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/cascade.html">cascade</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/column.html">column</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/comment.html">comment</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/discriminator.html">discriminator</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/dynamicInsert.html">dynamicInsert</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/dynamicUpdate.html">dynamicUpdate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/fetch.html">fetch</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/id.html">id</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/ignoreNotFound.html">ignoreNotFound</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/indexColumn.html">indexColumn</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/insertable.html">insertable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/joinTable.html">joinTable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/lazy.html">lazy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/order.html">order</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/sort.html">sort</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/table.html">table</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/type.html">type</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/updateable.html">updateable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Database%20Mapping/version.html">version</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Domain Classes</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/addTo.html">addTo</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/attach.html">attach</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/belongsTo.html">belongsTo</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/clearErrors.html">clearErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/constraints.html">constraints</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/count.html">count</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/countBy.html">countBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/createCriteria.html">createCriteria</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/delete.html">delete</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/discard.html">discard</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/embedded.html">embedded</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/errors.html">errors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/executeQuery.html">executeQuery</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/executeUpdate.html">executeUpdate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/exists.html">exists</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/fetchMode.html">fetchMode</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/find.html">find</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findAll.html">findAll</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findAllBy.html">findAllBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findAllWhere.html">findAllWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findBy.html">findBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findOrCreateBy.html">findOrCreateBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findOrCreateWhere.html">findOrCreateWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findOrSaveBy.html">findOrSaveBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findOrSaveWhere.html">findOrSaveWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/findWhere.html">findWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/first.html">first</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/get.html">get</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/getAll.html">getAll</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/getDirtyPropertyNames.html">getDirtyPropertyNames</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/getPersistentValue.html">getPersistentValue</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/hasErrors.html">hasErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/hasMany.html">hasMany</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/hasOne.html">hasOne</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/ident.html">ident</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/instanceOf.html">instanceOf</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/isAttached.html">isAttached</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/isDirty.html">isDirty</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/last.html">last</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/list.html">list</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/listOrderBy.html">listOrderBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/load.html">load</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/lock.html">lock</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/mapWith.html">mapWith</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/mappedBy.html">mappedBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/mapping.html">mapping</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/merge.html">merge</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/namedQueries.html">namedQueries</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/properties.html">properties</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/read.html">read</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/refresh.html">refresh</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/removeFrom.html">removeFrom</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/save.html">save</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/transients.html">transients</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/validate.html">validate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/where.html">where</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/whereAny.html">whereAny</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/withCriteria.html">withCriteria</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/withNewSession.html">withNewSession</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/withSession.html">withSession</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Domain%20Classes/withTransaction.html">withTransaction</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Plug-ins</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../../ref/Plug-ins/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/URL%20mappings.html">URL mappings</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/codecs.html">codecs</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/controllers.html">controllers</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/core.html">core</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/dataSource.html">dataSource</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/domainClasses.html">domainClasses</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/hibernate.html">hibernate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/i18n.html">i18n</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/logging.html">logging</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/scaffolding.html">scaffolding</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/services.html">services</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Plug-ins/servlets.html">servlets</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Services</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../../ref/Services/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Services/scope.html">scope</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Services/transactional.html">transactional</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Servlet API</h1><div class="menu-sub">
+                        
+                            
+                            <div class="menu-item"><a href="../../ref/Servlet%20API/request.html">request</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Servlet%20API/response.html">response</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Servlet%20API/servletContext.html">servletContext</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Servlet%20API/session.html">session</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<div id="footer">
+    Copies of this document may be made for your own use and for distribution to others, provided that you do not charge any fee for such copies and further provided that each copy contains this Copyright Notice, whether distributed in print or electronically.
+    
+</div>
+
+<script type="text/javascript" src="../js/docs.js"></script>
+
+</body>
+</html>

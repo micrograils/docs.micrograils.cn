@@ -1,0 +1,1150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script src="/cdn-cgi/apps/head/3cOPSgo5Omz84ycX7CvigfX4cpw.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-82213539-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-82213539-2');
+        </script>
+        <title>The Grails Framework 4.0.0</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8" />
+        <link rel="stylesheet" href="../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8" />
+    <script type="text/javascript">
+function addJsClass(el) {
+    var classes = document.body.className.split(" ");
+    classes.push("js");
+    document.body.className = classes.join(" ");
+}
+    </script>
+    </head>
+
+    <body class="body" onload="addJsClass();">
+        <div id="navigation">
+            <div class="navTitle">
+                
+                The Grails Framework
+            </div>
+            <div class="navLinks">
+                <ul>
+                    <li>
+                        <div id="nav-summary" onmouseover="toggleNavSummary(false)" onmouseout="toggleNavSummary(true)">
+                            <a href="../guide/index.html" class="button">Table of contents</a>
+                            <div id="nav-summary-childs" style="display:none;">
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/introduction.html"><strong>1</strong><span>&#31616;&#20171;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/gettingStarted.html"><strong>2</strong><span>&#20837;&#38376;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/upgrading.html"><strong>3</strong><span>&#20174; Grails 3.3.x &#21319;&#32423;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/conf.html"><strong>4</strong><span>&#37197;&#32622;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/commandLine.html"><strong>5</strong><span>&#21629;&#20196;&#34892;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/profiles.html"><strong>6</strong><span>&#24212;&#29992;&#31243;&#24207;&#37197;&#32622;&#25991;&#20214;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/GORM.html"><strong>7</strong><span>&#23545;&#35937;&#20851;&#31995;&#26144;&#23556; &#65288;GORM&#65289;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/theWebLayer.html"><strong>8</strong><span>Web &#23618;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/traits.html"><strong>9</strong><span>&#29305;&#24449;&#65288;Trait&#65289;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/REST.html"><strong>10</strong><span>REST</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/async.html"><strong>11</strong><span>&#24322;&#27493;&#32534;&#31243;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/validation.html"><strong>12</strong><span>&#39564;&#35777;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/services.html"><strong>13</strong><span>&#26381;&#21153;&#23618;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/staticTypeCheckingAndCompilation.html"><strong>14</strong><span>&#38745;&#24577;&#31867;&#22411;&#26816;&#26597;&#21644;&#32534;&#35793;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/testing.html"><strong>15</strong><span>&#27979;&#35797;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/i18n.html"><strong>16</strong><span>&#22269;&#38469;&#21270;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/security.html"><strong>17</strong><span>&#23433;&#20840;&#24615;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/plugins.html"><strong>18</strong><span>&#25554;&#20214;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/spring.html"><strong>19</strong><span>Grails &#19982; Spring</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/scaffolding.html"><strong>20</strong><span>&#33050;&#25163;&#26550;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/deployment.html"><strong>21</strong><span>&#37096;&#32626;</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="../guide/contributing.html"><strong>22</strong><span>&#32473; Grails &#36129;&#29486;&#20195;&#30721;</span></a></div>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="separator selected">
+                        <a id="ref-button" onclick="localToggle(); return false;" href="#">Quick Reference</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <table id="colset" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td id="col1">
+                    <div id="main" class="corner-all">
+
+                        <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
+
+                        <div class="project">
+                            <h1>The Grails Framework</h1>
+                            <p><strong>Authors:</strong> The Grails Team</p>
+                            <p><strong>Version:</strong> 4.0.0</p>
+                            
+                        </div>
+
+                        
+                        <div id="table-of-content">
+                            <h2>Table of Contents</h2>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/introduction.html"><strong>1</strong><span>&#31616;&#20171;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/introduction.html#whatsNew"><strong>1.1</strong><span>Grails 4 &#20013;&#30340;&#26032;&#22686;&#21151;&#33021;&#26159;&#20160;&#20040;&#65311;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/introduction.html#dependencyUpgrades"><strong>1.1.1</strong><span>&#26356;&#26032;&#30340;&#20381;&#36182;&#39033;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/introduction.html#micronautSupport"><strong>1.1.2</strong><span>Micronaut &#29238;&#19978;&#19979;&#25991;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/gettingStarted.html"><strong>2</strong><span>&#20837;&#38376;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/gettingStarted.html#requirements"><strong>2.1</strong><span>&#23433;&#35013;&#35201;&#27714;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/gettingStarted.html#downloadingAndInstalling"><strong>2.2</strong><span>&#19979;&#36733;&#21644;&#23433;&#35013;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/gettingStarted.html#creatingAnApplication"><strong>2.3</strong><span>&#21019;&#24314;&#24212;&#29992;&#31243;&#24207;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/gettingStarted.html#aHelloWorldExample"><strong>2.4</strong><span>Hello World &#31034;&#20363;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/gettingStarted.html#usingInteractiveMode"><strong>2.5</strong><span>&#20351;&#29992;&#20132;&#20114;&#27169;&#24335;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/gettingStarted.html#ide"><strong>2.6</strong><span>&#22312; IDE &#20013;&#35774;&#32622;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/gettingStarted.html#conventionOverConfiguration"><strong>2.7</strong><span>&#37197;&#32622;&#30340;&#32422;&#23450;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/gettingStarted.html#runningAndDebuggingAnApplication"><strong>2.8</strong><span>&#36816;&#34892;&#21644;&#35843;&#35797;&#24212;&#29992;&#31243;&#24207;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/gettingStarted.html#testingAnApplication"><strong>2.9</strong><span>&#27979;&#35797;&#24212;&#29992;&#31243;&#24207;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/gettingStarted.html#deployingAnApplication"><strong>2.10</strong><span>&#37096;&#32626;&#24212;&#29992;&#31243;&#24207;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/gettingStarted.html#supportedJavaEEContainers"><strong>2.11</strong><span>&#25903;&#25345;&#30340; Java EE &#23481;&#22120;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/gettingStarted.html#creatingArtefacts"><strong>2.12</strong><span>&#21019;&#24314;&#20154;&#24037;&#21046;&#21697;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/gettingStarted.html#generatingAnApplication"><strong>2.13</strong><span>&#29983;&#25104;&#24212;&#29992;&#31243;&#24207;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/upgrading.html"><strong>3</strong><span>&#20174; Grails 3.3.x &#21319;&#32423;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/conf.html"><strong>4</strong><span>&#37197;&#32622;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/conf.html#config"><strong>4.1</strong><span>&#22522;&#26412;&#37197;&#32622;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/conf.html#ymlOptions"><strong>4.1.1</strong><span>YML &#26684;&#24335;&#36873;&#39033;&#37197;&#32622;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/conf.html#builtInOptions"><strong>4.1.2</strong><span>&#20869;&#32622;&#36873;&#39033;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/conf.html#logging"><strong>4.1.3</strong><span>&#26085;&#24535;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:30px"><a href="../guide/conf.html#loggerName"><strong>4.1.3.1</strong><span>&#35760;&#24405;&#22120;&#21517;&#31216;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:30px"><a href="../guide/conf.html#maskingRequestParametersFromStacktraceLogs"><strong>4.1.3.2</strong><span>&#20174;&#22534;&#26632;&#36319;&#36394;&#26085;&#24535;&#23631;&#34109;&#35831;&#27714;&#21442;&#25968;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:30px"><a href="../guide/conf.html#externalLoggingConfiguration"><strong>4.1.3.3</strong><span>&#22806;&#37096;&#37197;&#32622;&#25991;&#20214;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/conf.html#configGORM"><strong>4.1.4</strong><span>GORM</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/conf.html#proxyConfig"><strong>4.1.5</strong><span>&#37197;&#32622; HTTP &#20195;&#29702;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/conf.html#applicationClass"><strong>4.2</strong><span>&#24212;&#29992;&#31243;&#24207;&#31867;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/conf.html#executing"><strong>4.2.1</strong><span>&#25191;&#34892;&#24212;&#29992;&#31243;&#24207;&#31867;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/conf.html#customizing"><strong>4.2.2</strong><span>&#33258;&#23450;&#20041;&#24212;&#29992;&#31243;&#24207;&#31867;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/conf.html#applicationLifeCycle"><strong>4.2.3</strong><span>&#24212;&#29992;&#31243;&#24207;&#29983;&#21629;&#21608;&#26399;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/conf.html#environments"><strong>4.3</strong><span>&#29615;&#22659;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/conf.html#dataSource"><strong>4.4</strong><span>&#25968;&#25454;&#28304;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/conf.html#dataSourcesAndEnvironments"><strong>4.4.1</strong><span>&#25968;&#25454;&#28304;&#21644;&#29615;&#22659;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/conf.html#automaticDatabaseMigration"><strong>4.4.2</strong><span>&#33258;&#21160;&#25968;&#25454;&#24211;&#36801;&#31227;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/conf.html#transactionAwareDataSourceProxy"><strong>4.4.3</strong><span>&#20107;&#21153;&#24863;&#30693;&#25968;&#25454;&#28304;&#20195;&#29702;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/conf.html#databaseConsole"><strong>4.4.4</strong><span>&#25968;&#25454;&#24211;&#25511;&#21046;&#21488;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/conf.html#multipleDatasources"><strong>4.4.5</strong><span>&#22810;&#20010;&#25968;&#25454;&#28304;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/conf.html#versioning"><strong>4.5</strong><span>&#29256;&#26412;&#25511;&#21046;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/conf.html#dependencyResolution"><strong>4.6</strong><span>&#20381;&#36182;&#39033;&#35299;&#26512;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/commandLine.html"><strong>5</strong><span>&#21629;&#20196;&#34892;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/commandLine.html#interactiveMode"><strong>5.1</strong><span>&#20132;&#20114;&#27169;&#24335;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/commandLine.html#creatingCustomScripts"><strong>5.2</strong><span>&#21019;&#24314;&#33258;&#23450;&#20041;&#33050;&#26412;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/commandLine.html#creatingCustomCommands"><strong>5.3</strong><span>&#21019;&#24314;&#33258;&#23450;&#20041;&#21629;&#20196;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/commandLine.html#reusingGrailsScripts"><strong>5.4</strong><span>&#37325;&#29992; Grails &#33050;&#26412;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/commandLine.html#gradleBuild"><strong>5.5</strong><span>&#29992; Gradle &#26500;&#24314;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/commandLine.html#gradleDependencies"><strong>5.5.1</strong><span>&#20351;&#29992; Gradle &#23450;&#20041;&#20381;&#36182;&#20851;&#31995;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/commandLine.html#gradleTasks"><strong>5.5.2</strong><span>&#20351;&#29992; Gradle &#20219;&#21153;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/commandLine.html#gradlePlugins"><strong>5.5.3</strong><span>Gradle &#30340; Grails &#25554;&#20214;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/profiles.html"><strong>6</strong><span>&#24212;&#29992;&#31243;&#24207;&#37197;&#32622;&#25991;&#20214;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/profiles.html#creatingProfiles"><strong>6.1</strong><span>&#21019;&#24314;&#37197;&#32622;&#25991;&#20214;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/profiles.html#profileInheritance"><strong>6.2</strong><span>&#32487;&#25215;&#37197;&#32622;&#25991;&#20214;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/profiles.html#publishingProfiles"><strong>6.3</strong><span>&#21457;&#24067;&#37197;&#32622;&#25991;&#20214;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/profiles.html#profileStructure"><strong>6.4</strong><span>&#20102;&#35299;&#37197;&#32622;&#25991;&#20214;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/profiles.html#profileCommands"><strong>6.5</strong><span>&#21019;&#24314;&#37197;&#32622;&#25991;&#20214;&#21629;&#20196;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/profiles.html#profileFeatures"><strong>6.6</strong><span>&#21019;&#24314;&#37197;&#32622;&#25991;&#20214;&#21151;&#33021;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/GORM.html"><strong>7</strong><span>&#23545;&#35937;&#20851;&#31995;&#26144;&#23556; &#65288;GORM&#65289;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/GORM.html#quickStartGuide"><strong>7.1</strong><span>&#24555;&#36895;&#20837;&#38376;&#25351;&#21335;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/GORM.html#basicCRUD"><strong>7.1.1</strong><span>&#22522;&#26412; CRUD</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/GORM.html#furtherReading"><strong>7.2</strong><span>&#20851;&#20110; GORM &#30340;&#36827;&#19968;&#27493;&#38405;&#35835;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/theWebLayer.html"><strong>8</strong><span>Web &#23618;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/theWebLayer.html#controllers"><strong>8.1</strong><span>&#25511;&#21046;&#22120;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#understandingControllersAndActions"><strong>8.1.1</strong><span>&#20102;&#35299;&#25511;&#21046;&#22120;&#21644;&#25805;&#20316;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#controllersAndScopes"><strong>8.1.2</strong><span>&#25511;&#21046;&#22120;&#21644;&#20316;&#29992;&#22495;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#modelsAndViews"><strong>8.1.3</strong><span>&#27169;&#22411;&#21644;&#35270;&#22270;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#redirectsAndChaining"><strong>8.1.4</strong><span>&#37325;&#23450;&#21521;&#21644;&#38142;&#25509;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#dataBinding"><strong>8.1.5</strong><span>&#25968;&#25454;&#32465;&#23450;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#jsonResponses"><strong>8.1.6</strong><span>&#20351;&#29992; JSON &#21709;&#24212;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#moreOnJSONBuilder"><strong>8.1.7</strong><span>&#20851;&#20110; JSONBuilder</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#xmlResponses"><strong>8.1.8</strong><span>&#20351;&#29992; XML &#21709;&#24212;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#uploadingFiles"><strong>8.1.9</strong><span>&#19978;&#20256;&#25991;&#20214;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#commandObjects"><strong>8.1.10</strong><span>&#21629;&#20196;&#23545;&#35937;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#formtokens"><strong>8.1.11</strong><span>&#22788;&#29702;&#37325;&#22797;&#34920;&#21333;&#25552;&#20132;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#typeConverters"><strong>8.1.12</strong><span>&#22522;&#26412;&#31867;&#22411;&#36716;&#25442;&#22120;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#controllerExceptionHandling"><strong>8.1.13</strong><span>&#22768;&#26126;&#24615;&#25511;&#21046;&#22120;&#24322;&#24120;&#22788;&#29702;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/theWebLayer.html#gsp"><strong>8.2</strong><span>Grails &#26381;&#21153;&#22120;&#39029;&#38754;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/theWebLayer.html#urlmappings"><strong>8.3</strong><span>URL &#26144;&#23556;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#mappingToControllersAndActions"><strong>8.3.1</strong><span>&#26144;&#23556;&#21040;&#25511;&#21046;&#22120;&#21644;&#25805;&#20316;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#restfulMappings"><strong>8.3.2</strong><span>&#26144;&#23556;&#21040; REST &#36164;&#28304;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#redirectMappings"><strong>8.3.3</strong><span>&#22312; URL &#26144;&#23556;&#20013;&#37325;&#23450;&#21521;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#embeddedVariables"><strong>8.3.4</strong><span>&#23884;&#20837;&#24335;&#21464;&#37327;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#mappingToViews"><strong>8.3.5</strong><span>&#26144;&#23556;&#21040;&#35270;&#22270;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#mappingToResponseCodes"><strong>8.3.6</strong><span>&#26144;&#23556;&#21040;&#21709;&#24212;&#20195;&#30721;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#mappingHTTP"><strong>8.3.7</strong><span>&#26144;&#23556;&#21040; HTTP &#26041;&#27861;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#mappingWildcards"><strong>8.3.8</strong><span>&#26144;&#23556;&#36890;&#37197;&#31526;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#automaticLinkRewriting"><strong>8.3.9</strong><span>&#33258;&#21160;&#38142;&#25509;&#37325;&#20889;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#applyingConstraints"><strong>8.3.10</strong><span>&#24212;&#29992;&#32422;&#26463;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#namedMappings"><strong>8.3.11</strong><span>&#21629;&#21517; URL &#26144;&#23556;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#customizingUrlFormat"><strong>8.3.12</strong><span>&#33258;&#23450;&#20041; URL &#26684;&#24335;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#namespacedControllers"><strong>8.3.13</strong><span>&#25511;&#21046;&#22120;&#30340;&#21629;&#21517;&#31354;&#38388;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/theWebLayer.html#cors"><strong>8.4</strong><span>CORS</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/theWebLayer.html#interceptors"><strong>8.5</strong><span>&#25318;&#25130;&#22120;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#definingInterceptors"><strong>8.5.1</strong><span>&#23450;&#20041;&#25318;&#25130;&#22120;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#interceptorMatching"><strong>8.5.2</strong><span>&#23558;&#35831;&#27714;&#19982;&#25318;&#25130;&#22120;&#21305;&#37197;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/theWebLayer.html#interceptorOrdering"><strong>8.5.3</strong><span>&#23450;&#20041;&#25318;&#25130;&#22120;&#25191;&#34892;&#39034;&#24207;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/theWebLayer.html#contentNegotiation"><strong>8.6</strong><span>&#20869;&#23481;&#21327;&#21830;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/traits.html"><strong>9</strong><span>&#29305;&#24449;&#65288;Trait&#65289;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/traits.html#traitsprovided"><strong>9.1</strong><span>Grails &#25552;&#20379;&#30340;&#29305;&#24449;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/traits.html#example"><strong>9.1.1</strong><span>Web &#23646;&#24615;&#29305;&#24615;&#31034;&#20363;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/REST.html"><strong>10</strong><span>REST</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/REST.html#domainResources"><strong>10.1</strong><span>&#22495;&#31867;&#20316;&#20026; REST &#36164;&#28304;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/REST.html#urlMappings"><strong>10.2</strong><span>&#26144;&#23556;&#21040; REST &#36164;&#28304;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/REST.html#linkingToResources"><strong>10.3</strong><span>&#20174; GSP &#39029;&#38754;&#38142;&#25509;&#21040; REST &#36164;&#28304;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/REST.html#versioningResources"><strong>10.4</strong><span>&#29256;&#26412;&#21270; REST &#36164;&#28304;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/REST.html#restfulControllers"><strong>10.5</strong><span>&#23454;&#29616; REST &#25511;&#21046;&#22120;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/REST.html#extendingRestfulController"><strong>10.5.1</strong><span>&#25193;&#23637;Rest&#25511;&#21046;&#22120;&#36229;&#32423;&#31867;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/REST.html#restControllersStepByStep"><strong>10.5.2</strong><span>&#36880;&#27493;&#23454;&#29616; REST &#25511;&#21046;&#22120;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/REST.html#generatingRestControllers"><strong>10.5.3</strong><span>&#20351;&#29992;&#22522;&#26550;&#29983;&#25104; REST &#25511;&#21046;&#22120;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/REST.html#callingRestServices"><strong>10.6</strong><span>&#20351;&#29992; HttpClient &#35843;&#29992; REST &#26381;&#21153;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/REST.html#restProfile"><strong>10.7</strong><span>REST &#37197;&#32622;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/REST.html#angularJsProfile"><strong>10.8</strong><span>AngularJS &#37197;&#32622;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/REST.html#angularProfile"><strong>10.9</strong><span>Angular &#37197;&#32622;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/REST.html#jsonViews"><strong>10.10</strong><span>JSON &#35270;&#22270;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/REST.html#jsonViewsSetup"><strong>10.10.1</strong><span>&#20837;&#38376;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/REST.html#jsonViewsCreating"><strong>10.10.2</strong><span>&#21019;&#24314; JSON &#35270;&#22270;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/REST.html#jsonViewsAndTemplates"><strong>10.10.3</strong><span>JSON &#35270;&#22270;&#27169;&#26495;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/REST.html#jsonViewsAndDomainClasses"><strong>10.10.4</strong><span>&#20351;&#29992; JSON &#35270;&#22270;&#21576;&#29616;&#22495;&#31867;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/REST.html#jsonViewsTemplatesAndConventions"><strong>10.10.5</strong><span>&#25353;&#32422;&#23450;&#36827;&#34892;&#30340; JSON &#35270;&#22270;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/REST.html#renderers"><strong>10.11</strong><span>&#33258;&#23450;&#20041;&#21709;&#24212;&#21576;&#29616;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/REST.html#defaultRenderers"><strong>10.11.1</strong><span>&#33258;&#23450;&#20041;&#40664;&#35748;&#28210;&#26579;&#22120;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/REST.html#customRenderers"><strong>10.11.2</strong><span>&#23454;&#29616;&#33258;&#23450;&#20041;&#28210;&#26579;&#22120;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/REST.html#gspRenderers"><strong>10.11.3</strong><span>&#20351;&#29992; GSP &#33258;&#23450;&#20041;&#28210;&#26579;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/REST.html#hypermedia"><strong>10.12</strong><span>&#36229;&#23186;&#20307;&#20316;&#20026;&#24212;&#29992;&#31243;&#24207;&#29366;&#24577;&#30340;&#24341;&#25806;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/REST.html#hal"><strong>10.12.1</strong><span>HAL &#25903;&#25345;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/REST.html#atom"><strong>10.12.2</strong><span>Atom &#25903;&#25345;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/REST.html#vndError"><strong>10.12.3</strong><span>Vnd.&#38169;&#35823;&#25903;&#25345;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/REST.html#binding"><strong>10.13</strong><span>&#33258;&#23450;&#20041;&#36164;&#28304;&#32465;&#23450;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/REST.html#RSSAndAtom"><strong>10.14</strong><span>RSS &#21644; Atom</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/async.html"><strong>11</strong><span>&#24322;&#27493;&#32534;&#31243;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/validation.html"><strong>12</strong><span>&#39564;&#35777;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/validation.html#constraints"><strong>12.1</strong><span>&#22768;&#26126;&#32422;&#26463;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/validation.html#validatingConstraints"><strong>12.2</strong><span>&#39564;&#35777;&#32422;&#26463;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/validation.html#sharingConstraints"><strong>12.3</strong><span>&#31867;&#20043;&#38388;&#30340;&#20849;&#20139;&#32422;&#26463;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/validation.html#validationOnTheClient"><strong>12.4</strong><span>&#23545;&#23458;&#25143;&#31471;&#30340;&#39564;&#35777;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/validation.html#validationAndInternationalization"><strong>12.5</strong><span>&#39564;&#35777;&#21644;&#22269;&#38469;&#21270;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/validation.html#validationNonDomainAndCommandObjectClasses"><strong>12.6</strong><span>&#23558;&#39564;&#35777;&#24212;&#29992;&#20110;&#20854;&#20182;&#31867;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/services.html"><strong>13</strong><span>&#26381;&#21153;&#23618;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/services.html#declarativeTransactions"><strong>13.1</strong><span>&#22768;&#26126;&#24615;&#20107;&#29289;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/services.html#transactionsMultiDataSource"><strong>13.1.1</strong><span>&#22810;&#25968;&#25454;&#28304;&#20107;&#29289;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/services.html#transactionsRollbackAndTheSession"><strong>13.1.2</strong><span>&#20107;&#21153;&#22238;&#28378;&#21644;&#20250;&#35805;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/services.html#scopedServices"><strong>13.2</strong><span>Service &#30340;&#20316;&#29992;&#22495;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/services.html#dependencyInjectionServices"><strong>13.3</strong><span>&#20381;&#36182;&#39033;&#27880;&#20837;&#21644;&#26381;&#21153;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/staticTypeCheckingAndCompilation.html"><strong>14</strong><span>&#38745;&#24577;&#31867;&#22411;&#26816;&#26597;&#21644;&#32534;&#35793;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/staticTypeCheckingAndCompilation.html#grailsCompileStatic"><strong>14.1</strong><span>Grails &#32534;&#35793;&#38745;&#24577;&#27880;&#37322;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/staticTypeCheckingAndCompilation.html#grailsTypeChecked"><strong>14.2</strong><span>Grails &#31867;&#22411;&#26816;&#26597;&#27880;&#37322;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/testing.html"><strong>15</strong><span>&#27979;&#35797;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/testing.html#unitTesting"><strong>15.1</strong><span>&#21333;&#20803;&#27979;&#35797;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/testing.html#integrationTesting"><strong>15.2</strong><span>&#38598;&#25104;&#27979;&#35797;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/testing.html#functionalTesting"><strong>15.3</strong><span>&#21151;&#33021;&#27979;&#35797;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/i18n.html"><strong>16</strong><span>&#22269;&#38469;&#21270;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/i18n.html#understandingMessageBundles"><strong>16.1</strong><span>&#20102;&#35299;&#28040;&#24687;&#21253;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/i18n.html#changingLocales"><strong>16.2</strong><span>&#26356;&#25913;&#21306;&#22495;&#35774;&#32622;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/i18n.html#readingMessages"><strong>16.3</strong><span>&#38405;&#35835;&#28040;&#24687;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/i18n.html#scaffoldingAndI18n"><strong>16.4</strong><span>&#33050;&#25163;&#26550;&#21644; i18n</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/security.html"><strong>17</strong><span>&#23433;&#20840;&#24615;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/security.html#securingAgainstAttacks"><strong>17.1</strong><span>&#38450;&#33539;&#25915;&#20987;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/security.html#xssPrevention"><strong>17.2</strong><span>&#36328;&#31449;&#28857;&#33050;&#26412; &#65288;XSS&#65289; &#39044;&#38450;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/security.html#codecs"><strong>17.3</strong><span>&#32534;&#30721;&#21644;&#35299;&#30721;&#23545;&#35937;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/security.html#authentication"><strong>17.4</strong><span>&#36523;&#20221;&#39564;&#35777;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/security.html#securityPlugins"><strong>17.5</strong><span>&#23433;&#20840;&#25554;&#20214;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/security.html#springSecurity"><strong>17.5.1</strong><span>Spring &#23433;&#20840;&#26426;&#21046;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/plugins.html"><strong>18</strong><span>&#25554;&#20214;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/plugins.html#creatingAndInstallingPlugins"><strong>18.1</strong><span>&#21019;&#24314;&#21644;&#23433;&#35013;&#25554;&#20214;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/plugins.html#repositories"><strong>18.2</strong><span>&#25554;&#20214;&#24211;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/plugins.html#providingBasicArtefacts"><strong>18.3</strong><span>&#25552;&#20379;&#22522;&#26412;&#25991;&#29289;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/plugins.html#evaluatingConventions"><strong>18.4</strong><span>&#35780;&#20272;&#32422;&#23450;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/plugins.html#hookingIntoRuntimeConfiguration"><strong>18.5</strong><span>&#25346;&#38057;&#21040;&#36816;&#34892;&#26102;&#37197;&#32622;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/plugins.html#addingMethodsAtCompileTime"><strong>18.6</strong><span>&#22312;&#32534;&#35793;&#26102;&#28155;&#21152;&#26041;&#27861;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/plugins.html#addingDynamicMethodsAtRuntime"><strong>18.7</strong><span>&#22312;&#36816;&#34892;&#26102;&#28155;&#21152;&#21160;&#24577;&#26041;&#27861;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/plugins.html#participatingInAutoReloadEvents"><strong>18.8</strong><span>&#21442;&#19982;&#33258;&#21160;&#37325;&#26032;&#21152;&#36733;&#20107;&#20214;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/plugins.html#understandingPluginLoadOrder"><strong>18.9</strong><span>&#20102;&#35299;&#25554;&#20214;&#21152;&#36733;&#39034;&#24207;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/plugins.html#artefactApi"><strong>18.10</strong><span>&#33402;&#26415;&#21697; API</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/plugins.html#queryingArtefacts"><strong>18.10.1</strong><span>&#35810;&#38382;&#21487;&#29992;&#25991;&#29289;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:20px"><a href="../guide/plugins.html#customArtefacts"><strong>18.10.2</strong><span>&#28155;&#21152;&#24744;&#33258;&#24049;&#30340;&#33402;&#26415;&#21697;&#31867;&#22411;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/spring.html"><strong>19</strong><span>Grails &#19982; Spring</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/spring.html#springdslAdditional"><strong>19.1</strong><span>&#37197;&#32622;&#20854;&#20182; bean</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/spring.html#springdsl"><strong>19.2</strong><span>&#20351;&#29992; Bean DSL &#36816;&#34892;&#26102;Spring</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/spring.html#theBeanBuilderDSLExplained"><strong>19.3</strong><span>Bean&#26500;&#24314;&#22120;DSL&#35299;&#37322;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/spring.html#propertyPlaceholderConfiguration"><strong>19.4</strong><span>&#23646;&#24615;&#21344;&#20301;&#31526;&#37197;&#32622;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/spring.html#propertyOverrideConfiguration"><strong>19.5</strong><span>&#23646;&#24615;&#35206;&#30422;&#37197;&#32622;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/spring.html#actuators"><strong>19.6</strong><span>Spring Boot &#25191;&#34892;&#22120;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/scaffolding.html"><strong>20</strong><span>&#33050;&#25163;&#26550;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/deployment.html"><strong>21</strong><span>&#37096;&#32626;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/deployment.html#deploymentStandalone"><strong>21.1</strong><span>&#29420;&#31435;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/deployment.html#deploymentContainer"><strong>21.2</strong><span>&#23481;&#22120;&#37096;&#32626;&#65288;&#20363;&#22914;&#65292;Tomcat&#65289;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/deployment.html#deploymentTasks"><strong>21.3</strong><span>&#37096;&#32626;&#37197;&#32622;&#20219;&#21153;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:0px"><a href="../guide/contributing.html"><strong>22</strong><span>&#32473; Grails &#36129;&#29486;&#20195;&#30721;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/contributing.html#issues"><strong>22.1</strong><span>&#22312; Github &#20013;&#25253;&#21578;&#38382;&#39064;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/contributing.html#build"><strong>22.2</strong><span>&#20174;&#28304;&#20195;&#30721;&#32534;&#35793;&#24182;&#36816;&#34892;&#27979;&#35797;</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/contributing.html#patchesCore"><strong>22.3</strong><span>&#23558;&#34917;&#19969;&#25552;&#20132;&#21040; Grails</span></a></div>
+                            
+                            <div class="toc-item" style="margin-left:10px"><a href="../guide/contributing.html#patchesDoc"><strong>22.4</strong><span>&#23558;&#20462;&#34917;&#31243;&#24207;&#25552;&#20132;&#21040; Grails &#25991;&#26723;</span></a></div>
+                            
+                            <div style="clear:both" ></div>
+                        </div>
+                        
+                        
+                    </div>
+                </td>
+                <td id="col2">
+            <div class="local clearfix">
+                <div class="local-title">
+                    <a href="../guide/index.html" target="mainFrame">Quick Reference</a>
+                    <span class="toggle">(<a href="#" onclick="localToggle(); return false;">hide</a>)</span>
+                </div>
+                <div class="menu">
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Command Line</h1><div class="menu-sub">
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/Usage.html">Usage</a></div>
+                        
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/bug-report.html">bug-report</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/clean.html">clean</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/compile.html">compile</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/console.html">console</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/create-app.html">create-app</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/create-command.html">create-command</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/create-controller.html">create-controller</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/create-domain-class.html">create-domain-class</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/create-functional-test.html">create-functional-test</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/create-hibernate-cfg-xml.html">create-hibernate-cfg-xml</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/create-integration-test.html">create-integration-test</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/create-interceptor.html">create-interceptor</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/create-plugin.html">create-plugin</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/create-profile.html">create-profile</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/create-script.html">create-script</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/create-service.html">create-service</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/create-taglib.html">create-taglib</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/create-unit-test.html">create-unit-test</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/dependency-report.html">dependency-report</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/docs.html">docs</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/generate-all.html">generate-all</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/generate-controller.html">generate-controller</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/generate-views.html">generate-views</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/help.html">help</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/install-templates.html">install-templates</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/list-plugins.html">list-plugins</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/list-profiles.html">list-profiles</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/package-plugin.html">package-plugin</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/package.html">package</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/plugin-info.html">plugin-info</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/profile-info.html">profile-info</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/run-app.html">run-app</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/run-command.html">run-command</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/run-script.html">run-script</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/schema-export.html">schema-export</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/shell.html">shell</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/stats.html">stats</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/stop-app.html">stop-app</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/test-app.html">test-app</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Command%20Line/war.html">war</a>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Constraints</h1><div class="menu-sub">
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/Usage.html">Usage</a></div>
+                        
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/attributes.html">attributes</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/bindable.html">bindable</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/blank.html">blank</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/creditCard.html">creditCard</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/email.html">email</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/inList.html">inList</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/matches.html">matches</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/max.html">max</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/maxSize.html">maxSize</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/min.html">min</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/minSize.html">minSize</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/notEqual.html">notEqual</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/nullable.html">nullable</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/range.html">range</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/scale.html">scale</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/size.html">size</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/unique.html">unique</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/url.html">url</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/validator.html">validator</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Constraints/widget.html">widget</a>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Controllers</h1><div class="menu-sub">
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/Usage.html">Usage</a></div>
+                        
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/actionName.html">actionName</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/allowedMethods.html">allowedMethods</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/bindData.html">bindData</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/chain.html">chain</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/controllerName.html">controllerName</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/defaultAction.html">defaultAction</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/errors.html">errors</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/flash.html">flash</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/forward.html">forward</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/grailsApplication.html">grailsApplication</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/hasErrors.html">hasErrors</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/namespace.html">namespace</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/params.html">params</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/redirect.html">redirect</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/render.html">render</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/request.html">request</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/respond.html">respond</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/response.html">response</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/responseFormats.html">responseFormats</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/scope.html">scope</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/servletContext.html">servletContext</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/session.html">session</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/withForm.html">withForm</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Controllers/withFormat.html">withFormat</a>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Database Mapping</h1><div class="menu-sub">
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/Usage.html">Usage</a></div>
+                        
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/autoImport.html">autoImport</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/autoTimestamp.html">autoTimestamp</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/batchSize.html">batchSize</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/cache.html">cache</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/cascade.html">cascade</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/column.html">column</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/comment.html">comment</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/discriminator.html">discriminator</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/dynamicInsert.html">dynamicInsert</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/dynamicUpdate.html">dynamicUpdate</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/fetch.html">fetch</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/id.html">id</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/ignoreNotFound.html">ignoreNotFound</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/indexColumn.html">indexColumn</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/insertable.html">insertable</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/joinTable.html">joinTable</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/lazy.html">lazy</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/order.html">order</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/sort.html">sort</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/table.html">table</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/type.html">type</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/updateable.html">updateable</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Database%20Mapping/version.html">version</a>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Domain Classes</h1><div class="menu-sub">
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/Usage.html">Usage</a></div>
+                        
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/addTo.html">addTo</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/attach.html">attach</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/belongsTo.html">belongsTo</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/clearErrors.html">clearErrors</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/constraints.html">constraints</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/count.html">count</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/countBy.html">countBy</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/createCriteria.html">createCriteria</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/delete.html">delete</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/discard.html">discard</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/embedded.html">embedded</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/errors.html">errors</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/executeQuery.html">executeQuery</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/executeUpdate.html">executeUpdate</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/exists.html">exists</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/fetchMode.html">fetchMode</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/find.html">find</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/findAll.html">findAll</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/findAllBy.html">findAllBy</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/findAllWhere.html">findAllWhere</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/findBy.html">findBy</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/findOrCreateBy.html">findOrCreateBy</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/findOrCreateWhere.html">findOrCreateWhere</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/findOrSaveBy.html">findOrSaveBy</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/findOrSaveWhere.html">findOrSaveWhere</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/findWhere.html">findWhere</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/first.html">first</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/get.html">get</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/getAll.html">getAll</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/getDirtyPropertyNames.html">getDirtyPropertyNames</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/getPersistentValue.html">getPersistentValue</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/hasErrors.html">hasErrors</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/hasMany.html">hasMany</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/hasOne.html">hasOne</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/ident.html">ident</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/instanceOf.html">instanceOf</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/isAttached.html">isAttached</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/isDirty.html">isDirty</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/last.html">last</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/list.html">list</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/listOrderBy.html">listOrderBy</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/load.html">load</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/lock.html">lock</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/mapWith.html">mapWith</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/mappedBy.html">mappedBy</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/mapping.html">mapping</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/merge.html">merge</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/namedQueries.html">namedQueries</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/properties.html">properties</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/read.html">read</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/refresh.html">refresh</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/removeFrom.html">removeFrom</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/save.html">save</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/transients.html">transients</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/validate.html">validate</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/where.html">where</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/whereAny.html">whereAny</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/withCriteria.html">withCriteria</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/withNewSession.html">withNewSession</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/withSession.html">withSession</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Domain%20Classes/withTransaction.html">withTransaction</a>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Plug-ins</h1><div class="menu-sub">
+                        
+                        <div class="menu-item"><a href="../ref/Plug-ins/Usage.html">Usage</a></div>
+                        
+                        
+                        <div class="menu-item"><a href="../ref/Plug-ins/URL%20mappings.html">URL mappings</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Plug-ins/codecs.html">codecs</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Plug-ins/controllers.html">controllers</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Plug-ins/core.html">core</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Plug-ins/dataSource.html">dataSource</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Plug-ins/domainClasses.html">domainClasses</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Plug-ins/hibernate.html">hibernate</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Plug-ins/i18n.html">i18n</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Plug-ins/logging.html">logging</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Plug-ins/scaffolding.html">scaffolding</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Plug-ins/services.html">services</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Plug-ins/servlets.html">servlets</a>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Services</h1><div class="menu-sub">
+                        
+                        <div class="menu-item"><a href="../ref/Services/Usage.html">Usage</a></div>
+                        
+                        
+                        <div class="menu-item"><a href="../ref/Services/scope.html">scope</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Services/transactional.html">transactional</a>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Servlet API</h1><div class="menu-sub">
+                        
+                        
+                        <div class="menu-item"><a href="../ref/Servlet%20API/request.html">request</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Servlet%20API/response.html">response</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Servlet%20API/servletContext.html">servletContext</a>
+                        </div>
+                        
+                        <div class="menu-item"><a href="../ref/Servlet%20API/session.html">session</a>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </td>
+            </tr>
+        </table>
+
+        <div id="footer">
+            Copies of this document may be made for your own use and for distribution to others, provided that you do not charge any fee for such copies and further provided that each copy contains this Copyright Notice, whether distributed in print or electronically.
+            
+        </div>
+
+
+
+<script type="text/javascript" src="../js/docs.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,2334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="/cdn-cgi/apps/head/3cOPSgo5Omz84ycX7CvigfX4cpw.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-82213539-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-82213539-2');
+    </script>
+    <title>18 &#25554;&#20214; 4.0.0</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8"/>
+    <link rel="stylesheet" href="../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8"/>
+    <script type="text/javascript">
+function addJsClass() {
+    var classes = document.body.className.split(" ");
+    classes.push("js");
+    document.body.className = classes.join(" ");
+}
+    </script>
+</head>
+
+<body class="body" onload="addJsClass();">
+<div id="navigation">
+    <div class="navTitle">
+        
+        The Grails Framework
+    </div>
+    <div class="navLinks">
+        <ul>
+            <li>
+                <div id="nav-summary" onmouseover="toggleNavSummary(false)" onmouseout="toggleNavSummary(true)">
+                    <a href="../guide/index.html" class="button">Table of contents</a>
+
+                    <div id="nav-summary-childs" style="display:none;">
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/introduction.html"><strong>1</strong><span>&#31616;&#20171;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/gettingStarted.html"><strong>2</strong><span>&#20837;&#38376;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/upgrading.html"><strong>3</strong><span>&#20174; Grails 3.3.x &#21319;&#32423;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/conf.html"><strong>4</strong><span>&#37197;&#32622;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/commandLine.html"><strong>5</strong><span>&#21629;&#20196;&#34892;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/profiles.html"><strong>6</strong><span>&#24212;&#29992;&#31243;&#24207;&#37197;&#32622;&#25991;&#20214;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/GORM.html"><strong>7</strong><span>&#23545;&#35937;&#20851;&#31995;&#26144;&#23556; &#65288;GORM&#65289;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/theWebLayer.html"><strong>8</strong><span>Web &#23618;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/traits.html"><strong>9</strong><span>&#29305;&#24449;&#65288;Trait&#65289;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/REST.html"><strong>10</strong><span>REST</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/async.html"><strong>11</strong><span>&#24322;&#27493;&#32534;&#31243;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/validation.html"><strong>12</strong><span>&#39564;&#35777;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/services.html"><strong>13</strong><span>&#26381;&#21153;&#23618;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/staticTypeCheckingAndCompilation.html"><strong>14</strong><span>&#38745;&#24577;&#31867;&#22411;&#26816;&#26597;&#21644;&#32534;&#35793;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/testing.html"><strong>15</strong><span>&#27979;&#35797;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/i18n.html"><strong>16</strong><span>&#22269;&#38469;&#21270;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/security.html"><strong>17</strong><span>&#23433;&#20840;&#24615;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/plugins.html"><strong>18</strong><span>&#25554;&#20214;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/spring.html"><strong>19</strong><span>Grails &#19982; Spring</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/scaffolding.html"><strong>20</strong><span>&#33050;&#25163;&#26550;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/deployment.html"><strong>21</strong><span>&#37096;&#32626;</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/contributing.html"><strong>22</strong><span>&#32473; Grails &#36129;&#29486;&#20195;&#30721;</span></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="separator selected">
+                <a id="ref-button" onclick="localToggle(); return false;" href="#">Quick Reference</a>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+
+<table id="colset" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td id="col1">
+            <div id="main" class="corner-all">
+
+                
+                    <div class="toc-item prev-left"><a href="../guide/security.html">&lt;&lt; <strong>17</strong><span>&#23433;&#20840;&#24615;</span></a></div>
+                
+
+                <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
+
+                
+                    <div class="toc-item next-right"><a href="../guide/spring.html"><strong>19</strong><span>Grails &#19982; Spring</span> >></a></div>
+                
+
+
+                <div class="project">
+                    <h1>18 &#25554;&#20214;</h1>
+
+                    <p><strong>Version:</strong> 4.0.0</p>
+                </div>
+
+                
+                <div id="table-of-content">
+                    <h2>Table of Contents</h2>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#creatingAndInstallingPlugins"><strong>18.1</strong><span>&#21019;&#24314;&#21644;&#23433;&#35013;&#25554;&#20214;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#repositories"><strong>18.2</strong><span>&#25554;&#20214;&#24211;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#providingBasicArtefacts"><strong>18.3</strong><span>&#25552;&#20379;&#22522;&#26412;&#25991;&#29289;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#evaluatingConventions"><strong>18.4</strong><span>&#35780;&#20272;&#32422;&#23450;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#hookingIntoRuntimeConfiguration"><strong>18.5</strong><span>&#25346;&#38057;&#21040;&#36816;&#34892;&#26102;&#37197;&#32622;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#addingMethodsAtCompileTime"><strong>18.6</strong><span>&#22312;&#32534;&#35793;&#26102;&#28155;&#21152;&#26041;&#27861;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#addingDynamicMethodsAtRuntime"><strong>18.7</strong><span>&#22312;&#36816;&#34892;&#26102;&#28155;&#21152;&#21160;&#24577;&#26041;&#27861;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#participatingInAutoReloadEvents"><strong>18.8</strong><span>&#21442;&#19982;&#33258;&#21160;&#37325;&#26032;&#21152;&#36733;&#20107;&#20214;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#understandingPluginLoadOrder"><strong>18.9</strong><span>&#20102;&#35299;&#25554;&#20214;&#21152;&#36733;&#39034;&#24207;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#artefactApi"><strong>18.10</strong><span>&#33402;&#26415;&#21697; API</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:10px"><a href="#queryingArtefacts"><strong>18.10.1</strong><span>&#35810;&#38382;&#21487;&#29992;&#25991;&#29289;</span></a>
+                    </div>
+                    
+                    <div class="toc-item" style="margin-left:10px"><a href="#customArtefacts"><strong>18.10.2</strong><span>&#28155;&#21152;&#24744;&#33258;&#24049;&#30340;&#33402;&#26415;&#21697;&#31867;&#22411;</span></a>
+                    </div>
+                    
+                </div>
+                
+
+                
+<a name="15. &#25554;&#20214;"><!-- Legacy link --></a>
+<h1 id="plugins">18 插件</h1>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/plugins.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>Grails是首先是一个Web应用程序框架，但它也是一个平台。 通过暴露了一些可以让你在命令行界面运行时配置引擎扩展任何扩展点，Grails的可定制，以适应几乎任何需求。 挂接到这个平台上，所有你需要做的就是创建一个插件。</p>
+</div>
+<div class="paragraph">
+<p>扩展平台可能听起来很复杂，但是插件的范围从简单到功能强大。 如果您知道如何构建Grails应用程序，那么您将知道如何为<a href="#providingBasicArtefacts">共享数据模型</a>或一些静态资源创建插件。</p>
+</div>
+
+<a name="15.1 &#21019;&#24314;&#21644;&#23433;&#35013;&#25554;&#20214;"><!-- Legacy link --></a>
+<h2 id="creatingAndInstallingPlugins">18.1 创建和安装插件</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/plugins/creatingAndInstallingPlugins.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="sect3">
+<h4 id="_创建插件">创建插件</h4>
+<div class="literalblock">
+<div class="content">
+<pre>创建 Grails 插件只需运行以下命令：</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">grails create-plugin &lt;&lt;PLUGIN NAME&gt;&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这将为您指定的名称创建一个插件项目。例如，运行 <code>grails create-plugin example</code> 将创建一个名为 <code>example</code> 的新插件项目。</p>
+</div>
+<div class="paragraph">
+<p>在 Grails 3.0 中，您应该考虑创建的插件是否需要Web环境，或者该插件是否可以与其他配置文件一起使用。如果您的插件不需要网络环境，请使用 <code>plugin</code> 配置文件，而不是 <code>web-plugin</code> 配置文件：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">grails create-plugin &lt;&lt;PLUGIN NAME&gt;&gt; --profile=plugin</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>确保插件名称不能连续包含多个大写字母，否则将无法正常工作。驼峰命名法的是个很好的选择。</p>
+</div>
+<div class="paragraph">
+<p>作为常规的 Grails 项目有很多好处，您可以通过运行立即测试您的插件（如果该插件针对 <code>web</code> 配置文件）：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">grails run-app</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+默认情况下，插件项目不提供 index.gsp，因为大多数插件都不需要它。因此，如果您尝试在创建插件后立即查看在浏览器中运行的插件，则会收到页面未找到错误。如果愿意，您可以轻松为插件创建 <code>grails-app/views/index.gsp</code>。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Grails 插件的结构与 Grails 应用程序项目的结构几乎相同，除了在插件包结构下的 <code>src/main/groovy</code> 目录中，您会找到插件描述符类（以 <code>GrailsPlugin</code> 结尾的类）。例如：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.plugins.*</span>
+
+<span class="type">class</span> <span class="class">ExampleGrailsPlugin</span> <span class="directive">extends</span> Plugin {
+   ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>所有插件都必须在 <code>src/main/groovy</code> 目录下具有此类，否则它们将不被视为插件。plugin 类定义有关插件的元数据，以及可选的各种插件扩展点的钩子（很快就会发现）。</p>
+</div>
+<div class="paragraph">
+<p>您还可以使用几个特殊属性提供有关插件的其他信息：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>title</code> - 插件的一句话简短描述</p>
+</li>
+<li>
+<p><code>grailsVersion</code> - 插件支持的Grails的版本范围，例如：<code>1.2&gt; *</code>（表示1.2或更高）</p>
+</li>
+<li>
+<p><code>author</code> - 插件作者的名字</p>
+</li>
+<li>
+<p><code>authorEmail</code> - 插件作者的联系电子邮件</p>
+</li>
+<li>
+<p><code>developers</code> - 除上述作者之外的任何其他开发人员。</p>
+</li>
+<li>
+<p><code>description</code> - 插件功能的完整多行描述</p>
+</li>
+<li>
+<p><code>documentation</code> - 插件文档的URL</p>
+</li>
+<li>
+<p><code>license</code> - 插件的许可证</p>
+</li>
+<li>
+<p><code>issueManagement</code> - 插件的问题跟踪器</p>
+</li>
+<li>
+<p><code>scm</code> - 插件的源代码管理位置</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>这是一个精简的例子 <a href="https://github.com/grails-plugins/grails-quartz">Quartz Grails plugin</a>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> quartz
+
+<span class="annotation">@Slf4j</span>
+<span class="type">class</span> <span class="class">QuartzGrailsPlugin</span> <span class="directive">extends</span> Plugin {
+    <span class="comment">// the version or versions of Grails the plugin is designed for</span>
+    <span class="keyword">def</span> grailsVersion = <span class="string"><span class="delimiter">&quot;</span><span class="content">3.0.0.BUILD-SNAPSHOT &gt; *</span><span class="delimiter">&quot;</span></span>
+    <span class="comment">// resources that are excluded from plugin packaging</span>
+    <span class="keyword">def</span> pluginExcludes = [
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">grails-app/views/error.gsp</span><span class="delimiter">&quot;</span></span>
+    ]
+    <span class="keyword">def</span> title = <span class="string"><span class="delimiter">&quot;</span><span class="content">Quartz</span><span class="delimiter">&quot;</span></span> <span class="comment">// Headline display name of the plugin</span>
+    <span class="keyword">def</span> author = <span class="string"><span class="delimiter">&quot;</span><span class="content">Jeff Brown</span><span class="delimiter">&quot;</span></span>
+    <span class="keyword">def</span> authorEmail = <span class="string"><span class="delimiter">&quot;</span><span class="content">zzz@yyy.com</span><span class="delimiter">&quot;</span></span>
+    <span class="keyword">def</span> description = <span class="string"><span class="delimiter">'''</span><span class="content">\
+</span><span class="content">Adds Quartz job scheduling features
+</span><span class="delimiter">'''</span></span>
+    <span class="keyword">def</span> profiles = [<span class="string"><span class="delimiter">'</span><span class="content">web</span><span class="delimiter">'</span></span>]
+    <span class="predefined-type">List</span> loadAfter = [<span class="string"><span class="delimiter">'</span><span class="content">hibernate3</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">hibernate4</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">hibernate5</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">services</span><span class="delimiter">'</span></span>]
+    <span class="keyword">def</span> documentation = <span class="string"><span class="delimiter">&quot;</span><span class="content">http://grails.org/plugin/quartz</span><span class="delimiter">&quot;</span></span>
+    <span class="keyword">def</span> license = <span class="string"><span class="delimiter">&quot;</span><span class="content">APACHE</span><span class="delimiter">&quot;</span></span>
+    <span class="keyword">def</span> issueManagement = [ <span class="key">system</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Github Issues</span><span class="delimiter">&quot;</span></span>, <span class="key">url</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://github.com/grails3-plugins/quartz/issues</span><span class="delimiter">&quot;</span></span> ]
+    <span class="keyword">def</span> developers = [
+            [ <span class="key">name</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Joe Dev</span><span class="delimiter">&quot;</span></span>, <span class="key">email</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">joedev@gmail.com</span><span class="delimiter">&quot;</span></span> ]
+    ]
+    <span class="keyword">def</span> scm = [ <span class="key">url</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">https://github.com/grails3-plugins/quartz/</span><span class="delimiter">&quot;</span></span> ]
+
+    Closure doWithSpring()......</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_安装本地插件">安装本地插件</h4>
+<div class="paragraph">
+<p>为了使您的插件可在Grails应用程序中使用，请运行 <code>install</code> 命令：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">grails install</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这会将插件安装到本地 Maven 缓存中。 然后要在应用程序中使用插件，请在 <code>build.gradle</code> 文件中声明对该插件的依赖性：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">compile <span class="string"><span class="delimiter">&quot;</span><span class="content">org.grails.plugins:quartz:0.1</span><span class="delimiter">&quot;</span></span></code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+在 Grails 2.x 中，插件打包为 ZIP 文件，但是在 Grails 3.x 中，插件是简单的 JAR 文件，可以将其添加到IDE的类路径中。
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_插件和多项目构建">插件和多项目构建</h4>
+<div class="paragraph">
+<p>如果您希望将插件设置为多项目构建的一部分，请遵循以下步骤。</p>
+</div>
+<div class="paragraph">
+<p><strong>步骤1：创建应用程序和插件</strong></p>
+</div>
+<div class="paragraph">
+<p>使用 <code>grails</code> 命令创建一个应用程序和一个插件：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">$</span> grails create-app myapp
+<span class="error">$</span> grails create-plugin myplugin</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>步骤2：建立 settings.gradle 文件</strong></p>
+</div>
+<div class="paragraph">
+<p>在同一目录中，创建一个具有以下内容的 <code>settings.gradle</code> 文件：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">include <span class="string"><span class="delimiter">&quot;</span><span class="content">myapp</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">myplugin</span><span class="delimiter">&quot;</span></span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>目录结构应如下所示：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">PROJECT_DIR
+  - settings.gradle
+  - myapp
+    - build.gradle
+  - myplugin
+    - build.gradle</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>步骤3：声明对插件的项目依赖</strong></p>
+</div>
+<div class="paragraph">
+<p>在应用程序的 <code>build.gradle</code> 中，声明对 plugins 块中插件的依赖：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">grails {
+    plugins {
+        compile project(<span class="string"><span class="delimiter">'</span><span class="content">:myplugin</span><span class="delimiter">'</span></span>)
+    }
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+您也可以在 <code>dependencies</code> 块中声明依赖项，但是如果这样做，子项目将不会同步刷新！
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>步骤4：运行应用程序</strong></p>
+</div>
+<div class="paragraph">
+<p>现在，从应用程序目录的根目录使用 <code>grails run-app</code> 命令运行应用程序，您可以使用 <code>verbose</code> 标志查看Gradle输出：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">$</span> cd myapp
+<span class="error">$</span> grails run-app -verbose</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>您将从Gradle输出中注意到，插件源已构建并放置在应用程序的类路径中：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">:<span class="key">myplugin</span>:compileAstJava UP-TO-DATE
+:<span class="key">myplugin</span>:compileAstGroovy UP-TO-DATE
+:<span class="key">myplugin</span>:processAstResources UP-TO-DATE
+:<span class="key">myplugin</span>:astClasses UP-TO-DATE
+:<span class="key">myplugin</span>:compileJava UP-TO-DATE
+:<span class="key">myplugin</span>:configScript UP-TO-DATE
+:<span class="key">myplugin</span>:compileGroovy
+:<span class="key">myplugin</span>:copyAssets UP-TO-DATE
+:<span class="key">myplugin</span>:copyCommands UP-TO-DATE
+:<span class="key">myplugin</span>:copyTemplates UP-TO-DATE
+:<span class="key">myplugin</span>:processResources
+:<span class="key">myapp</span>:compileJava UP-TO-DATE
+:<span class="key">myapp</span>:compileGroovy
+:<span class="key">myapp</span>:processResources UP-TO-DATE
+:<span class="key">myapp</span>:classes
+:<span class="key">myapp</span>:findMainClass
+:<span class="key">myapp</span>:bootRun
+Grails application running at <span class="key">http</span>:<span class="comment">//localhost:8080 in environment: development</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_关于排除文物的注意事项">关于排除文物的注意事项</h4>
+<div class="paragraph">
+<p>虽然 <a href="../ref/Command%20Line/create-plugin.html">create-plugin</a> 命令会为您创建某些文件，以便该插件可以作为 Grails 应用程序运行，但在打包插件时，并非所有这些文件都被包括在内。以下是创建但未包含的文件类别的列表 <a href="../ref/Command%20Line/package-plugin.html">package-plugin</a>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>grails-app/build.gradle</code>（尽管它用于生成 <code>dependencies.groovy</code>）</p>
+</li>
+<li>
+<p><code>grails-app/conf/application.yml</code>（重命名为plugin.yml）</p>
+</li>
+<li>
+<p><code>grails-app/conf/spring/resources.groovy</code></p>
+</li>
+<li>
+<p><code>grails-app/conf/logback.groovy</code></p>
+</li>
+<li>
+<p><code>/src/test/*\*</code> 下的一切文件</p>
+</li>
+<li>
+<p>SCM 管理文件，路径：<code>*\*/.svn/*\*</code> 和 <code>*\*/CVS/*\*</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_自定义插件内容">自定义插件内容</h4>
+<div class="paragraph">
+<p>开发插件时，您可以创建在插件开发和测试期间使用的测试类和源，但不应将其导出到应用程序。</p>
+</div>
+<div class="paragraph">
+<p>要排除测试源，您需要修改插件描述符的 <code>pluginExcludes</code> 属性，并排除 <code>build.gradle</code> 文件中的资源。例如，说在 <code>com.demo</code> 包下有一些类，这些类在插件源代码树中，但不应打包在应用程序中。在您的插件描述符中，您应该排除以下这些：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="comment">// resources that should be loaded by the plugin once installed in the application</span>
+  <span class="keyword">def</span> pluginExcludes = [
+    <span class="string"><span class="delimiter">'</span><span class="content">**/com/demo/**</span><span class="delimiter">'</span></span>
+  ]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>并且在您的 <code>build.gradle</code> 中，您应该从 JAR 文件中排除已编译的类：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">jar {
+  exclude <span class="string"><span class="delimiter">&quot;</span><span class="content">com/demo/**/**</span><span class="delimiter">&quot;</span></span>
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_grails_3_0_中的嵌入式插件">Grails 3.0 中的嵌入式插件</h4>
+<div class="paragraph">
+<p>在 Grails 2.x 中，可以在 <code>BuildConfig</code> 中指定内联插件，在 Grails 3.x 中，此功能已被 Gradle 的多项目构建功能所取代。</p>
+</div>
+<div class="paragraph">
+<p>要设置多项目构建，请在父目录中创建一个应用程序和一个插件：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">$</span> grails create-app myapp
+<span class="error">$</span> grails create-plugin myplugin</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>然后在父目录中创建一个 <code>settings.gradle</code> 文件，指定您的应用程序和插件的位置：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">include <span class="string"><span class="delimiter">'</span><span class="content">myapp</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">myplugin</span><span class="delimiter">'</span></span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>最后，在插件的应用程序的 <code>build.gradle</code> 中添加一个依赖项：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">compile project(<span class="string"><span class="delimiter">'</span><span class="content">:myplugin</span><span class="delimiter">'</span></span>)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这样一来，您就可以获得 Grails 2.x 等效的嵌入式插件。</p>
+</div>
+</div>
+
+<a name="15.2 &#25554;&#20214;&#23384;&#20648;&#24211;"><!-- Legacy link --></a>
+<h2 id="repositories">18.2 插件库</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/plugins/repositories.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="sect3">
+<h4 id="_在_grails_中央插件库中分发插件">在 Grails 中央插件库中分发插件</h4>
+<div class="paragraph">
+<p>分发插件的首选方法是发布到官方 Grails 中央插件库。这将使您的插件 <a href="../ref/Command%20Line/listplugins.html">list plugins</a> 可见命令：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">grails list-plugins</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>它列出了中央存储库中的所有插件。您的插件也可以访问 <a href="../ref/Command%20Line/plugininfo.html">plugin info</a> 命令：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">grails plugin-info [plugin-name]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>它打印关于它的额外信息，比如它的描述，谁写的，等等。</p>
+</div>
+<div class="paragraph">
+<p>注意：如果您已经创建了一个 Grails 插件并希望它托管在中央存储库中，那么您可以在 <a href="http://plugins.Grails.org/">plugin portal</a>网站上找到获取帐户的说明。</p>
+</div>
+</div>
+
+<a name="15.4 &#25552;&#20379;&#22522;&#26412;&#25991;&#29289;"><!-- Legacy link --></a>
+<h2 id="providingBasicArtefacts">18.3 提供基本文物</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/plugins/providingBasicArtefacts.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="sect3">
+<h4 id="_添加命令行命令">添加命令行命令</h4>
+<div class="paragraph">
+<p>插件可以通过以下两种方式之一向 Grails 3.0 交互式 shell 添加新命令。首先，使用 <a href="../ref/Command%20Line/createscript.html">create script</a> 可以创建代码生成脚本，该脚本将对应用程序可用。<code>create script</code> 命令将在 <code>src/main/scripts</code> 目录中创建脚本：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">+ src/main/scripts     &lt;-- additional scripts here
+ + grails-app
+      + controllers
+      + services
+      + etc.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>代码生成脚本可用于在项目树中创建人工制品并自动与 Gradle 交互。</p>
+</div>
+<div class="paragraph">
+<p>如果要创建与加载的 Grails 应用程序实例交互的新 shell 命令，则应使用 <code>create command</code> 命令：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">$</span> grails create-command MyExampleCommand</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这将创建一个名为 <code>grails app/commands/PACKAGE/PATH/MyExampleCommand.groovy</code> 的文件，扩展<a href="http://docs.grails.org/4.0.0/api/grails/dev/commands/ApplicationCommand.html">ApplicationCommand</a>：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">grails.dev.commands.*</span>
+
+<span class="type">class</span> <span class="class">MyExampleCommand</span> <span class="directive">implements</span> ApplicationCommand {
+
+  <span class="type">boolean</span> handle(ExecutionContext ctx) {
+      println <span class="string"><span class="delimiter">&quot;</span><span class="content">Hello World</span><span class="delimiter">&quot;</span></span>
+      <span class="keyword">return</span> <span class="predefined-constant">true</span>
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>ApplicationCommand</code> 可以访问 <code>GrailsApplication</code> 实例，并像任何其他 Spring bean 一样接受自动连接。</p>
+</div>
+<div class="paragraph">
+<p>您还可以通知Grails跳过 <code>Bootstrap.groovy</code> 文件的执行，命令中有一个简单的属性：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">MyExampleCommand</span> <span class="directive">implements</span> ApplicationCommand {
+
+  <span class="type">boolean</span> skipBootstrap = <span class="predefined-constant">true</span>
+
+  <span class="type">boolean</span> handle(ExecutionContext ctx) {
+      ...
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>对于每个 <code>ApplicationCommand</code>，Grails 将创建一个 shell 命令和一个 Gradle 任务来调用 <code>ApplicationCommand</code>。在上面的示例中，可以使用以下任一方法调用 <code>MyExampleCommand</code> 类：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">$</span> grails my-example</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">$</span> gradle myExample</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Grails 版本都是小写连字符分隔的，不包括 <code>Command</code> 后缀。</p>
+</div>
+<div class="paragraph">
+<p>代码生成脚本和 <code>ApplicationCommand</code> 实例的主要区别在于后者可以完全访问 Grails 应用程序状态，因此可以用于执行与数据库交互的任务、调用 GORM 等。</p>
+</div>
+<div class="paragraph">
+<p>在 Grails 2.x 中，甘特图脚本可以用来执行这两个任务，在 Grails 3.x 中，代码生成和与运行时应用程序的交互状态已经完全分离。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_添加新的_grails_应用程序工件_控制器_标记库_服务等">添加新的 grails 应用程序工件（控制器、标记库、服务等）</h4>
+<div class="paragraph">
+<p>插件可以通过在 <code>grails app</code> 树中创建相关文件来添加新工件。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">+ grails-app
+      + controllers  &lt;-- additional controllers here
+      + services &lt;-- additional services here
+      + etc.  &lt;-- additional XXX here</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_提供视图_模板和视图分辨率">提供视图、模板和视图分辨率</h4>
+<div class="paragraph">
+<p>当插件提供控制器时，它也可以提供要呈现的默认视图。这是通过插件模块化应用程序的一个很好的方法。Grails 的视图解析机制将首先在安装到其中的应用程序中查找视图，如果失败，将尝试在插件中查找视图。这意味着您可以通过在应用程序的 <code>grails app/views</code> 目录中创建相应的 gsp 来覆盖插件提供的视图。</p>
+</div>
+<div class="paragraph">
+<p>例如，考虑一个名为 <code>BookController</code> 的控制器，它是由一个 <code>amazon</code> 插件提供的。如果正在执行的操作是 <code>list</code>，Grails将首先查找名为 <code>Grails app/views/book/list.gsp</code> 的视图，如果失败，它将查找与插件相关的同一视图。</p>
+</div>
+<div class="paragraph">
+<p>但是，如果视图使用插件提供的模板，则可能需要以下语法：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">&lt;<span class="key">g</span>:render template=<span class="string"><span class="delimiter">&quot;</span><span class="content">fooTemplate</span><span class="delimiter">&quot;</span></span> plugin=<span class="string"><span class="delimiter">&quot;</span><span class="content">amazon</span><span class="delimiter">&quot;</span></span>/&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>请注意 <code>plugin</code> 属性的用法，该属性包含模板所在的插件的名称。如果未指定，Grails 将寻找相对于应用程序的模板。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_排除文物">排除文物</h4>
+<div class="paragraph">
+<p>默认情况下，Grails 在打包过程中不包括以下文件：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>grails-app/conf/logback.groovy</code></p>
+</li>
+<li>
+<p><code>grails-app/conf/application.yml</code> (重命名为 <code>plugin.yml</code>)</p>
+</li>
+<li>
+<p><code>grails-app/conf/spring/resources.groovy</code></p>
+</li>
+<li>
+<p>一切内的 <code>/src/test/*\*</code></p>
+</li>
+<li>
+<p>scm管理文件内的 <code>*\*/.svn/*\*</code> and <code>*\*/cvs/*\*</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>不排除默认的 <code>UrlMappings.groovy</code> 文件，因此请删除该插件正常工作不需要的任何映射。您还可以随意使用其他名称（包含*将*）添加 UrlMappings 定义。例如，名为 <code>grails-app/controllers/BlogUrlMappings.groovy</code>.的文件就可以了。
+排除列表可通过 <code>pluginExcludes</code> 属性进行扩展：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="comment">// resources that are excluded from plugin packaging</span>
+<span class="keyword">def</span> pluginExcludes = [
+    <span class="string"><span class="delimiter">&quot;</span><span class="content">grails-app/views/error.gsp</span><span class="delimiter">&quot;</span></span>
+]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>例如，这对于将演示或测试资源包括在插件存储库中，而不在最终发行版中包括它们很有用。</p>
+</div>
+</div>
+
+<a name="15.5 &#35780;&#20272;&#32422;&#23450;"><!-- Legacy link --></a>
+<h2 id="evaluatingConventions">18.4 评估约定</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/plugins/evaluatingConventions.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>在查看基于约定的运行时配置之前，首先需要了解如何从插件评估这些约定。每个插件都有一个隐式的 <code>application</code> 变量，该变量是 <a href="http://docs.grails.org/4.0.0/api/grails/core/GrailsApplication.html">GrailsApplication</a>接口的一个实例。
+GrailsApplication接口提供了评估项目中约定的方法，并在内部存储对应用程序中所有工件类的引用
+工件实现<a href="http://docs.grails.org/4.0.0/api/grails/core/GrailsClass.html">GrailsClass</a>接口，该接口表示Grails资源，例如控制器或标签库。例如，要获取所有 <code>GrailsClass</code> 实例，您可以执行以下操作：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">for</span> (grailsClass <span class="keyword">in</span> application.allClasses) {
+    println grailsClass.name
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>GrailsApplication</code> 具有一些 <code>魔术</code> 属性，可以缩小您感兴趣的伪像的类型。例如，要访问控制器，可以使用：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">for</span> (controllerClass <span class="keyword">in</span> application.controllerClasses) {
+    println controllerClass.name
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>动态方法约定如下:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>* Classes</code>-检索特定文物名称的所有类。 例如 <code>application.controllerClasses</code>。</p>
+</li>
+<li>
+<p><code>get * Class</code>-检索特定人工制品的命名类。例如 <code>application.getControllerClass（"PersonController"）</code></p>
+</li>
+<li>
+<p><code>is * Class</code>-如果给定的类属于给定的伪像类型，则返回 <code>true</code>。例如 <code>application.isControllerClass（PersonController）</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><code>GrailsClass</code> 接口具有许多有用的方法，可让您进一步评估和使用约定。这些包括：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>getPropertyValue</code>-获取类中给定属性的初始值</p>
+</li>
+<li>
+<p><code>hasProperty</code>-如果类具有指定的属性，则返回 <code>true</code></p>
+</li>
+<li>
+<p><code>newInstance</code>-创建此类的新实例。</p>
+</li>
+<li>
+<p><code>getName</code>-返回应用程序中类的逻辑名称，如果适用，则不包含结尾约定部分</p>
+</li>
+<li>
+<p><code>getShortName</code>-返回没有包前缀的类的简称</p>
+</li>
+<li>
+<p><code>getFullName</code>-返回带有尾部约定部分和包名的应用程序中类的全名</p>
+</li>
+<li>
+<p><code>getPropertyName</code>-返回类的名称作为属性名称</p>
+</li>
+<li>
+<p><code>getLogicalPropertyName</code>-返回应用程序中类的逻辑属性名称，不包含尾随约定部分（如果适用）</p>
+</li>
+<li>
+<p><code>getNaturalName</code>-以自然术语返回属性的名称（例如 <code>lastName</code> 变为 <code>Last Name</code>）</p>
+</li>
+<li>
+<p><code>getPackageName</code>-返回包名</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>有关完整参考，请参见<a href="http://docs.grails.org/4.0.0/api/grails/core/GrailsClass.html">javadoc API</a>。</p>
+</div>
+
+<a name="15.7 &#25346;&#38057;&#21040;&#36816;&#34892;&#26102;&#37197;&#32622;"><!-- Legacy link --></a>
+<h2 id="hookingIntoRuntimeConfiguration">18.5 挂钩到运行时配置</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/plugins/hookingIntoRuntimeConfiguration.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>Grails 提供了许多挂钩（hook）来使用系统的不同部分并按照约定执行运行时配置。</p>
+</div>
+<div class="sect3">
+<h4 id="_接触_grails_spring_配置">接触 Grails Spring 配置</h4>
+<div class="paragraph">
+<p>首先，您可以从 <a href="http://docs.grails.org/4.0.0/api/grails/plugins/Plugin.html">Plugin</a> 类中插入覆盖了 <code>doWithSpring</code> 方法的 Grails 运行时配置，并返回一个定义其他 bean 的闭包。例如，以下代码片段来自提供以下功能的核心 Grails 插件之一 <a href="i18n.html">i18n</a> 支持:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">org.springframework.web.servlet.i18n.CookieLocaleResolver</span>
+<span class="keyword">import</span> <span class="include">org.springframework.web.servlet.i18n.LocaleChangeInterceptor</span>
+<span class="keyword">import</span> <span class="include">org.springframework.context.support.ReloadableResourceBundleMessageSource</span>
+<span class="keyword">import</span> <span class="include">grails.plugins.*</span>
+
+<span class="type">class</span> <span class="class">I18nGrailsPlugin</span> <span class="directive">extends</span> Plugin {
+
+    <span class="keyword">def</span> version = <span class="string"><span class="delimiter">&quot;</span><span class="content">0.1</span><span class="delimiter">&quot;</span></span>
+
+    Closure doWithSpring() {{-&gt;
+        messageSource(ReloadableResourceBundleMessageSource) {
+            basename = <span class="string"><span class="delimiter">&quot;</span><span class="content">WEB-INF/grails-app/i18n/messages</span><span class="delimiter">&quot;</span></span>
+        }
+        localeChangeInterceptor(LocaleChangeInterceptor) {
+            paramName = <span class="string"><span class="delimiter">&quot;</span><span class="content">lang</span><span class="delimiter">&quot;</span></span>
+        }
+        localeResolver(CookieLocaleResolver)
+    }}
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这个插件配置 Grails 的 <code>messageSource bean</code> 和其他两个 bean 来管理 Locale 解析和切换。它使用 <a href="spring.html#theBeanBuilderDSLExplained">Spring Bean Builder</a> 这样做的语法。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_自定义_servlet_环境">自定义 Servlet 环境</h4>
+<div class="paragraph">
+<p>在早期的 Grails 版本中，可以动态修改生成的 <code>web.xml</code>。在 Grails 3.x 中，没有 <code>web.xml</code> 文件，并且无法以编程方式修改 <code>web.xml</code> 文件。
+但是，可以在 Grails 3.x 中执行最常见的修改 Servlet 环境的任务。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_添加新的_servlet">添加新的 Servlet</h4>
+<div class="paragraph">
+<p>如果要添加一个新的 Servlet 实例，最简单的方法就是在 <code>doWithSpring</code> 方法中定义一个新的Spring bean：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">Closure doWithSpring() {{-&gt;
+  myServlet(MyServlet)
+}}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果您需要自定义 servlet，则可以使用 Spring Boot 的 <a href="http://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/context/embedded/ServletRegistrationBean.html">ServletRegistrationBean</a>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">Closure doWithSpring() {{-&gt;
+  myServlet(ServletRegistrationBean, <span class="keyword">new</span> MyServlet(), <span class="string"><span class="delimiter">&quot;</span><span class="content">/myServlet/*</span><span class="delimiter">&quot;</span></span>) {
+    loadOnStartup = <span class="integer">2</span>
+  }
+}}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_添加新的_servlet_过滤器">添加新的 Servlet 过滤器</h4>
+<div class="paragraph">
+<p>就像 Servlets 一样，配置新过滤器的最简单方法是简单地定义一个 Spring bean：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">Closure doWithSpring() {{-&gt;
+  myFilter(MyFilter)
+}}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>但是，如果您想控制过滤器注册的顺序，则需要使用 Spring Boot 的 <a href="http://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/web/servlet/FilterRegistrationBean.html">FilterRegistrationBean</a>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">myFilter(FilterRegistrationBean) {
+    filter = bean(MyFilter)
+    urlPatterns = [<span class="string"><span class="delimiter">'</span><span class="content">/*</span><span class="delimiter">'</span></span>]
+    order = Ordered.HIGHEST_PRECEDENCE
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+通过将 <code>HIGHEST_PRECEDENCE</code> 增加 10 来定义 Grails 内部注册的过滤器（ <code>GrailsWebRequestFilter</code>，<code>HiddenHttpMethodFilter</code> 等），从而允许在 Grails 过滤器之前或之间插入多个过滤器。
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_执行后期初始化配置">执行后期初始化配置</h4>
+<div class="paragraph">
+<p>有时，在构建 <a href="Springhttps://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/context/ApplicationContext.html">ApplicationContext</a> 之后进行一些运行时配置会很有用。在这种情况下，您可以定义一个 <code>doWithApplicationContext</code> 关闭属性。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">SimplePlugin</span> <span class="directive">extends</span> Plugin{
+
+    <span class="keyword">def</span> name = <span class="string"><span class="delimiter">&quot;</span><span class="content">simple</span><span class="delimiter">&quot;</span></span>
+    <span class="keyword">def</span> version = <span class="string"><span class="delimiter">&quot;</span><span class="content">1.1</span><span class="delimiter">&quot;</span></span>
+
+    <span class="annotation">@Override</span>
+    <span class="type">void</span> doWithApplicationContext() {
+        <span class="keyword">def</span> sessionFactory = applicationContext.sessionFactory
+        <span class="comment">// do something here with session factory</span>
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+
+
+<h2 id="addingMethodsAtCompileTime">18.6 在编译时添加方法</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/plugins/addingMethodsAtCompileTime.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>Grails 3.0 使得从插件向现有人工类型添加新特征（trait）变得容易。例如，说您想向控制器添加用于操纵日期的方法。这可以通过在 src/main/groovy 中定义一个特征（trait）来完成：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> myplugin
+
+<span class="annotation">@Enhances</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Controller</span><span class="delimiter">&quot;</span></span>)
+trait DateTrait {
+  <span class="predefined-type">Date</span> currentDate() {
+    <span class="keyword">return</span> <span class="keyword">new</span> <span class="predefined-type">Date</span>()
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>@Enhances</code> 注解定义了应将特征（trait）应用到的工件（artefacts）的类型。</p>
+</div>
+<div class="paragraph">
+<p>作为使用以上 <code>@Enhances</code> 批注的替代方法，您可以实现 <a href="http://docs.grails.org/4.0.0/api/grails/compiler/traits/TraitInjector.html">TraitInjector</a> 来告诉 Grails 在编译时要将特征注入到哪些工件（artefacts）中：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> myplugin
+
+<span class="annotation">@CompileStatic</span>
+<span class="type">class</span> <span class="class">ControllerTraitInjector</span> <span class="directive">implements</span> TraitInjector {
+
+    <span class="annotation">@Override</span>
+    <span class="predefined-type">Class</span> getTrait() {
+        SomeTrait
+    }
+
+    <span class="annotation">@Override</span>
+    <span class="predefined-type">String</span><span class="type">[]</span> getArtefactTypes() {
+        [<span class="string"><span class="delimiter">'</span><span class="content">Controller</span><span class="delimiter">'</span></span>] <span class="keyword">as</span> <span class="predefined-type">String</span><span class="type">[]</span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>上面的 <code>TraitInjector</code> 会将 <code>SomeTrait</code> 添加到所有控制器（Controller）。 <code>getArtefactTypes</code> 方法定义应将特征应用到的工件（artefacts）的类型。</p>
+</div>
+<div class="sect3">
+<h4 id="_有条件地应用特质">有条件地应用特质</h4>
+<div class="paragraph">
+<p><code>TraitInjector</code> 实现还可以实现 <a href="http://docs.grails.org/4.0.0/api/grails/compiler/ast/SupportsClassNode.html">SupportsClassNode</a> 接口，以将特征仅应用于那些满足自定义要求的人工制品。</p>
+</div>
+<div class="paragraph">
+<p>例如，如果仅在目标工件（artefacts）类具有特定注解时才应用特征，则可以按以下方式完成</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> myplugin
+
+<span class="annotation">@CompileStatic</span>
+<span class="type">class</span> <span class="class">AnnotationBasedTraitInjector</span> <span class="directive">implements</span> TraitInjector, SupportsClassNode {
+
+    <span class="annotation">@Override</span>
+    <span class="predefined-type">Class</span> getTrait() {
+        SomeTrait
+    }
+
+    <span class="annotation">@Override</span>
+    <span class="predefined-type">String</span><span class="type">[]</span> getArtefactTypes() {
+        [<span class="string"><span class="delimiter">'</span><span class="content">Controller</span><span class="delimiter">'</span></span>] <span class="keyword">as</span> <span class="predefined-type">String</span><span class="type">[]</span>
+    }
+
+    <span class="type">boolean</span> supports(ClassNode classNode) {
+      <span class="keyword">return</span> GrailsASTUtils.hasAnnotation(classNode, SomeAnnotation)
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在 <code>TraitInjector</code> 之上将仅向声明了 <code>SomeAnnotation</code> 的那些控制器添加 <code>SomeTrait</code>。</p>
+</div>
+<div class="paragraph">
+<p>该框架通过 .jar 文件中的 <code>META-INF/grails.factories</code> 描述符发现特征注入器。该描述符是自动生成的。 为上面显示的代码生成的描述符如下所示：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code>#Grails Factories File
+grails.compiler.traits.TraitInjector=
+myplugin.ControllerTraitInjector,myplugin.DateTraitTraitInjector</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+由于格式问题，以上代码段在等号后包含换行符。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>该文件会自动生成，并在构建时添加到 .jar 文件中。 如果应用程序出于任何原因在 <code>src/main/resources/META-INF/grails.factories</code> 上定义了自己的 <code>grails.factories</code> 文件，则在该文件中明确定义特征注入器非常重要。 仅当应用程序未定义自己的 <code>src/main/resources/META-INF/grails.factores</code> 文件时，自动生成的元数据才是可靠的。</p>
+</div>
+</div>
+
+<a name="15.8 &#22312;&#36816;&#34892;&#26102;&#28155;&#21152;&#21160;&#24577;&#26041;&#27861;"><!-- Legacy link --></a>
+<h2 id="addingDynamicMethodsAtRuntime">18.7 在运行时添加动态方法</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/plugins/addingDynamicMethodsAtRuntime.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="sect3">
+<h4 id="_基础">基础</h4>
+<div class="paragraph">
+<p>Grails 插件使您可以在运行时向任何 Grails 管理的或其他类注册动态方法。 这项工作是通过 <code>doWithDynamicMethods</code> 方法完成的。
+注意：请注意，Grails 3.x 具有较新的功能，例如可从使用 <code>CompileStatic</code> 编译的代码中使用的特征。建议仅对特征无法实现的情况添加动态行为。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">ExamplePlugin</span> <span class="directive">extends</span> Plugin {
+    <span class="type">void</span> doWithDynamicMethods() {
+        <span class="keyword">for</span> (controllerClass <span class="keyword">in</span> grailsApplication.controllerClasses) {
+             controllerClass.metaClass.myNewMethod = {-&gt; println <span class="string"><span class="delimiter">&quot;</span><span class="content">hello world</span><span class="delimiter">&quot;</span></span> }
+        }
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在这种情况下，我们使用隐式应用程序对象获取对所有控制器类的 MetaClass 实例的引用，并向每个控制器添加一个名为 <code>myNewMethod</code> 的新方法。 如果您事先知道该类，则希望添加一个方法，您只需引用其 <code>metaClass</code> 属性即可。</p>
+</div>
+<div class="paragraph">
+<p>例如我们可以在 <code>java.lang.String</code> 中添加一个新的方法 <code>swapCase</code> ：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">ExamplePlugin</span> <span class="directive">extends</span> Plugin  {
+
+    <span class="annotation">@Override</span>
+    <span class="type">void</span> doWithDynamicMethods() {
+        <span class="predefined-type">String</span>.metaClass.swapCase = {-&gt;
+             <span class="keyword">def</span> sb = <span class="keyword">new</span> <span class="predefined-type">StringBuilder</span>()
+             delegate.each {
+                 sb &lt;&lt; (<span class="predefined-type">Character</span>.isUpperCase(<span class="local-variable">it</span> <span class="keyword">as</span> <span class="type">char</span>) ?
+                        <span class="predefined-type">Character</span>.toLowerCase(<span class="local-variable">it</span> <span class="keyword">as</span> <span class="type">char</span>) :
+                        <span class="predefined-type">Character</span>.toUpperCase(<span class="local-variable">it</span> <span class="keyword">as</span> <span class="type">char</span>))
+             }
+             sb.toString()
+        }
+
+        <span class="keyword">assert</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">UpAndDown</span><span class="delimiter">&quot;</span></span> == <span class="string"><span class="delimiter">&quot;</span><span class="content">uPaNDdOWN</span><span class="delimiter">&quot;</span></span>.swapCase()
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_与applicationcontext交互">与ApplicationContext交互</h4>
+<div class="paragraph">
+<p><code>doWithDynamicMethods</code> 闭包通过了Spring <code>ApplicationContext</code> 实例。 这很有用，因为它使您可以与其中的对象进行交互。 例如，如果您正在实现与Hibernate交互的方法，则可以将 <code>SessionFactory</code> 实例与 <code>HibernateTemplate</code> 结合使用：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">org.springframework.orm.hibernate3.HibernateTemplate</span>
+
+<span class="type">class</span> <span class="class">ExampleHibernatePlugin</span> <span class="directive">extends</span> Plugin{
+
+   <span class="type">void</span> doWithDynamicMethods() {
+
+       <span class="keyword">for</span> (domainClass <span class="keyword">in</span> grailsApplication.domainClasses) {
+
+           domainClass.metaClass.static.load = { <span class="predefined-type">Long</span> id-&gt;
+                <span class="keyword">def</span> sf = applicationContext.sessionFactory
+                <span class="keyword">def</span> template = <span class="keyword">new</span> HibernateTemplate(sf)
+                template.load(delegate, id)
+           }
+       }
+   }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>同样由于 Spring 容器的自动装配和依赖注入功能，您可以实现更强大的动态构造函数，这些构造函数使用应用程序上下文在运行时将依赖关系连接到对象中：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">MyConstructorPlugin</span> {
+
+    <span class="type">void</span> doWithDynamicMethods()
+         <span class="keyword">for</span> (domainClass <span class="keyword">in</span> grailsApplication.domainClasses) {
+              domainClass.metaClass.constructor = {-&gt;
+                  <span class="keyword">return</span> applicationContext.getBean(domainClass.name)
+              }
+         }
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在这里，我们实际上将默认构造函数替换为一个查找原型 Spring bean 的构造函数！</p>
+</div>
+</div>
+
+<a name="15.9 &#21442;&#19982;&#33258;&#21160;&#37325;&#26032;&#21152;&#36733;&#20107;&#20214;"><!-- Legacy link --></a>
+<h2 id="participatingInAutoReloadEvents">18.8 参与自动重新加载事件</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/plugins/participatingInAutoReloadEvents.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="sect3">
+<h4 id="_监视资源的更改">监视资源的更改</h4>
+<div class="paragraph">
+<p>通常，监视资源的更改并在发生更改时执行某些操作是很有价值的。这就是 Grails 如何在运行时实现应用程序状态的高级重新加载。例如，考虑 Grails <code>ServicesPlugin</code> 中的这个简化片段：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">ServicesGrailsPlugin</span> <span class="directive">extends</span> Plugin {
+    ...
+    def watchedResources = <span class="string"><span class="delimiter">&quot;</span><span class="content">file:./grails-app/services/**/*Service.groovy</span><span class="delimiter">&quot;</span></span>
+
+    ...
+    void onChange( <span class="predefined-type">Map</span>&lt;<span class="predefined-type">String</span>, <span class="predefined-type">Object</span>&gt; event) {
+        <span class="keyword">if</span> (event.source) {
+            <span class="keyword">def</span> serviceClass = grailsApplication.addServiceClass(event.source)
+            <span class="keyword">def</span> serviceName = <span class="string"><span class="delimiter">&quot;</span><span class="inline"><span class="inline-delimiter">${</span>serviceClass.propertyName<span class="inline-delimiter">}</span></span><span class="delimiter">&quot;</span></span>
+            beans {
+                <span class="string"><span class="delimiter">&quot;</span><span class="inline"><span class="inline-delimiter">$</span>serviceName</span><span class="delimiter">&quot;</span></span>(serviceClass.getClazz()) { bean -&gt;
+                    bean.autowire =  <span class="predefined-constant">true</span>
+                }
+            }
+        }
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>首先，它将 <code>watchedResources</code> 定义为包含要监视的资源的引用或模式的字符串或字符串列表。如果关注的资源指定了一个 Groovy 文件，当它被更改时，它将自动被重新加载并传递到 <code>event</code> 对象中的 <code>onChange</code> 闭包中。</p>
+</div>
+<div class="paragraph">
+<p><code>event</code> 对象定义了许多有用的属性：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>event.source</code> - 事件的源，可以是重新加载的 <code>类</code> 资源，也可以是 Spring 资源</p>
+</li>
+<li>
+<p><code>event.ctx</code> - Spring <code>ApplicationContext</code> 实例</p>
+</li>
+<li>
+<p><code>event.plugin</code> - 管理资源的插件对象（通常是 <code>this</code>）</p>
+</li>
+<li>
+<p><code>event.application</code> - <code>GrailsApplication</code> 实例</p>
+</li>
+<li>
+<p><code>event.manager</code> - <code>grailspruginmanager</code> 实例</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>这些对象可帮助您根据更改内容应用适当的更改。在上面的 <code>Services</code> 示例中，当其中一个服务类更改时，新的服务bean将重新注册到 <code>ApplicationContext</code> 。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_影响其他插件">影响其他插件</h4>
+<div class="paragraph">
+<p>除了对变化做出反应外，有时插件还需要 <code>影响</code> 另一个插件。</p>
+</div>
+<div class="paragraph">
+<p>以服务和控制器插件为例。重新加载服务时，除非您也重新加载控制器，否则当您尝试将重新加载的服务自动连接到较旧的控制器类时，将出现问题。</p>
+</div>
+<div class="paragraph">
+<p>为了解决这个问题，您可以指定哪些插件是另一个插件 <code>影响</code>。这意味着当一个插件检测到更改时，它将重新加载自己，然后重新加载其受影响的插件。例如，考虑来自 <code>ServicesGrailsPlugin</code> 的这个片段：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> influences = [<span class="string"><span class="delimiter">'</span><span class="content">controllers</span><span class="delimiter">'</span></span>]</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_观察其他插件">观察其他插件</h4>
+<div class="paragraph">
+<p>如果有一个特定的插件，您希望观察其更改，但不需要观察它所监视的资源，则可以使用 <code>observe</code> 属性：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> observe = [<span class="string"><span class="delimiter">&quot;</span><span class="content">controllers</span><span class="delimiter">&quot;</span></span>]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在这种情况下，当控制器被更改时，您还将收到来自控制器插件的事件链。</p>
+</div>
+<div class="paragraph">
+<p>插件还可以使用通配符来观察所有加载的插件：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> observe = [<span class="string"><span class="delimiter">&quot;</span><span class="content">*</span><span class="delimiter">&quot;</span></span>]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>日志插件正是这样做的，以便它可以将 <code>log</code> 属性添加回应用程序运行时更改的任何事实。</p>
+</div>
+</div>
+
+<a name="15.10 &#20102;&#35299;&#25554;&#20214;&#21152;&#36733;&#39034;&#24207;"><!-- Legacy link --></a>
+<h2 id="understandingPluginLoadOrder">18.9 了解插件加载顺序</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/plugins/understandingPluginLoadOrder.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="sect3">
+<h4 id="_控制插件依赖项">控制插件依赖项</h4>
+<div class="paragraph">
+<p>插件通常依赖于其他插件的存在，并且可以根据其他插件的存在进行调整。这是用两个属性实现的。第一种叫做 <code>dependsOn</code>。例如，查看 Hibernate 插件中的以下代码片段：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">HibernateGrailsPlugin</span> {
+
+    <span class="keyword">def</span> version = <span class="string"><span class="delimiter">&quot;</span><span class="content">1.0</span><span class="delimiter">&quot;</span></span>
+
+    <span class="keyword">def</span> dependsOn = [<span class="key">dataSource</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">1.0</span><span class="delimiter">&quot;</span></span>,
+                     <span class="key">domainClass</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">1.0</span><span class="delimiter">&quot;</span></span>,
+                     <span class="key">i18n</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">1.0</span><span class="delimiter">&quot;</span></span>,
+                     <span class="key">core</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">1.0</span><span class="delimiter">&quot;</span></span>]
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Hibernate 插件依赖于四个插件的存在：<code>dataSource</code>、<code>domainClass</code>、<code>i18n</code> 和 <code>core</code> 插件。</p>
+</div>
+<div class="paragraph">
+<p>依赖项将在 Hibernate 插件之前加载，如果所有依赖项都未加载，则插件将不会加载。</p>
+</div>
+<div class="paragraph">
+<p>dependsOn 属性还支持用于指定版本范围的小型表达式语言。下面是一些语法示例：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> dependsOn = [<span class="key">foo</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">* &gt; 1.0</span><span class="delimiter">&quot;</span></span>]
+<span class="keyword">def</span> dependsOn = [<span class="key">foo</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">1.0 &gt; 1.1</span><span class="delimiter">&quot;</span></span>]
+<span class="keyword">def</span> dependsOn = [<span class="key">foo</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">1.0 &gt; *</span><span class="delimiter">&quot;</span></span>]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>当使用通配符 * 时，它表示 <code>任意</code> 版本。表达式语法还排除了任何后缀，如 -BETA、-ALPHA 等。因此，例如，表达式 <code>1.0&gt;1.1</code> 将匹配以下任何版本：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>1.1</p>
+</li>
+<li>
+<p>1.0</p>
+</li>
+<li>
+<p>1.0.1</p>
+</li>
+<li>
+<p>1.0.3-SNAPSHOT</p>
+</li>
+<li>
+<p>1.1-BETA2</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_控制负载顺序">控制负载顺序</h4>
+<div class="paragraph">
+<p>使用 dependsOn 建立一个 <code>硬</code> 依赖关系，如果依赖关系没有被解析，插件将放弃并且不会加载。不过，使用 <code>loadAfter</code> 和 <code>loadBefore</code> 属性可能会有较弱的依赖关系：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> loadAfter = [<span class="string"><span class="delimiter">'</span><span class="content">controllers</span><span class="delimiter">'</span></span>]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在这里，插件将被加载到 <code>控制器</code> 插件，如果它存在，否则它将被加载。然后，该插件可以适应其他插件的存在，例如 Hibernate 插件在其 <code>doWithSpring</code> 闭包中包含以下代码：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">if</span> (manager?.hasGrailsPlugin(<span class="string"><span class="delimiter">&quot;</span><span class="content">controllers</span><span class="delimiter">&quot;</span></span>)) {
+    openSessionInViewInterceptor(OpenSessionInViewInterceptor) {
+        flushMode = HibernateAccessor.FLUSH_MANUAL
+        sessionFactory = sessionFactory
+    }
+    grailsUrlHandlerMapping.interceptors &lt;&lt; openSessionInViewInterceptor
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在这里，如果 <code>controllers</code> 插件已经加载，Hibernate 插件将只注册一个 <code>OpenSessionInViewInterceptor</code> 。manager 变量是 <a href="http://docs.grails.org/4.0.0/api/grails/plugins/grailspruginmanager.html">grailspruginmanager</a> 接口的一个实例，它提供了与其他插件交互的方法。</p>
+</div>
+<div class="paragraph">
+<p>您还可以使用 <code>load before</code> 属性指定一个或多个插件，您的插件应在以下时间之前加载：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> loadBefore = [<span class="string"><span class="delimiter">'</span><span class="content">rabbitmq</span><span class="delimiter">'</span></span>]</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_范围和环境">范围和环境</h4>
+<div class="paragraph">
+<p>你不仅可以控制插件的加载顺序。您还可以指定插件应加载在哪些环境中以及应加载哪些作用域（生成阶段）。只需在插件描述符中声明这些属性中的一个或两个：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> environments = [<span class="string"><span class="delimiter">'</span><span class="content">development</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">test</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">myCustomEnv</span><span class="delimiter">'</span></span>]
+<span class="keyword">def</span> scopes = [<span class="key">excludes</span>:<span class="string"><span class="delimiter">'</span><span class="content">war</span><span class="delimiter">'</span></span>]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在本例中，插件将只在 <code>开发</code> 和 <code>测试</code> 环境中加载。也不会打包到 WAR 文件中，因为它被排除在 <code>WAR</code> 阶段之外。这允许 <code>仅开发</code> 插件不打包供生产使用。</p>
+</div>
+<div class="paragraph">
+<p>可用作用域的完整列表由 <a href="enumhttp://docs.grails.org/4.0.0/api/grails/util/BuildScope.html">BuildScope</a> 定义，但这里有一个摘要：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>test</code> - 运行测试时</p>
+</li>
+<li>
+<p><code>functional-test</code> - 运行功能测试时</p>
+</li>
+<li>
+<p><code>run</code> - 用于run app和run war</p>
+</li>
+<li>
+<p><code>war</code> - 将应用程序打包为war文件时</p>
+</li>
+<li>
+<p><code>all</code> - 插件应用于所有作用域（默认）</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>两个属性都可以是：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>a string - 唯一的包裹物</p>
+</li>
+<li>
+<p>a list - 要包括的环境或范围的列表</p>
+</li>
+<li>
+<p>a map - 用于完全控制，具有 <code>includes</code> 和/或 <code>excludes</code> 键，这些键可以具有字符串或列表值</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>例如，</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> environments = <span class="string"><span class="delimiter">&quot;</span><span class="content">test</span><span class="delimiter">&quot;</span></span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>将只在测试环境中包含插件，而</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> environments = [<span class="string"><span class="delimiter">&quot;</span><span class="content">development</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">test</span><span class="delimiter">&quot;</span></span>]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>将它包括在开发和测试环境中。最后，</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">def</span> environments = [<span class="key">includes</span>: [<span class="string"><span class="delimiter">&quot;</span><span class="content">development</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">test</span><span class="delimiter">&quot;</span></span>]]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>会做同样的事。</p>
+</div>
+</div>
+
+
+<h2 id="artefactApi">18.10 艺术品 API</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/plugins/artefactApi.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>您现在应该了解 Grails 具有工件（artefact）的概念：它了解的特殊类型的类，可以将其与常规 Groovy 和 Java 类区别对待，例如通过使用额外的属性和方法对其进行增强。工件（artefact）的示例包括域类和控制器。 您可能没有意识到，Grails 允许应用程序和插件开发人员访问工件（artefact）的基础结构，这意味着您可以找到可用的工件（artefacts），甚至自己进行增强。您甚至可以提供自己的自定义工件（artefact）类型。</p>
+</div>
+
+
+<h2 id="queryingArtefacts">18.10.1 询问可用文物</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/plugins/artefactApi/queryingArtefacts.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>作为插件开发人员，重要的是要了解应用程序中可用的域类，控制器或其他类型的人工制品。例如， <a href="https://grails.org/plugins.html#plugin/elasticsearch">Elasticsearch插件</a> 需要知道存在哪些域类，以便可以检查它们的任何 <code>可搜索</code> 属性并为适当的属性建立索引。那么它是如何做到的呢？答案取决于 <code>grailsApplication</code> 对象，以及 <a href="http://docs.grails.org/4.0.0/api/grails/core/GrailsApplication.html">GrailsApplication</a> 的实例，该实例可在控制器和 GSP 中自动使用，并且可以在其他任何地方 <a href="services.html＃dependencyInjectionServices">injected</a> 。</p>
+</div>
+<div class="paragraph">
+<p><code>grailsApplication</code> 对象具有一些重要的属性和查询伪像的方法。可能最常见的是为您提供特定文物类型的所有类别的文物：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">for</span> (cls <span class="keyword">in</span> grailsApplication.&lt;artefactType&gt;Classes) {
+    ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在这种情况下，<code>artefactType</code> 是工件类型的属性名称形式。使用核心 Grails，您可以：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>domain</p>
+</li>
+<li>
+<p>controller</p>
+</li>
+<li>
+<p>tagLib</p>
+</li>
+<li>
+<p>service</p>
+</li>
+<li>
+<p>codec</p>
+</li>
+<li>
+<p>bootstrap</p>
+</li>
+<li>
+<p>urlMappings</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>因此，例如，如果要遍历所有域类，请使用：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">for</span> (cls <span class="keyword">in</span> grailsApplication.domainClasses) {
+    ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>对于 URL 映射：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">for</span> (cls <span class="keyword">in</span> grailsApplication.urlMappingsClasses) {
+    ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>您需要注意，这些属性返回的对象不是 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a> 的实例。相反，它们是 <a href="http://docs.grails.org/4.0.0/api/grails/core/GrailsClass.html">GrailsClass</a> 的实例，这些实例具有一些特别有用的属性和方法，包括一个用于基础 <code>类</code> 的属性和方法：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>shortName</code> - 没有包的人工制品的类名（等同于 <code>Class.simpleName</code> ）。</p>
+</li>
+<li>
+<p><code>logicalPropertyName</code>- 属性形式的名称，不带 <code>type</code> 后缀。因此，<code>MyGreatController</code> 成为 <code>myGreat</code> 。</p>
+</li>
+<li>
+<p><code>isAbstract()</code> - 一个布尔值，指示 artefact 类是否为抽象类。</p>
+</li>
+<li>
+<p><code>getPropertyValue(name)</code> - 返回给定属性的值，无论它是静态的还是实例的。如果属性是在声明时初始化的，则效果最好。<code>static transactional = true</code>。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>artefact API 还允许您按名称获取类，并检查类是否为 artefact：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>get&lt;type&gt;Class(String name)</p>
+</li>
+<li>
+<p>is&lt;type&gt;Class(Class clazz)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>第一种方法将检索给定名称的 GrailsClass 实例，例如 <code>MyGreatController</code> 。第二个将检查类是否为特定类型的人工制品。 例如，您可以使用 <code>grailsApplication.isControllerClass(org.example.MyGreatController)</code> 检查 <code>MyGreatController</code> 是否实际上是控制器。</p>
+</div>
+
+
+<h2 id="customArtefacts">18.10.2 添加您自己的艺术品类型</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails/grails-doc/edit/master/src/en/guide/plugins/artefactApi/customArtefacts.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>插件可以轻松提供自己的工件（artefacts），以便他们可以轻松地找到可用的实现并参与重新加载。您需要做的就是创建一个 ArtefactHandler 实现，并将其注册到您的主插件类中：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">MyGrailsPlugin</span> {
+    <span class="keyword">def</span> artefacts = [ org.somewhere.MyArtefactHandler ]
+    ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>artefacts</code> 列表可以包含处理程序类（如上所述）或处理程序实例。</p>
+</div>
+<div class="paragraph">
+<p>那么，Artefact 是怎样处理的？好吧，简单地说，它是 <a href="http://docs.grails.org/4.0.0/api/grails/core/ArtefactHandler.html">ArtefactHandler</a> 接口的实现。为了使生活更轻松，可以轻松扩展以下框架实现: <a href="http://docs.grails.org/4.0.0/api/grails/core/ArtefactHandlerAdapter.html">ArtefactHandlerAdapter</a> 。</p>
+</div>
+<div class="paragraph">
+<p>除了处理程序本身之外，每个新的工件都需要一个相应的包装器类，该包装器类可实现 <a href="http://docs.grails.org/4.0.0/api/grails/core/GrailsClass.html">GrailsClass</a>。同样，可以使用骨架实现，例如 <a href="http://docs.grails.org/4.0.0/api/org/grails/core/AbstractInjectableGrailsClass.html">AbstractInjectableGrailsClass</a>，它特别有用，因为它可以将工件变成自动注入的 Spring bean，就像控制器和服务一样。</p>
+</div>
+<div class="paragraph">
+<p>理解处理程序类和包装程序类如何工作的最好方法是查看 Quartz 插件：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/grails-plugins/grails-quartz/blob/master/src/main/groovy/grails/plugins/quartz/GrailsJobClass.java">GrailsJobClass</a></p>
+</li>
+<li>
+<p><a href="https://github.com/grails-plugins/grails-quartz/blob/master/src/main/groovy/grails/plugins/quartz/DefaultGrailsJobClass.java">DefaultGrailsJobClass</a></p>
+</li>
+<li>
+<p><a href="https://github.com/grails-plugins/grails-quartz/blob/master/src/main/groovy/grails/plugins/quartz/JobArtefactHandler.groovy">JobArtefactHandler</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>另一个示例是 <a href="http://github.com/pledbrook/grails-shiro">Shiro plugin</a>，它添加了一个领域工件。</p>
+</div>
+
+
+                <div style="clear:both;margin-top:15px;"></div>
+                
+                    <div class="toc-item prev-left"><a href="../guide/security.html">&lt;&lt; <strong>17</strong><span>&#23433;&#20840;&#24615;</span></a></div>
+                
+                    <div class="toc-item next-right"><a href="../guide/spring.html"><strong>19</strong><span>Grails &#19982; Spring</span> >></a></div>
+                
+                <div style="clear:both"></div>
+            </div>
+        </td>
+        <td id="col2">
+            <div class="local clearfix">
+                <div class="local-title">
+                    <a href="../guide/index.html" target="mainFrame">Quick Reference</a>
+                    <span class="toggle">(<a href="#" onclick="localToggle(); return false;">hide</a>)</span>
+                </div>
+                <div class="menu">
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Command Line</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Command%20Line/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/bug-report.html">bug-report</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/clean.html">clean</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/compile.html">compile</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/console.html">console</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-app.html">create-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-command.html">create-command</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-controller.html">create-controller</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-domain-class.html">create-domain-class</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-functional-test.html">create-functional-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-hibernate-cfg-xml.html">create-hibernate-cfg-xml</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-integration-test.html">create-integration-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-interceptor.html">create-interceptor</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-plugin.html">create-plugin</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-profile.html">create-profile</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-script.html">create-script</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-service.html">create-service</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-taglib.html">create-taglib</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/create-unit-test.html">create-unit-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/dependency-report.html">dependency-report</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/docs.html">docs</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/generate-all.html">generate-all</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/generate-controller.html">generate-controller</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/generate-views.html">generate-views</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/help.html">help</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/install-templates.html">install-templates</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/list-plugins.html">list-plugins</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/list-profiles.html">list-profiles</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/package-plugin.html">package-plugin</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/package.html">package</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/plugin-info.html">plugin-info</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/profile-info.html">profile-info</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/run-app.html">run-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/run-command.html">run-command</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/run-script.html">run-script</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/schema-export.html">schema-export</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/shell.html">shell</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/stats.html">stats</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/stop-app.html">stop-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/test-app.html">test-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Command%20Line/war.html">war</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Constraints</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Constraints/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/attributes.html">attributes</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/bindable.html">bindable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/blank.html">blank</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/creditCard.html">creditCard</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/email.html">email</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/inList.html">inList</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/matches.html">matches</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/max.html">max</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/maxSize.html">maxSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/min.html">min</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/minSize.html">minSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/notEqual.html">notEqual</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/nullable.html">nullable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/range.html">range</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/scale.html">scale</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/size.html">size</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/unique.html">unique</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/url.html">url</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/validator.html">validator</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Constraints/widget.html">widget</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Controllers</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Controllers/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/actionName.html">actionName</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/allowedMethods.html">allowedMethods</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/bindData.html">bindData</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/chain.html">chain</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/controllerName.html">controllerName</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/defaultAction.html">defaultAction</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/errors.html">errors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/flash.html">flash</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/forward.html">forward</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/grailsApplication.html">grailsApplication</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/hasErrors.html">hasErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/namespace.html">namespace</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/params.html">params</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/redirect.html">redirect</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/render.html">render</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/request.html">request</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/respond.html">respond</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/response.html">response</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/responseFormats.html">responseFormats</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/scope.html">scope</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/servletContext.html">servletContext</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/session.html">session</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/withForm.html">withForm</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Controllers/withFormat.html">withFormat</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Database Mapping</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/autoImport.html">autoImport</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/autoTimestamp.html">autoTimestamp</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/batchSize.html">batchSize</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/cache.html">cache</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/cascade.html">cascade</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/column.html">column</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/comment.html">comment</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/discriminator.html">discriminator</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/dynamicInsert.html">dynamicInsert</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/dynamicUpdate.html">dynamicUpdate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/fetch.html">fetch</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/id.html">id</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/ignoreNotFound.html">ignoreNotFound</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/indexColumn.html">indexColumn</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/insertable.html">insertable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/joinTable.html">joinTable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/lazy.html">lazy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/order.html">order</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/sort.html">sort</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/table.html">table</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/type.html">type</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/updateable.html">updateable</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Database%20Mapping/version.html">version</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Domain Classes</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/addTo.html">addTo</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/attach.html">attach</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/belongsTo.html">belongsTo</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/clearErrors.html">clearErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/constraints.html">constraints</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/count.html">count</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/countBy.html">countBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/createCriteria.html">createCriteria</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/delete.html">delete</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/discard.html">discard</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/embedded.html">embedded</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/errors.html">errors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/executeQuery.html">executeQuery</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/executeUpdate.html">executeUpdate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/exists.html">exists</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/fetchMode.html">fetchMode</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/find.html">find</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findAll.html">findAll</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findAllBy.html">findAllBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findAllWhere.html">findAllWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findBy.html">findBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findOrCreateBy.html">findOrCreateBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findOrCreateWhere.html">findOrCreateWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findOrSaveBy.html">findOrSaveBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findOrSaveWhere.html">findOrSaveWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/findWhere.html">findWhere</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/first.html">first</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/get.html">get</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/getAll.html">getAll</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/getDirtyPropertyNames.html">getDirtyPropertyNames</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/getPersistentValue.html">getPersistentValue</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/hasErrors.html">hasErrors</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/hasMany.html">hasMany</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/hasOne.html">hasOne</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/ident.html">ident</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/instanceOf.html">instanceOf</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/isAttached.html">isAttached</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/isDirty.html">isDirty</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/last.html">last</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/list.html">list</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/listOrderBy.html">listOrderBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/load.html">load</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/lock.html">lock</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/mapWith.html">mapWith</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/mappedBy.html">mappedBy</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/mapping.html">mapping</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/merge.html">merge</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/namedQueries.html">namedQueries</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/properties.html">properties</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/read.html">read</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/refresh.html">refresh</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/removeFrom.html">removeFrom</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/save.html">save</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/transients.html">transients</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/validate.html">validate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/where.html">where</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/whereAny.html">whereAny</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/withCriteria.html">withCriteria</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/withNewSession.html">withNewSession</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/withSession.html">withSession</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Domain%20Classes/withTransaction.html">withTransaction</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Plug-ins</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Plug-ins/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/URL%20mappings.html">URL mappings</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/codecs.html">codecs</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/controllers.html">controllers</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/core.html">core</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/dataSource.html">dataSource</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/domainClasses.html">domainClasses</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/hibernate.html">hibernate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/i18n.html">i18n</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/logging.html">logging</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/scaffolding.html">scaffolding</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/services.html">services</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Plug-ins/servlets.html">servlets</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Services</h1><div class="menu-sub">
+                        
+                            <div class="menu-item"><a href="../ref/Services/Usage.html">Usage</a></div>
+                            
+                            
+                            <div class="menu-item"><a href="../ref/Services/scope.html">scope</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Services/transactional.html">transactional</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">Servlet API</h1><div class="menu-sub">
+                        
+                            
+                            <div class="menu-item"><a href="../ref/Servlet%20API/request.html">request</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Servlet%20API/response.html">response</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Servlet%20API/servletContext.html">servletContext</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../ref/Servlet%20API/session.html">session</a>
+                            </div>
+                            
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<div id="footer">
+    Copies of this document may be made for your own use and for distribution to others, provided that you do not charge any fee for such copies and further provided that each copy contains this Copyright Notice, whether distributed in print or electronically.
+    
+</div>
+
+<script type="text/javascript" src="../js/docs.js"></script>
+
+</body>
+</html>
